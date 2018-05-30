@@ -1,17 +1,8 @@
 # Welcome to MQDocs
 
-For full documentation visit [docs.moquality.com](http://docs.moquality.com).
+MoQuality provides automated app testing services for native Android and iOS apps.
 
-## Commands
+The best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [Getting Started with Android](getting-started/android)
+* [Getting Started with iOS](getting-started/ios)
