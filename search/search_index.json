@@ -2,23 +2,78 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to MQDocs\n\n\nFor full documentation visit \ndocs.moquality.com\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "text": "Welcome to MQDocs\n\n\nMoQuality provides automated app testing services for native Android and iOS apps.\n\n\nThe best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.\n\n\n\n\nGetting Started with Android\n\n\nGetting Started with iOS",
             "title": "Welcome to MQDocs"
         },
         {
             "location": "/#welcome-to-mqdocs",
-            "text": "For full documentation visit  docs.moquality.com .",
+            "text": "MoQuality provides automated app testing services for native Android and iOS apps.  The best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.   Getting Started with Android  Getting Started with iOS",
             "title": "Welcome to MQDocs"
         },
         {
-            "location": "/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
+            "location": "/getting-started/android/",
+            "text": "Android\n\n\nGetting Started\n\n\n\n\n\n\nDownload the recorder from \napp.moquality.com > Apps > Download Test Recorder\n\n\n\n\n\n\nSelect a device you would like to test with and \nturn on USB Debugging\n, which can be found inside of \nSettings > Developer Options > USB Debugging\n and connect your device to your computer. \nPress 'Always Allow\"\n on the popup on the device.\n\n\n\n\n\n\nMake sure to have \nuploaded a version of your app to test onto www.app.moquality.com\n and have filled out the package name and activity name.\n\n\n\n\n\n\nLaunch the recorder with your connected device and \nlog in with either your API key or username and password\n. Select your device and app from the drop down, as well as your screen size and keyboard preference.\n\n\n\n\n\n\nPress Record to begin\n recording your test on your device. Interact with the screen projection you see in front of you. You \nMUST use the bottom interface buttons\n for actions instead of the hardware buttons on your device. \n\n\n\n\n\n\nWhen you are done recording a test, \npress SAVE and name your test\n. You can then view the test in the app.moquality.com website.\n\n\n\n\n\n\nTo \nconfirm the test was valid, move to the Replays Tab and try to replay the test\n. If you are unable to replay the test, you may have to re-record it, or head down to the FAQ to see possible solutions. \n\n\n\n\n\n\nFAQ\n\n\nWhy does my phone not connect?\n\n\nDouble-check that USB debugging is on and that you have clicked 'Allow' on the on-screen popup. You may have to unplug and replug the device in some cases.\n\n\nWhy does it say I need to re-record in 'Stable Mode'?\n\n\nFor some apps and tests, the regular mode may be unable to capture all the necessary details to successfully replay the test. You can toggle 'Stable Mode' inside the recording by going into 'Settings' and toggling the option.",
+            "title": "Android"
         },
         {
-            "location": "/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
+            "location": "/getting-started/android/#android",
+            "text": "",
+            "title": "Android"
+        },
+        {
+            "location": "/getting-started/android/#getting-started",
+            "text": "Download the recorder from  app.moquality.com > Apps > Download Test Recorder    Select a device you would like to test with and  turn on USB Debugging , which can be found inside of  Settings > Developer Options > USB Debugging  and connect your device to your computer.  Press 'Always Allow\"  on the popup on the device.    Make sure to have  uploaded a version of your app to test onto www.app.moquality.com  and have filled out the package name and activity name.    Launch the recorder with your connected device and  log in with either your API key or username and password . Select your device and app from the drop down, as well as your screen size and keyboard preference.    Press Record to begin  recording your test on your device. Interact with the screen projection you see in front of you. You  MUST use the bottom interface buttons  for actions instead of the hardware buttons on your device.     When you are done recording a test,  press SAVE and name your test . You can then view the test in the app.moquality.com website.    To  confirm the test was valid, move to the Replays Tab and try to replay the test . If you are unable to replay the test, you may have to re-record it, or head down to the FAQ to see possible solutions.",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/getting-started/android/#faq",
+            "text": "Why does my phone not connect?  Double-check that USB debugging is on and that you have clicked 'Allow' on the on-screen popup. You may have to unplug and replug the device in some cases.  Why does it say I need to re-record in 'Stable Mode'?  For some apps and tests, the regular mode may be unable to capture all the necessary details to successfully replay the test. You can toggle 'Stable Mode' inside the recording by going into 'Settings' and toggling the option.",
+            "title": "FAQ"
+        },
+        {
+            "location": "/getting-started/ios/",
+            "text": "iOS\n\n\nIn order to use the recorder with iOS devices, some configuration is necessary. This page documents that configuration.\n\n\nNote: These steps were gathered via repeated attempts to determine the code signing process. It is possible that earlier attempts affected the steps determined, meaning that these may not work on a clean setup. Further testing is necessary.\n\n\nLog in to Apple Developer Portal\n\n\nFirst, log into \nthe Apple Developer Portal\n. Click the Account link at the top of the page to access your account info. In the sidebar on the left, you should see the following links:\n\n\n\n\nClick the \"Certificates, IDs & Profiles\" link.\n\n\nIf you already have a valid certificate, skip to step 3 (Alternate).\n\n\nGenerate a certificate\n\n\nAbove the certificate list on the next page, click the \n+\n button to generate a new certificate.\n\n\n\n\nSelect \"iOS App Development\".\n\n\n\n\nThe next page should give you instructions on how to generate a CSR. Follow those instructions before continuing.\n\n\n\n\n\n\nImport the certificate\n\n\nDownload the newly generated certificate.\n\n\n\n\nIf you already have a certificate generated, navigate to the certificate list, find your certificate, click on it, and then click the download button in the expanded panel.\n\n\n\n\nOnce the certificate is downloaded, locate it in Finder and double-click it. This should open the Keychain Access app with the certificate newly imported into the \"System\" keychain. To find it, click System in the sidebar, and then Certificates.\n\n\n\n\nThe certificate needs to be moved to the \"local\" keychain. To do so, simply drag it from the list of certificates on the local keychain in the sidebar. Once this is done, it should appear under \"My Certificates\", rather than just under \"Certificates\".\n\n\nGenerate an App ID\n\n\nBack in the developer portal, click \"App IDs\" on the sidebar.\n\n\n\n\nClick the \n+\n button at the top, much like when generating a certificate.\n\n\n\n\nName the ID something reasonable for its use, such as \"Recorder\".\n\n\n\n\nSelect \"Wildcard App ID\" and enter a single asterisk as the ID.\n\n\nTake note of the Team ID listed under the \"App ID Prefix\". You'll need it.\n\n\n\n\nClick \"Done\".\n\n\nGenerate a mobile provisioning profile\n\n\nClick \"All\" under \"Provisioning Profiles\" in the sidebar. You may need to scroll down to see it.\n\n\n\n\nClick the \n+\n button to generate a new profile, and then select \"iOS App Development\".\n\n\n\n\nSelect the App ID that you generated in the previous step.\n\n\n\n\nSelect the certificate generated in step 2, or your existing certificate if you did not generate one.\n\n\n\n\nClick the \"Select All\" checkbox on the device list.\n\n\n\n\nEnter a name for the profile.\n\n\n\n\nYou do \nnot\n need to download the profile. That will be handled automatically.\n\n\n\n\nSet up environment variables\n\n\nThe final step is to set the \n$DEVELOPMENT_TEAM\n environment variable to the Team ID from step 4. There are several ways to do this, but one of the simplest is to add the variable to the \n.bash_profile\n file in your home directory.\n\n\nOpen the \n$HOME/.bash_profile\n file in an editor of your choice and add the following line to the end of it:\n\n\nbash export DEVELOPMENT_TEAM=<Team ID>\n\n\n\n\nReplace \n<Team ID>\n with the your team ID.\n\n\nOnce this is done, you will need to log out and back in. Then simply run the recorder as normal.\n\n\nEnsure xcode is in system path\n\n\nGo to \nXcode > Preferences > Locations\n, and assign the Command Line Tools to XCode.",
+            "title": "iOS"
+        },
+        {
+            "location": "/getting-started/ios/#ios",
+            "text": "In order to use the recorder with iOS devices, some configuration is necessary. This page documents that configuration.  Note: These steps were gathered via repeated attempts to determine the code signing process. It is possible that earlier attempts affected the steps determined, meaning that these may not work on a clean setup. Further testing is necessary.",
+            "title": "iOS"
+        },
+        {
+            "location": "/getting-started/ios/#log-in-to-apple-developer-portal",
+            "text": "First, log into  the Apple Developer Portal . Click the Account link at the top of the page to access your account info. In the sidebar on the left, you should see the following links:   Click the \"Certificates, IDs & Profiles\" link.  If you already have a valid certificate, skip to step 3 (Alternate).",
+            "title": "Log in to Apple Developer Portal"
+        },
+        {
+            "location": "/getting-started/ios/#generate-a-certificate",
+            "text": "Above the certificate list on the next page, click the  +  button to generate a new certificate.   Select \"iOS App Development\".   The next page should give you instructions on how to generate a CSR. Follow those instructions before continuing.",
+            "title": "Generate a certificate"
+        },
+        {
+            "location": "/getting-started/ios/#import-the-certificate",
+            "text": "Download the newly generated certificate.   If you already have a certificate generated, navigate to the certificate list, find your certificate, click on it, and then click the download button in the expanded panel.   Once the certificate is downloaded, locate it in Finder and double-click it. This should open the Keychain Access app with the certificate newly imported into the \"System\" keychain. To find it, click System in the sidebar, and then Certificates.   The certificate needs to be moved to the \"local\" keychain. To do so, simply drag it from the list of certificates on the local keychain in the sidebar. Once this is done, it should appear under \"My Certificates\", rather than just under \"Certificates\".",
+            "title": "Import the certificate"
+        },
+        {
+            "location": "/getting-started/ios/#generate-an-app-id",
+            "text": "Back in the developer portal, click \"App IDs\" on the sidebar.   Click the  +  button at the top, much like when generating a certificate.   Name the ID something reasonable for its use, such as \"Recorder\".   Select \"Wildcard App ID\" and enter a single asterisk as the ID.  Take note of the Team ID listed under the \"App ID Prefix\". You'll need it.   Click \"Done\".",
+            "title": "Generate an App ID"
+        },
+        {
+            "location": "/getting-started/ios/#generate-a-mobile-provisioning-profile",
+            "text": "Click \"All\" under \"Provisioning Profiles\" in the sidebar. You may need to scroll down to see it.   Click the  +  button to generate a new profile, and then select \"iOS App Development\".   Select the App ID that you generated in the previous step.   Select the certificate generated in step 2, or your existing certificate if you did not generate one.   Click the \"Select All\" checkbox on the device list.   Enter a name for the profile.   You do  not  need to download the profile. That will be handled automatically.",
+            "title": "Generate a mobile provisioning profile"
+        },
+        {
+            "location": "/getting-started/ios/#set-up-environment-variables",
+            "text": "The final step is to set the  $DEVELOPMENT_TEAM  environment variable to the Team ID from step 4. There are several ways to do this, but one of the simplest is to add the variable to the  .bash_profile  file in your home directory.  Open the  $HOME/.bash_profile  file in an editor of your choice and add the following line to the end of it:  bash export DEVELOPMENT_TEAM=<Team ID>  Replace  <Team ID>  with the your team ID.  Once this is done, you will need to log out and back in. Then simply run the recorder as normal.",
+            "title": "Set up environment variables"
+        },
+        {
+            "location": "/getting-started/ios/#ensure-xcode-is-in-system-path",
+            "text": "Go to  Xcode > Preferences > Locations , and assign the Command Line Tools to XCode.",
+            "title": "Ensure xcode is in system path"
         }
     ]
 }
