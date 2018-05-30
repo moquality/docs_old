@@ -1,0 +1,7 @@
+name: docs
+
+dependencies:
+  - pip=9.0.1
+  - pip:
+    - mkdocs
+    - mkdocs-material
