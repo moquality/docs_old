@@ -2,7 +2,7 @@ site_name: MQ Docs
 theme:
   name: 'material'
 
-edit_uri: /moquality/docs/tree/master/mq/docs
+edit_uri: /moquality/docs/tree/master/docs/docs
 repo_name: 'MQ Docs'
 repo_url: 'https://github.com/moquality/docs'
 
