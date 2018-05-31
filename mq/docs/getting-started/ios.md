@@ -2,7 +2,8 @@
 
 In order to use the recorder with iOS devices, some configuration is necessary. This page documents that configuration.
 
-Note: These steps were gathered via repeated attempts to determine the code signing process. It is possible that earlier attempts affected the steps determined, meaning that these may not work on a clean setup. Further testing is necessary.
+!!! note
+    These steps were gathered via repeated attempts to determine the code signing process. It is possible that earlier attempts affected the steps determined, meaning that these may not work on a clean setup. Further testing is necessary.
 
 ### Log in to Apple Developer Portal
 
