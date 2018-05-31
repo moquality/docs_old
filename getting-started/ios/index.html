@@ -64,6 +64,25 @@
       <defs>
         
         
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
       </defs>
     </svg>
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
@@ -133,6 +152,30 @@
         
       </div>
       
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/moquality/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      MQ Docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
     </div>
   </nav>
 </header>
@@ -158,6 +201,28 @@
     </span>
     MQ Docs
   </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/moquality/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      MQ Docs
+    </div>
+  </a>
+
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -388,16 +453,21 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/moquality/docs/tree/master/mq/docs/getting-started/ios.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
-                <h1 id="ios">iOS</h1>
+                
+                <h1 id="ios">iOS<a class="headerlink" href="#ios" title="Permanent link">⚓</a></h1>
 <p>In order to use the recorder with iOS devices, some configuration is necessary. This page documents that configuration.</p>
-<p>Note: These steps were gathered via repeated attempts to determine the code signing process. It is possible that earlier attempts affected the steps determined, meaning that these may not work on a clean setup. Further testing is necessary.</p>
-<h3 id="log-in-to-apple-developer-portal">Log in to Apple Developer Portal</h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These steps were gathered via repeated attempts to determine the code signing process. It is possible that earlier attempts affected the steps determined, meaning that these may not work on a clean setup. Further testing is necessary.</p>
+</div>
+<h3 id="log-in-to-apple-developer-portal">Log in to Apple Developer Portal<a class="headerlink" href="#log-in-to-apple-developer-portal" title="Permanent link">⚓</a></h3>
 <p>First, log into <a href="https://developer.apple.com/">the Apple Developer Portal</a>. Click the Account link at the top of the page to access your account info. In the sidebar on the left, you should see the following links:</p>
 <p><img src="../img/01.png" width="270px"></p>
 <p>Click the "Certificates, IDs &amp; Profiles" link.</p>
 <p>If you already have a valid certificate, skip to step 3 (Alternate).</p>
-<h2 id="generate-a-certificate">Generate a certificate</h2>
+<h2 id="generate-a-certificate">Generate a certificate<a class="headerlink" href="#generate-a-certificate" title="Permanent link">⚓</a></h2>
 <p>Above the certificate list on the next page, click the <code>+</code> button to generate a new certificate.</p>
 <p><img src="../img/02.png" width="320px"></p>
 <p>Select "iOS App Development".</p>
@@ -405,7 +475,7 @@
 <p>The next page should give you instructions on how to generate a CSR. Follow those instructions before continuing.</p>
 <p><img src="../img/04.png" width="680px"></p>
 <p><img src="../img/05.png" width="680px"></p>
-<h2 id="import-the-certificate">Import the certificate</h2>
+<h2 id="import-the-certificate">Import the certificate<a class="headerlink" href="#import-the-certificate" title="Permanent link">⚓</a></h2>
 <p>Download the newly generated certificate.</p>
 <p><img src="../img/06.png" width="680px"></p>
 <p>If you already have a certificate generated, navigate to the certificate list, find your certificate, click on it, and then click the download button in the expanded panel.</p>
@@ -413,7 +483,7 @@
 <p>Once the certificate is downloaded, locate it in Finder and double-click it. This should open the Keychain Access app with the certificate newly imported into the "System" keychain. To find it, click System in the sidebar, and then Certificates.</p>
 <p><img src="../img/08.png" width="200px"></p>
 <p>The certificate needs to be moved to the "local" keychain. To do so, simply drag it from the list of certificates on the local keychain in the sidebar. Once this is done, it should appear under "My Certificates", rather than just under "Certificates".</p>
-<h2 id="generate-an-app-id">Generate an App ID</h2>
+<h2 id="generate-an-app-id">Generate an App ID<a class="headerlink" href="#generate-an-app-id" title="Permanent link">⚓</a></h2>
 <p>Back in the developer portal, click "App IDs" on the sidebar.</p>
 <p><img src="../img/10.png" width="200"></p>
 <p>Click the <code>+</code> button at the top, much like when generating a certificate.</p>
@@ -424,7 +494,7 @@
 <p><strong>Take note of the Team ID listed under the "App ID Prefix". You'll need it.</strong></p>
 <p><img src="../img/12.png" width="450px"></p>
 <p>Click "Done".</p>
-<h2 id="generate-a-mobile-provisioning-profile">Generate a mobile provisioning profile</h2>
+<h2 id="generate-a-mobile-provisioning-profile">Generate a mobile provisioning profile<a class="headerlink" href="#generate-a-mobile-provisioning-profile" title="Permanent link">⚓</a></h2>
 <p>Click "All" under "Provisioning Profiles" in the sidebar. You may need to scroll down to see it.</p>
 <p><img src="../img/13.png" width="200px"></p>
 <p>Click the <code>+</code> button to generate a new profile, and then select "iOS App Development".</p>
@@ -439,15 +509,16 @@
 <p><img src="../img/18.png" width="550px"></p>
 <p>You do <em>not</em> need to download the profile. That will be handled automatically.</p>
 <p><img src="../img/19.png" width="550px"></p>
-<h2 id="set-up-environment-variables">Set up environment variables</h2>
+<h2 id="set-up-environment-variables">Set up environment variables<a class="headerlink" href="#set-up-environment-variables" title="Permanent link">⚓</a></h2>
 <p>The final step is to set the <code>$DEVELOPMENT_TEAM</code> environment variable to the Team ID from step 4. There are several ways to do this, but one of the simplest is to add the variable to the <code>.bash_profile</code> file in your home directory.</p>
 <p>Open the <code>$HOME/.bash_profile</code> file in an editor of your choice and add the following line to the end of it:</p>
-<pre><code>bash export DEVELOPMENT_TEAM=&lt;Team ID&gt;
-</code></pre>
+<div class="code"><pre><span></span>bash export DEVELOPMENT_TEAM=&lt;Team ID&gt;
+</pre></div>
+
 
 <p>Replace <code>&lt;Team ID&gt;</code> with the your team ID.</p>
 <p>Once this is done, you will need to log out and back in. Then simply run the recorder as normal.</p>
-<h2 id="ensure-xcode-is-in-system-path">Ensure xcode is in system path</h2>
+<h2 id="ensure-xcode-is-in-system-path">Ensure xcode is in system path<a class="headerlink" href="#ensure-xcode-is-in-system-path" title="Permanent link">⚓</a></h2>
 <p>Go to <code>Xcode &gt; Preferences &gt; Locations</code>, and assign the Command Line Tools to XCode.</p>
                 
                   
