@@ -13,7 +13,7 @@
 
 6. When you are done recording a test, **press SAVE and name your test**. You can then view the test in the app.moquality.com website.
 
-7. To **confirm the test was valid, move to the Replays Tab and try to replay the test**. If you are unable to replay the test, you may have to re-record it, or head down to the FAQ to see possible solutions. 
+7. To **confirm the test was valid, move to the Tests Tab and try to run the test**. If you are unable to run the test, you may have to re-record it, or head down to the FAQ to see possible solutions. 
 
 
 ## FAQ
@@ -24,5 +24,4 @@ Double-check that USB debugging is on and that you have clicked 'Allow' on the o
 
 **Why does it say I need to re-record in 'Stable Mode'?**
 
-For some apps and tests, the regular mode may be unable to capture all the necessary details to successfully replay the test. You can toggle 'Stable Mode' inside the recording by going into 'Settings' and toggling the option. 
-
+For some apps and tests, the regular mode may be unable to capture all the necessary details to successfully run the test. You can toggle 'Stable Mode' inside the recording by going into 'Settings' and toggling the option. 
