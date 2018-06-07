@@ -7,7 +7,7 @@ repo_name: 'MQ Docs'
 repo_url: 'https://github.com/moquality/docs'
 
 markdown_extensions:
-  - codehilite(css_class=code)
+  - codehilite
   - admonition
   - toc:
       permalink: '⚓'
@@ -21,4 +21,4 @@ pages:
   - MoQuality CLI: integration-ci-cd/mq-cli.md
   - Integrate with Bitrise: integration-ci-cd/bitrise.md
   - Integrate with CircleCI: integration-ci-cd/circleci.md
-  - Create a Custom Dockerfile: integration-ci-cd/dockerfile.md
+  - Custom Docker Images: integration-ci-cd/dockerfile.md
