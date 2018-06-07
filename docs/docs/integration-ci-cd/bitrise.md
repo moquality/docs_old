@@ -1,13 +1,17 @@
 # Integrating with Bitrise
 
 ## Getting Started
+
 Bitrise is a Continuous Integration and Delivery Platform as a Service. MoQuality integrates with the workflows of Bitrise by adding a step to a workflow. The following instructions outline how to integrate MoQuality with your Bitrise workflow.
 
 ## Prerequisites
+
 * Bitrise: If you have not yet installed Bitrise, follow the instructions [here](https://www.bitrise.io/cli).
 * mq-cli: To install mq-cli, run `npm install -g mq-cli` in your terminal.
+* MoQuality app: If you intend to upload a new build of an app, ensure that you have already uploaded the first version through the [MoQuality website](https://app.moquality.com/).
 
-##Instructions
+## Instructions
+
 1. In your command line, navigate to your desired directory, and **clone your git repository**.
 
     ```
