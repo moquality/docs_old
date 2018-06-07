@@ -1,4 +1,4 @@
-# iOS
+# Recorder Setup for iOS Devices
 
 In order to use the recorder with iOS devices, some configuration is necessary. This page documents that configuration.
 
