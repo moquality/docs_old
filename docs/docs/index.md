@@ -1,4 +1,4 @@
-# Welcome to MQDocs
+# What is MoQuality?
 
 MoQuality provides automated app testing services for native Android and iOS apps.
 
