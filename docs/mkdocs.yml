@@ -11,3 +11,11 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: '⚓'
+
+pages:
+- "What is MoQuality?": index.md
+- Getting Started:
+  - Recording Tests in Android: getting-started/android.md
+  - Recording Tests in iOS: getting-started/ios.md
+- Integrate with CI/CD:
+  - Integrate with Bitrise: integration-ci-cd/bitrise.md
