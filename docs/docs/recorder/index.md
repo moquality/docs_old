@@ -4,3 +4,4 @@
 
 * [Recorder Setup for Android Devices](android)
 * [Recorder Setup for iOS Devices](ios)
+* [Recorder Features](features)
