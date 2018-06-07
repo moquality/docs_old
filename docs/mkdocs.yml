@@ -14,9 +14,11 @@ markdown_extensions:
 
 pages:
 - "What is MoQuality?": index.md
-- Getting Started:
-  - Recording Tests in Android: getting-started/android.md
-  - Recording Tests in iOS: getting-started/ios.md
+- Recorder:
+  - Getting Started: recorder/index.md
+  - Setup:
+    - Android: recorder/android.md
+    - iOS: recorder/ios.md
 - Integrate with CI/CD:
   - MoQuality CLI: integration-ci-cd/mq-cli.md
   - Integrate with Bitrise: integration-ci-cd/bitrise.md
