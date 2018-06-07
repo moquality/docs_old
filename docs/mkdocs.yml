@@ -18,5 +18,7 @@ pages:
   - Recording Tests in Android: getting-started/android.md
   - Recording Tests in iOS: getting-started/ios.md
 - Integrate with CI/CD:
+  - MoQuality CLI: integration-ci-cd/mq-cli.md
   - Integrate with Bitrise: integration-ci-cd/bitrise.md
   - Integrate with CircleCI: integration-ci-cd/circleci.md
+  - Create a Custom Dockerfile: integration-ci-cd/dockerfile.md
