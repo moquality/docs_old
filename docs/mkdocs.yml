@@ -17,6 +17,8 @@ pages:
 - Getting Started:
   - Recording Tests in Android: getting-started/android.md
   - Recording Tests in iOS: getting-started/ios.md
+  - Web: getting-started/dashboard.md
+  - Test Report: getting-started/testreport.md
 - Integrate with CI/CD:
   - Integrate with Bitrise: integration-ci-cd/bitrise.md
   - Integrate with CircleCI: integration-ci-cd/circleci.md
