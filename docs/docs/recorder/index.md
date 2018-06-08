@@ -1,6 +1,8 @@
 # Getting Started with the Recorder
 
-The MoQuality test recorder allows a developer to record test cases for their mobile apps.
+The MoQuality test recorder provides functionality for only recording test cases for their mobile apps, as well as for both replaying test cases on a local device and editing them. In addition, useful supplementary functionality, such as the ability to automatically download and install the app being recorded on a new device.
+
+For a full overview of the recorder's functionality, see [the Recorder Feature List](features).
 
 ## Downloading the Recorder
 
@@ -15,12 +17,16 @@ Setup differs rather significantly between Android and iOS. Please consult the r
 * [Recorder Setup for Android Devices](android)
 * [Recorder Setup for iOS Devices](ios)
 
-## Features
-* [Recorder Features](features)
-
 ## Recording a Test Case
 
-TODO.
+1. Choose a device and an app.
+2. Choose device settings.
+3. Optional: Install app.
+4. Click "Record".
+5. Perform actions in the app.
+6. Click "Save".
+7. Enter a name for the test.
+8. Click "Save".
 
 ## Replaying a Test
 
