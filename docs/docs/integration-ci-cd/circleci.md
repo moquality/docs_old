@@ -38,7 +38,7 @@ CircleCI is a Continuous Integration and Continuous Delivery platform that allow
 5. Now that you have access to MQ CLI commands, you can create a subsequent step of your own to perform a task with these commands. The following sub-instructions breakdown **how to write a step that uploads your app to MoQuality** using MQ CLI commands.
 
         - run:
-            name: Upload to MoQuality
+            name: Login and Upload to MoQuality
             command: |
               mq login -a [API_KEY]
               mq user

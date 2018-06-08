@@ -64,11 +64,13 @@ Now your image is accessible from online and can be pulled at any time. The next
 
 ### CircleCI and Custom Docker Images
 
-CircleCI supports the use of custom Docker images, and the CircleCI documentation on customizing Docker images for CircleCI can be found [here](https://circleci.com/docs/2.0/custom-images/). If you have built and pushed a custom Docker image, you can use it in your CircleCI job by adding the image to the Docker executor of your job.
+CircleCI supports the use of custom Docker images, and the CircleCI documentation on customizing Docker images for CircleCI can be found [here](https://circleci.com/docs/2.0/custom-images/). If you have built and pushed a custom Docker image, you can use it in your CircleCI job by adding the image path to the Docker executor in your job.
 
 ```YAML
-docker:
-  - image: [DOCKER_USERNAME]/[REPOSITORY_NAME]:[TAG]
+job:
+  build:
+    docker:
+      - image: [DOCKER_USERNAME]/[REPOSITORY_NAME]:[TAG]
 ```
 
 The information in brackets can be found by visiting your image on [Docker Hub](https://hub.docker.com/) and selecting your repository. The Docker pull command will be on the repository page, and you can find your tag under the Tags tab.
@@ -79,23 +81,23 @@ You can also build your custom Docker image on top of a CirlceCI image. Say you 
 FROM circleci/android:api-25-alpha
 ```
 
-Now you can add your instructions to set up an environment within a CircleCI container. The next section breaks down an exmaple Docker image used to build and upload an app to MoQuality.
+Now you can add your instructions to set up an environment within a CircleCI container. The next section breaks down an exmaple Docker image used with CircleCI to build and upload an app to MoQuality.
 
-### Custom Docker Image for Example MoQuality App
+### CircleCI and Custom Docker Image for MoQuality App
 
-MoQuality has created a [Github repository] with all the necessary files to build and upload an example app to MoQuality by using CircleCI and a custom Dockerfile. Our Dockerfile uses Ubuntu as our parent image and installs dependencies like Gradle to build the app and MQ CLI to upload it to MoQuality. We also make use of a shell script called mqtest.sh that is filled with the necessary Gradle and MQ CLI commands. 
+MoQuality has created a [Github repository] with all the necessary files to build and upload a calculator app to MoQuality by using CircleCI and a custom Dockerfile. Our Dockerfile uses Ubuntu as our parent image and installs dependencies such as Gradle to build the app. The Docker image path is `jragonemq/mqubuntutest:latest`. Before beginning, create an app on MoQuality that you can use to test the upload properties of this build. It does not matter what apk file you upload upon creation of the app.
 
-1. Paste the following into your Dockerfile. This Dockerfile creates an environment for running the Calculator app on top of our Ubuntu parent image. Note that the RUN instruction is akin to running a command within the command line. We are essentially filling a fresh Ubuntu container with our dependencies and running a shell script when the container launches. Read the comments to understand what the instructions are doing.
+The following is the code behind the `jragonemq/mqubuntutest:latest` Dockerfile. This creates an environment for running the calculator app on top of an Ubuntu parent image. We are essentially filling a fresh Ubuntu container with our dependencies. The comments explain what each set of instructions is doing. However, understanding each instruction is less important than understanding what these instructions accomplish holistically: they build the environment.
 
 ``` Dockerfile
-#Use an official ubuntu runtime as a parent image
+#Use an official Ubuntu runtime as a parent image
 FROM ubuntu
 
-#Update apt-get and install dependencies
-RUN apt-get -y update && apt-get install -y wget bzip2 unzip gcc nodejs npm openjdk-8-jdk git
+#Set user to root
+USER root
 
-#Install CircleCI
-RUN wget -o /circleci https://circle-downloads.s3.amazonaws.com/releases/build_agent_wrapper/circleci && chmod +x /circleci
+#Update apt-get and install dependencies
+RUN apt-get -y update && apt-get install -y wget bzip2 unzip gcc nodejs npm openjdk-8-jdk git sudo curl
 
 #Install Gradle
 RUN wget https://services.gradle.org/distributions/gradle-4.1-bin.zip
@@ -117,14 +119,39 @@ RUN yes | sdkmanager --licenses
 RUN sdkmanager "platforms;android-22"
 RUN sdkmanager "build-tools;26.0.2"
 
-#Install MQ CLI and copy android
-RUN npm install -g mq-cli
+#Copy Android
 COPY android-8.0.0 android
 ENV PATH="/android:$PATH"
+```
 
-#Copy shell script into container
-COPY mqtest.sh mqtest.sh
+Create an empty directory and `cd` into it. Then, clone the repository using `git clone`. Within the hidden `.circleci` folder is the `config.yml` file. In this file are steps which build the app using `gradle build`, [install the mq-cli](circleci.md#instructions), and [login and upload the app to MoQuality](circleci.md#instructions). By the `mq login` and `mq upload` commands, fill in [API_KEY] and [APP_ID] with the API key of your account and app id of your app. To find your API key, run `mq login` and follow the prompts to log in to your account. Next, run `mq user` to display user information. Your API key will be in the list of returned information. To find your app id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app id in the same row. Using the above instructions and [CircleCI MQ CLI integration documentation](circleci.md), we have created our own custom Dockerfile, integrated it with CircleCI, and integrated the CircleCI with MoQuality.
 
-#Run mqtest.sh when container launches
-CMD ["sh", "mqtest.sh"]
+```YAML
+version: 2
+jobs:
+  build:
+    docker:
+      - image: jragonemq/mqubuntutest:latest
+    environment:
+      JVM_OPTS: -Xmx3200m
+    steps:
+      - checkout
+      - run:
+          name: Build app
+          command: gradle build
+      - run:
+          name: Install mq-cli
+          command: |
+            curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+            sudo apt-get install -y nodejs
+            sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin
+            npm -g config set user root
+            npm install -g mq-cli
+      - run:
+          name: Login and Upload to MoQuality
+          command: |
+            mq login -a [API_KEY]
+            mq user
+            mq upload -f app/build/outputs/apk/debug/app-debug.apk -a [APP_ID]
+            mq apps
 ```
