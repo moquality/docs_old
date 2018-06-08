@@ -16,9 +16,8 @@ pages:
 - "What is MoQuality?": index.md
 - Test Recorder:
   - Getting Started: recorder/index.md
-  - Setup:
-    - Android: recorder/android.md
-    - iOS: recorder/ios.md
+  - Android Setup: recorder/android.md
+  - iOS Setup: recorder/ios.md
   - Features: recorder/features.md
 - CI/CD Integrations:
   - Integrate with Bitrise: integration-ci-cd/bitrise.md
