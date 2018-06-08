@@ -22,7 +22,4 @@ pages:
 - CI/CD Integrations:
   - Integrate with Bitrise: integration-ci-cd/bitrise.md
   - Integrate with CircleCI: integration-ci-cd/circleci.md
-- FAQs:
-  - Testing: faq/testing.md
-  - Test Recording: faq/recorder.md
-  - Devices: faq/devices.md
+- FAQ: faq.md
