@@ -186,107 +186,102 @@
             "title": "Troubleshooting"
         },
         {
-            "location": "/faq/testing/",
-            "text": "MoQuality\n\u2693\n\n\nWhat types of apps can be tested with MoQuality?\n\u2693\n\n\nMoQuality can be used to test native Android and iOS apps.\n\n\nWhat it the maximum number of apps we can test?\n\u2693\n\n\nYou can upload a total of 100 apps for each account. When you upload a new version of your app, that counts as a new app.\n\n\nDo I need to instrument my app or supply source code?\n\u2693\n\n\nNo instrumentation or source code is required to use the built-in tests. Android apps can be submitted as is. iOS apps should be built with \u201ciOS Device\u201d as the target. If they are built with a simulator as the target, select the simulator checkbox while uploading the app.\n\n\nHow do you clean up devices after my testing is completed?\n\u2693\n\n\nAfter test execution completes, we uninstall the app and any data related to the app (cache is deleted).\n\n\nWhile we continue to add additional cleanup steps and improve the cleanup process, it is possible for data to persist between sessions. In case you want to test on a private device, contact us. In some cases you might have to provide sensitive information like login or other security-sensitive details during your automated test sessions. We advise you to create sandbox accounts to perform these tests on your staging enviornments.\n\n\nDo you modify my app?\n\u2693\n\n\nNo, we don't modify your app. However some apps need resigning for testing. However we don't support this feature currently. we advise that you upload the app with debug symbols enabled.",
+            "location": "/faq/",
+            "text": "Frequently Asked Questions\n\u2693\n\n\nTesting\n\u2693\n\n\nWhat types of apps can be tested with MoQuality?\n\u2693\n\n\nMoQuality can be used to test native Android and iOS apps.\n\n\nWhat it the maximum number of apps we can test?\n\u2693\n\n\nYou can upload a total of 100 apps for each account. Note that two versions of the same app counts as two apps towards this total.\n\n\nDo I need to instrument my app or supply source code?\n\u2693\n\n\nNo instrumentation or source code is required to use the built-in tests. Android apps can be submitted as is. iOS apps should be built with \u201ciOS Device\u201d as the target. If they are built with a simulator as the target, select the simulator checkbox while uploading the app.\n\n\nHow do you clean up devices after my testing is completed?\n\u2693\n\n\nAfter test execution completes, we uninstall the app and any data related to the app (cache is deleted).\n\n\nWhile we continue to add additional cleanup steps and improve the cleanup process, it is possible for data to persist between sessions. In case you want to test on a private device, contact us. In some cases you might have to provide sensitive information like login or other security-sensitive details during your automated test sessions. We advise you to create sandbox accounts to perform these tests on your staging environments.\n\n\nDo you modify my app?\n\u2693\n\n\nNo, we don't modify your app. Some iOS apps may require re-signing, but this feature is not currently supported. We recommend uploading a version of your app with debugging symbols enabled.\n\n\nTest Recording and Editing\n\u2693\n\n\nDoes the recorder support both Android and iOS?\n\u2693\n\n\nYes, both Android and iOS, including iOS simulators, are supported.\n\n\nDo I need to additional software on my machine?\n\u2693\n\n\nAndroid does not require any additional software. iOS requires Xcode to be installed and the command-line tools enabled. For details on how to setup a system for use with iOS, see \nRecorder Setup for iOS Devices\n.\n\n\nCan I connect to multiple Android devices from my local machine?\n\u2693\n\n\nYes. The recorder allows you to choose which you would like to use after you have logged in.\n\n\nWhat is the maximum test time allowed?\n\u2693\n\n\nThe maximum time for each test is 5 minutes. If you need a longer timeout, please\u00a0contact us.\n\n\nIs there a way to download the results?\n\u2693\n\n\nWe offer this feature as an extra package. After you enable it, a link appears in our dashboard that enables you to download tests and test reports in JSON format.\n\n\nDevices\n\u2693\n\n\nAre devices able to communicate with other services or systems that are available on the Internet?\n\u2693\n\n\nYes. All devices have a WiFi connection with internet access.\n\n\nCan I make phone calls or send SMS from the devices?\n\u2693\n\n\nNo, devices do not have carrier connections and cannot make phone calls or send SMS messages.\n\n\nCan I use the device camera?\n\u2693\n\n\nYes, you can use the device cameras, both front and rear facing. Images might be dark or blurry.\n\n\nAndroid: Is there a default Google account on the devices?\n\u2693\n\n\nNo, devices do not have an active Google account.\u00a0We do however allow you to add webhooks in our tests through the recorder. You can use the webhooks to create a Google account and then login into it on the phone. Then you can use another webhook at the end of the test to deactivate the account.\n\n\nAndroid: Is Google Play Services available on your devices? Which version is installed?\n\u2693\n\n\nYes, Google Play Services is installed on devices that support it. The services are updated as new versions become available.",
+            "title": "FAQ"
+        },
+        {
+            "location": "/faq/#frequently-asked-questions",
+            "text": "",
+            "title": "Frequently Asked Questions"
+        },
+        {
+            "location": "/faq/#testing",
+            "text": "",
             "title": "Testing"
         },
         {
-            "location": "/faq/testing/#moquality",
-            "text": "",
-            "title": "MoQuality"
-        },
-        {
-            "location": "/faq/testing/#what-types-of-apps-can-be-tested-with-moquality",
+            "location": "/faq/#what-types-of-apps-can-be-tested-with-moquality",
             "text": "MoQuality can be used to test native Android and iOS apps.",
             "title": "What types of apps can be tested with MoQuality?"
         },
         {
-            "location": "/faq/testing/#what-it-the-maximum-number-of-apps-we-can-test",
-            "text": "You can upload a total of 100 apps for each account. When you upload a new version of your app, that counts as a new app.",
+            "location": "/faq/#what-it-the-maximum-number-of-apps-we-can-test",
+            "text": "You can upload a total of 100 apps for each account. Note that two versions of the same app counts as two apps towards this total.",
             "title": "What it the maximum number of apps we can test?"
         },
         {
-            "location": "/faq/testing/#do-i-need-to-instrument-my-app-or-supply-source-code",
+            "location": "/faq/#do-i-need-to-instrument-my-app-or-supply-source-code",
             "text": "No instrumentation or source code is required to use the built-in tests. Android apps can be submitted as is. iOS apps should be built with \u201ciOS Device\u201d as the target. If they are built with a simulator as the target, select the simulator checkbox while uploading the app.",
             "title": "Do I need to instrument my app or supply source code?"
         },
         {
-            "location": "/faq/testing/#how-do-you-clean-up-devices-after-my-testing-is-completed",
-            "text": "After test execution completes, we uninstall the app and any data related to the app (cache is deleted).  While we continue to add additional cleanup steps and improve the cleanup process, it is possible for data to persist between sessions. In case you want to test on a private device, contact us. In some cases you might have to provide sensitive information like login or other security-sensitive details during your automated test sessions. We advise you to create sandbox accounts to perform these tests on your staging enviornments.",
+            "location": "/faq/#how-do-you-clean-up-devices-after-my-testing-is-completed",
+            "text": "After test execution completes, we uninstall the app and any data related to the app (cache is deleted).  While we continue to add additional cleanup steps and improve the cleanup process, it is possible for data to persist between sessions. In case you want to test on a private device, contact us. In some cases you might have to provide sensitive information like login or other security-sensitive details during your automated test sessions. We advise you to create sandbox accounts to perform these tests on your staging environments.",
             "title": "How do you clean up devices after my testing is completed?"
         },
         {
-            "location": "/faq/testing/#do-you-modify-my-app",
-            "text": "No, we don't modify your app. However some apps need resigning for testing. However we don't support this feature currently. we advise that you upload the app with debug symbols enabled.",
+            "location": "/faq/#do-you-modify-my-app",
+            "text": "No, we don't modify your app. Some iOS apps may require re-signing, but this feature is not currently supported. We recommend uploading a version of your app with debugging symbols enabled.",
             "title": "Do you modify my app?"
         },
         {
-            "location": "/faq/recorder/",
-            "text": "Test Recording and Editing\n\u2693\n\n\nDoes it support both Android and iOS?\n\u2693\n\n\nYes. We also support iOS apps targetted to run on simulators.\n\n\nDo I need to additional software on my machine?\n\u2693\n\n\nNot for Android. For iOS, you need to have XCode installed with command line tools enabled.\n\n\nCan I connect to multiple Android devices from my local machine?\n\u2693\n\n\nYes.\n\n\nWhat is the maximum test time allowed?\n\u2693\n\n\nThe maximum time for each test is 5 minutes. If you need a longer timeout, please\u00a0contact us.\n\n\nIs there a way to download the results?\n\u2693\n\n\nWe offer this feature as an extra package. After you enable it, a link appears in our dashboard that enables you to download tests and test reports. They are also JSONified so that other tools can consume this data easily.",
-            "title": "Test Recording"
-        },
-        {
-            "location": "/faq/recorder/#test-recording-and-editing",
+            "location": "/faq/#test-recording-and-editing",
             "text": "",
             "title": "Test Recording and Editing"
         },
         {
-            "location": "/faq/recorder/#does-it-support-both-android-and-ios",
-            "text": "Yes. We also support iOS apps targetted to run on simulators.",
-            "title": "Does it support both Android and iOS?"
+            "location": "/faq/#does-the-recorder-support-both-android-and-ios",
+            "text": "Yes, both Android and iOS, including iOS simulators, are supported.",
+            "title": "Does the recorder support both Android and iOS?"
         },
         {
-            "location": "/faq/recorder/#do-i-need-to-additional-software-on-my-machine",
-            "text": "Not for Android. For iOS, you need to have XCode installed with command line tools enabled.",
+            "location": "/faq/#do-i-need-to-additional-software-on-my-machine",
+            "text": "Android does not require any additional software. iOS requires Xcode to be installed and the command-line tools enabled. For details on how to setup a system for use with iOS, see  Recorder Setup for iOS Devices .",
             "title": "Do I need to additional software on my machine?"
         },
         {
-            "location": "/faq/recorder/#can-i-connect-to-multiple-android-devices-from-my-local-machine",
-            "text": "Yes.",
+            "location": "/faq/#can-i-connect-to-multiple-android-devices-from-my-local-machine",
+            "text": "Yes. The recorder allows you to choose which you would like to use after you have logged in.",
             "title": "Can I connect to multiple Android devices from my local machine?"
         },
         {
-            "location": "/faq/recorder/#what-is-the-maximum-test-time-allowed",
+            "location": "/faq/#what-is-the-maximum-test-time-allowed",
             "text": "The maximum time for each test is 5 minutes. If you need a longer timeout, please\u00a0contact us.",
             "title": "What is the maximum test time allowed?"
         },
         {
-            "location": "/faq/recorder/#is-there-a-way-to-download-the-results",
-            "text": "We offer this feature as an extra package. After you enable it, a link appears in our dashboard that enables you to download tests and test reports. They are also JSONified so that other tools can consume this data easily.",
+            "location": "/faq/#is-there-a-way-to-download-the-results",
+            "text": "We offer this feature as an extra package. After you enable it, a link appears in our dashboard that enables you to download tests and test reports in JSON format.",
             "title": "Is there a way to download the results?"
         },
         {
-            "location": "/faq/devices/",
-            "text": "Devices\n\u2693\n\n\nAre devices able to communicate with other services or systems that are available on the Internet?\n\u2693\n\n\nYes. All devices have a WiFi connection with Internet access.\u00a0\n\n\nCan I make phone calls or send SMS from the devices?\n\u2693\n\n\nNo, devices do not have carrier connections and cannot make phone calls or send SMS messages.\n\n\nCan I use the device camera?\n\u2693\n\n\nYes, you can use the device cameras, both front- and rear-facing. Images might be dark or blurry.\n\n\nAndroid: Is there a default Google account on the devices?\n\u2693\n\n\nNo, devices do not have an active Google account.\u00a0We do however allow you to add webhooks in our tests through the recorder. You can use the webhooks to create a Google account and then login into it on the phone. Then you can use another webook at the end of the test to deactive the account.\n\n\nAndroid: Is Google Play Services available on your devices? Which version is installed?\n\u2693\n\n\nYes, Google Play Services is installed on devices that support it. The services are updated as new versions become available.",
-            "title": "Devices"
-        },
-        {
-            "location": "/faq/devices/#devices",
+            "location": "/faq/#devices",
             "text": "",
             "title": "Devices"
         },
         {
-            "location": "/faq/devices/#are-devices-able-to-communicate-with-other-services-or-systems-that-are-available-on-the-internet",
-            "text": "Yes. All devices have a WiFi connection with Internet access.",
+            "location": "/faq/#are-devices-able-to-communicate-with-other-services-or-systems-that-are-available-on-the-internet",
+            "text": "Yes. All devices have a WiFi connection with internet access.",
             "title": "Are devices able to communicate with other services or systems that are available on the Internet?"
         },
         {
-            "location": "/faq/devices/#can-i-make-phone-calls-or-send-sms-from-the-devices",
+            "location": "/faq/#can-i-make-phone-calls-or-send-sms-from-the-devices",
             "text": "No, devices do not have carrier connections and cannot make phone calls or send SMS messages.",
             "title": "Can I make phone calls or send SMS from the devices?"
         },
         {
-            "location": "/faq/devices/#can-i-use-the-device-camera",
-            "text": "Yes, you can use the device cameras, both front- and rear-facing. Images might be dark or blurry.",
+            "location": "/faq/#can-i-use-the-device-camera",
+            "text": "Yes, you can use the device cameras, both front and rear facing. Images might be dark or blurry.",
             "title": "Can I use the device camera?"
         },
         {
-            "location": "/faq/devices/#android-is-there-a-default-google-account-on-the-devices",
-            "text": "No, devices do not have an active Google account.\u00a0We do however allow you to add webhooks in our tests through the recorder. You can use the webhooks to create a Google account and then login into it on the phone. Then you can use another webook at the end of the test to deactive the account.",
+            "location": "/faq/#android-is-there-a-default-google-account-on-the-devices",
+            "text": "No, devices do not have an active Google account.\u00a0We do however allow you to add webhooks in our tests through the recorder. You can use the webhooks to create a Google account and then login into it on the phone. Then you can use another webhook at the end of the test to deactivate the account.",
             "title": "Android: Is there a default Google account on the devices?"
         },
         {
-            "location": "/faq/devices/#android-is-google-play-services-available-on-your-devices-which-version-is-installed",
+            "location": "/faq/#android-is-google-play-services-available-on-your-devices-which-version-is-installed",
             "text": "Yes, Google Play Services is installed on devices that support it. The services are updated as new versions become available.",
             "title": "Android: Is Google Play Services available on your devices? Which version is installed?"
         }

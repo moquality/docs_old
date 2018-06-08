@@ -42,25 +42,11 @@
     
 
     
-        
     <url>
-     <loc>/faq/testing/</loc>
+     <loc>/faq/</loc>
      <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    <url>
-     <loc>/faq/recorder/</loc>
-     <lastmod>2018-06-08</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/faq/devices/</loc>
-     <lastmod>2018-06-08</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     
 
 </urlset>
