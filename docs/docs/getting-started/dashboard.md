@@ -32,10 +32,10 @@ The test cases you create adapt to every version of the app you upload. So the t
 
 ## Upload an App
 1. Go to the MoQuality URL (http://app.moquality.com) and click on the Add APP box.
-<img src="/dashboard/1.png" height="360px" />
+<img src="../dashboard/1.png" height="360px" />
 
 2. Upload an app.
-<img rc="/dashboard/2.png" height="360px" />
+<img rc="../dashboard/2.png" height="360px" />
 
 3. Enter the App detials such as name, description, and select the type of App (Android/iOS).
 
@@ -58,7 +58,7 @@ We describe each of these tabs and their functionality. There is also a button w
 
 The overview page provide the App and Test Reports details. Test Reports are described in detail in the Test Report Section. Here you can schedule the test runs recorded with Moquality recorder or Automatic Testing on a set of selected devices.
 
-<img src="/dashboard/3.png" height="360px" />
+<img src="../dashboard/3.png" height="360px" />
 
 # Tests page
 
@@ -77,7 +77,7 @@ Writing test cases is hard. Using MoQuality test recorder, it is a matter of few
 
 Naviagate to Tests tab. This tab provides an overview of all the tests that have been recorded with the MoQuality Recorder. A test consist of a series of actions performed on an app on a device. It is displayed as a series of screenshot and a heilighted area indiciating the action widget.
 
-<img src="/dashboard/4.png" height="360px" />
+<img src="../dashboard/4.png" height="360px" />
 
 
 
@@ -95,11 +95,11 @@ A test suite is a series of tests that should be run in an order. A test report 
 
 Navigate to the Suite tab and click on the Create Test Suite.
 
-<img src="/dashboard/11.png" height="360px" />
+<img src="../dashboard/11.png" height="360px" />
 
 Now name the Test Suite and select the tests that are part of it. You can create multiple test suites this way. 
 
-<img src="/dashboard/12.png" height="360px" />
+<img src="../dashboard/12.png" height="360px" />
 
 
 
@@ -111,17 +111,17 @@ We rent devices from various test infrastructure providers. Today we support aro
 
 A device group is a collection of devices on which you want to run tests on. A user can create a group of devices you want to run tests on. There are few presets available such as Google Devices, Samsung Devices, Popular Devices.
 
-<img src="/dashboard/5.png" height="360px" />
+<img src=.."/dashboard/5.png" height="360px" />
 
 In order to create a custom device group click the + button. Custom device groups are important in many situations. For example, a user may want to run the apps on devices that have the latest android version, or to confirm it works on old versions. Another example is to create a group of devices from a certain manufacturer, or a user wants to create a group of popular devices. An example is shown below to create a custom group
 
-<img src="/dashboard/9.png" height="360px" />
+<img src="../dashboard/9.png" height="360px" />
 
 
 #Settings page
 Here you can change the name of the app and version. You can also specify Package Name of the app and launchable activity name. If you are not sure, do not change these fields.
 
-<img src="/dashboard/10.png" height="360px" />
+<img src="../dashboard/10.png" height="360px" />
 
 
 #Reporting and Executing Tests
