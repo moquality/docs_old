@@ -30,7 +30,13 @@ Setup differs rather significantly between Android and iOS. Please consult the r
 
 ## Replaying a Test
 
-TODO.
+1. Choose a device.
+2. Choose the app that the test was recorded for.
+3. Choose device settings.
+4. Optional: Install app.
+5. Switch to the "Tests" tab.
+6. Find the test that you would like to replay and expand it.
+7. Click "Run".
 
 ## Troubleshooting
 
