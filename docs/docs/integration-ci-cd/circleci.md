@@ -57,7 +57,7 @@ CircleCI is a Continuous Integration and Continuous Delivery platform that allow
 
     6. `mq apps` returns a list of your apps, and you can confirm that your app version has incremented by one.
 
-7. Now that you have created new steps, integrating MoQuality with CircleCI, **run `circleci build`** in your command line to run the build job. If you added the steps within a job other than build, **add the `--job` flag followed by the name of the job** to the `circleci build` command.
+7. Now that you have created new steps, integrating MoQuality with CircleCI, **run `circleci build`** in your command line to run the build job. If you added the steps within a job other than build, **add the `--job` option followed by the name of the job** to the `circleci build` command.
 
 ## Notes
 
