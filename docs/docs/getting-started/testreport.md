@@ -5,7 +5,11 @@ You can reach the Test Reports  from the Dashboard by clicking Overview.
 <img src="/dashboard/2.png" height="360px" />
 
 
-There are two types of reports that are generated.
+There are two ways to execute tests and reports:
+
+1. Executing exisiting tests that have been recorded by MoQuality Recorder.
+
+2. Automatically generating test using MoQuality AI-bot.
 
 ### Executing existing tests
 
@@ -18,11 +22,12 @@ select a device group, and select tests/suites you want to run on other devices.
 
 #### Use Case:
 1. Using the Moquality recorder, you have recorded a login test on Nexus 6p that checks whether login functionality works on Nexus 6p or not. Now you want to test
-it on Samsung Galaxy S8. All you have to do schedule a test run on Samsung Galaxy S8.
+it on a Samsung Galaxy S8. All you have to do is schedule a test run on Samsung Galaxy S8.
 
-2. Imagine that you have a new version of your app and you want to confirm if existing tests are running smoothly on the new version.
+2. Ensuring that a new version of your app has all the  existing tests  running smoothly.
 
-3. There is a new version of Android, and you want to confirm if existing tests are compatible with the new android version.
+3. Ensuring that a your app has all the  existing tests  running smoothly
+on a new version of android/iOS.
 
 Click on Run Tests, then the following window would pop-up. Enter the name of the report, 
 select a device group, and select tests/suites you want to run on other devices.
