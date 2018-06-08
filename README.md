@@ -3,12 +3,12 @@ Docs
 
 ## Installation
 
-Create the docs enviornment with
+Create the docs environment with
 ```
 conda env create -f environment.yml
 ```
 
-Activate the enviornment with
+Activate the environment with
 ```
 source activate docs
 ```
@@ -26,7 +26,7 @@ or
 mkdocs serve
 ```
 
-To publish to github,
+To publish to GitHub,
 ```
 make publish
 ```

@@ -20,6 +20,9 @@ Setup differs rather significantly between Android and iOS. Please consult the r
 ## Recording a Test Case
 
 1. Choose a device and an app.
+
+    <img src="common/select-device-and-settings.gif" style="max-width:600px;max-height:480px" />
+
 2. Choose device settings.
 3. Optional: Install app.
 4. Click "Record".
