@@ -17,7 +17,14 @@ Setup differs rather significantly between Android and iOS. Please consult the r
 
 ## Recording a Test Case
 
-TODO.
+1. Choose a device and an app.
+2. Choose device settings.
+3. Optional: Install app.
+4. Click "Record".
+5. Perform actions in the app.
+6. Click "Save".
+7. Enter a name for the test.
+8. Click "Save".
 
 ## Replaying a Test
 
