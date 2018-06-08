@@ -21,6 +21,10 @@ Go to the Overview page and create a test report by clicking on + in the Test Re
 *** For  Automated Testing: ***
 Click on *** Generate Tests ***  on the *** Overview Page*** and select the number of tests you want to generate and time limit.
 
+
+6. *** Reporting and executing tests *** 
+Visit the guide.
+
 *** Note: ***
 The test cases you create adapt to every version of the app you upload. So the test, test suites, and device groups you create show up for every new version. Only the overview page keeps changing because the test report runs on a particular version.
 
@@ -56,13 +60,12 @@ The overview page provide the App and Test Reports details. Test Reports are des
 
 <img src="/dashboard/3.png" height="360px" />
 
-# Tests 
+# Tests page
 
-Writing test cases is hard. So we built a recorder in which you demonstrate (not record) your test case.
+*** Recording test cases ***
 
-*** Use Case:***
+Writing test cases is hard. Using MoQuality test recorder, it is a matter of few clicks to record a test case. In the background, AI understands the test case and ensures it is playble across multiple devices and adaptible to future app versions and os updates.
 
-In contrast to a test recorder which uses user input to select the best selectors, we only need a demonstration of the test. In the background, our AI engine post processes this information and finds the best way to run the test on any device you select.
 
 *** Features: ***
 
@@ -78,7 +81,8 @@ Naviagate to Tests tab. This tab provides an overview of all the tests that have
 
 
 
-# Suite Overview
+# Suite page 
+
 A test is a series of action that should be performed to cover a use case or check an assertion. All our tests always start after clearing any cache related to the app.
 
 A test suite is a series of tests that should be run in an order. A test report is a test of these test suites. A test is created using the MQRecorder. After creating a few tests, you can create test suites. 
@@ -101,8 +105,8 @@ Now name the Test Suite and select the tests that are part of it. You can create
 
 
 
-
-# Devices 
+ 
+# Devices  page
 We rent devices from various test infrastructure providers. Today we support around 50 devices and we are continuously adding new devices into our system as and when our users need them.
 
 A device group is a collection of devices on which you want to run tests on. A user can create a group of devices you want to run tests on. There are few presets available such as Google Devices, Samsung Devices, Popular Devices.
@@ -114,12 +118,14 @@ In order to create a custom device group click the + button. Custom device group
 <img src="/dashboard/9.png" height="360px" />
 
 
-#Settings
+#Settings page
 Here you can change the name of the app and version. You can also specify Package Name of the app and launchable activity name. If you are not sure, do not change these fields.
 
 <img src="/dashboard/10.png" height="360px" />
 
 
-
+#Reporting and Executing Tests
+Visit the guide
+ 
 
 
