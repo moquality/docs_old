@@ -30,8 +30,13 @@ After you have a recorded a successful test, proceed to the Tests Tab and replay
 
 
 ## Keyboard Input 
+
 To enter keyboard input, you must go through the keyboard button below the phone screen
 <img src="../android/keyboard.gif" height="360px" />
 
 
-- Test Editing
+## Test Editing
+To edit a previously recorded test, go into the Tests tab. Open up the test you would like to edit and hover over the specific step. Click the edit button to drop down into the editor.  Here you can edit the step description, select a new widget to target, and add a sleep action to happen after the step runs. This can be helpful if your app is taking too long to process a specific screen, and the replay algorithmn has already moved on.
+
+<img src="../android/editing.gif" height="360px" />
+
