@@ -2,22 +2,52 @@
     "docs": [
         {
             "location": "/",
-            "text": "What is MoQuality?\n\u2693\n\n\nMoQuality provides automated app testing services for native Android and iOS apps.\n\n\nThe best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.\n\n\n\n\nGetting Started with the Recorder\n\n\nRecorder Features",
+            "text": "What is MoQuality?\n\u2693\n\n\nMoQuality provides automated app testing services for native Android and iOS apps.\n\n\nThe best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.\n\n\n\n\nGetting Started with Android\n\n\nGetting Started with iOS\n\n\nGetting Started with the Recorder\n\n\nGetting Started with Test Execution and Report Generation\n\n\nQuickstart and Dashboard Overview\n\n\nUploading APK or IPA for iOS\n\n\nScheduling tests\n\n\nAuto generating tests\n\n\nViewing results in the dashboard",
             "title": "What is MoQuality?"
         },
         {
             "location": "/#what-is-moquality",
-            "text": "MoQuality provides automated app testing services for native Android and iOS apps.  The best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.   Getting Started with the Recorder  Recorder Features",
+            "text": "MoQuality provides automated app testing services for native Android and iOS apps.  The best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.   Getting Started with Android  Getting Started with iOS  Getting Started with the Recorder  Getting Started with Test Execution and Report Generation  Quickstart and Dashboard Overview  Uploading APK or IPA for iOS  Scheduling tests  Auto generating tests  Viewing results in the dashboard",
             "title": "What is MoQuality?"
         },
         {
+            "location": "/getting-started/pushkar/",
+            "text": "TODO (PK)\n\u2693",
+            "title": "Creating an Android APK"
+        },
+        {
+            "location": "/getting-started/pushkar/#todo-pk",
+            "text": "",
+            "title": "TODO (PK)"
+        },
+        {
+            "location": "/getting-started/pushkar/",
+            "text": "TODO (PK)\n\u2693",
+            "title": "Creating an iOS App"
+        },
+        {
+            "location": "/getting-started/pushkar/#todo-pk",
+            "text": "",
+            "title": "TODO (PK)"
+        },
+        {
+            "location": "/getting-started/upload-app/",
+            "text": "Uploading an App\n\u2693\n\n\n\n\n\n\nGo to the MoQuality URL (http://app.moquality.com) and click on the Add APP box.\n\n\n\n\n\n\n\nUpload an app. It accepts .apk file for android and .app for iOS.\n\n\n\n\n\nEnter the App details such as name, description, and select the type of App (Android/iOS).\n\n\n\n\nAfter uploading an app, a user can either do\n\n\n\n\nTest recording\n using MoQuality Test Recorder and \nscheduled Test runs\n of  recorded tests to run on multiple devices. \n\n\nRequest an  \nAutogenerate tests\n.",
+            "title": "Upload App"
+        },
+        {
+            "location": "/getting-started/upload-app/#uploading-an-app",
+            "text": "Go to the MoQuality URL (http://app.moquality.com) and click on the Add APP box.    Upload an app. It accepts .apk file for android and .app for iOS.   Enter the App details such as name, description, and select the type of App (Android/iOS).   After uploading an app, a user can either do   Test recording  using MoQuality Test Recorder and  scheduled Test runs  of  recorded tests to run on multiple devices.   Request an   Autogenerate tests .",
+            "title": "Uploading an App"
+        },
+        {
             "location": "/recorder/",
-            "text": "Getting Started with the Recorder\n\u2693\n\n\nThe MoQuality test recorder allows a developer to record test cases for their mobile apps.\n\n\nDownloading the Recorder\n\u2693\n\n\n\n\nWindows\n\n\nMac OS X\n\n\nLinux (Coming Soon)\n\n\n\n\nSetup\n\u2693\n\n\nSetup differs rather significantly between Android and iOS. Please consult the relevant page for the device you wish to record test cases with.\n\n\n\n\nRecorder Setup for Android Devices\n\n\nRecorder Setup for iOS Devices\n\n\n\n\nRecording a Test Case\n\u2693\n\n\nTODO.\n\n\nReplaying a Test\n\u2693\n\n\nTODO.\n\n\nTroubleshooting\n\u2693\n\n\nInfinite Loading Screen\n\u2693\n\n\nIn some cases, the recorder may fail to start properly when connecting to a device. If this occurs, you will be presented with an error message, following which the loading screen will continue to load infinitely. This usually happens as a result of a desynchronization between the device and ADB, the Android Debug Bridge, resulting in ADB classifying the device as \"offline\". If this happens, try the following steps:\n\n\n\n\nClose the recorder.\n\n\nUnplug the device.\n\n\nDisable USB debugging in the devices settings.\n\n\nRe-enable USB debugging.\n\n\nPlug the device back in.\n\n\nStart the recorder again.\n\n\n\n\nIf the problem persists, please contact MoQuality for further support.\n\n\nAppendix: Differences between Android and iOS\n\u2693\n\n\nFor the most part, Android and iOS devices behave similarly in the recorder, but there are a few differences. Some of these are obvious, as they pertain to unique features that one device type or the other has, such as the back button, which doesn't exist on iOS.\n\n\nA larger, less obvious difference is that of touch control. On Android, the mouse emulates a touch input, providing a clean 1-to-1 interaction between the recorder and the app. Unfortunately, due to limitations in iOS automation, the recorder is unable to do this 1-to-1 interaction with iOS devices.\n\n\nWhen clicking on the screen while using an iOS device, a circle will appear where the mouse button was pressed. If the mouse is dragged past a threshold distance away from that starting point, a second circle will appear under the mouse with a line connecting the two. If this appears, releasing the mouse will perform a drag from the first circle to the second; if it has not appeared, a click will be performed at the location of the circle instead.",
+            "text": "Getting Started with the Recorder\n\u2693\n\n\nThe MoQuality test recorder provides functionality for only recording test cases for their mobile apps, as well as for both replaying test cases on a local device and editing them. In addition, useful supplementary functionality, such as the ability to automatically download and install the app being recorded on a new device.\n\n\nFor a full overview of the recorder's functionality, see \nthe Recorder Feature List\n.\n\n\nDownloading the Recorder\n\u2693\n\n\n\n\nWindows\n\n\nMac OS X\n\n\nLinux (Coming Soon)\n\n\n\n\nSetup\n\u2693\n\n\nSetup differs rather significantly between Android and iOS. Please consult the relevant page for the device you wish to record test cases with.\n\n\n\n\nRecorder Setup for Android Devices\n\n\nRecorder Setup for iOS Devices\n\n\n\n\nRecording a Test Case\n\u2693\n\n\n\n\n\n\nChoose a device and an app.\n\n\n\n\n\n\n\n\nChoose device settings.\n\n\n\n\nOptional: Install app.\n\n\nClick \"Record\".\n\n\nPerform actions in the app.\n\n\nClick \"Save\".\n\n\nEnter a name for the test.\n\n\nClick \"Save\".\n\n\n\n\nReplaying a Test\n\u2693\n\n\n\n\nChoose a device.\n\n\nChoose the app that the test was recorded for.\n\n\nChoose device settings.\n\n\nOptional: Install app.\n\n\nSwitch to the \"Tests\" tab.\n\n\nFind the test that you would like to replay and expand it.\n\n\nClick \"Run\".\n\n\n\n\nTroubleshooting\n\u2693\n\n\nInfinite Loading Screen\n\u2693\n\n\nIn some cases, the recorder may fail to start properly when connecting to a device. If this occurs, you will be presented with an error message, following which the loading screen will continue to load infinitely. This usually happens as a result of a desynchronization between the device and ADB, the Android Debug Bridge, resulting in ADB classifying the device as \"offline\". If this happens, try the following steps:\n\n\n\n\nClose the recorder.\n\n\nUnplug the device.\n\n\nDisable USB debugging in the devices settings.\n\n\nRe-enable USB debugging.\n\n\nPlug the device back in.\n\n\nStart the recorder again.\n\n\n\n\nIf the problem persists, please contact MoQuality for further support.\n\n\nAppendix: Differences between Android and iOS\n\u2693\n\n\nFor the most part, Android and iOS devices behave similarly in the recorder, but there are a few differences. Some of these are obvious, as they pertain to unique features that one device type or the other has, such as the back button, which doesn't exist on iOS.\n\n\nA larger, less obvious difference is that of touch control. On Android, the mouse emulates a touch input, providing a clean 1-to-1 interaction between the recorder and the app. Unfortunately, due to limitations in iOS automation, the recorder is unable to do this 1-to-1 interaction with iOS devices.\n\n\nWhen clicking on the screen while using an iOS device, a circle will appear where the mouse button was pressed. If the mouse is dragged past a threshold distance away from that starting point, a second circle will appear under the mouse with a line connecting the two. If this appears, releasing the mouse will perform a drag from the first circle to the second; if it has not appeared, a click will be performed at the location of the circle instead.",
             "title": "Getting Started"
         },
         {
             "location": "/recorder/#getting-started-with-the-recorder",
-            "text": "The MoQuality test recorder allows a developer to record test cases for their mobile apps.",
+            "text": "The MoQuality test recorder provides functionality for only recording test cases for their mobile apps, as well as for both replaying test cases on a local device and editing them. In addition, useful supplementary functionality, such as the ability to automatically download and install the app being recorded on a new device.  For a full overview of the recorder's functionality, see  the Recorder Feature List .",
             "title": "Getting Started with the Recorder"
         },
         {
@@ -32,12 +62,12 @@
         },
         {
             "location": "/recorder/#recording-a-test-case",
-            "text": "TODO.",
+            "text": "Choose a device and an app.     Choose device settings.   Optional: Install app.  Click \"Record\".  Perform actions in the app.  Click \"Save\".  Enter a name for the test.  Click \"Save\".",
             "title": "Recording a Test Case"
         },
         {
             "location": "/recorder/#replaying-a-test",
-            "text": "TODO.",
+            "text": "Choose a device.  Choose the app that the test was recorded for.  Choose device settings.  Optional: Install app.  Switch to the \"Tests\" tab.  Find the test that you would like to replay and expand it.  Click \"Run\".",
             "title": "Replaying a Test"
         },
         {
@@ -57,8 +87,8 @@
         },
         {
             "location": "/recorder/android/",
-            "text": "Recorder Setup for Android Devices\n\u2693\n\n\nGetting Started\n\u2693\n\n\n\n\n\n\nDownload the recorder from \napp.moquality.com > Apps > Download Test Recorder\n\n\n\n\n\n\nSelect a device you would like to test with and \nturn on USB Debugging\n, which can be found inside of \nSettings > Developer Options > USB Debugging\n and connect your device to your computer. \nPress 'Always Allow\"\n on the popup on the device.\n\n\n\n\n\n\nMake sure to have \nuploaded a version of your app to test onto www.app.moquality.com\n and have filled out the package name and activity name.\n\n\n\n\n\n\nLaunch the recorder with your connected device and \nlog in with either your API key or username and password\n. Select your device and app from the drop down, as well as your screen size and keyboard preference.\n\n\n\n\n\n\nPress Record to begin\n recording your test on your device. Interact with the screen projection you see in front of you. You \nMUST use the bottom interface buttons\n for actions instead of the hardware buttons on your device.\n\n\n\n\n\n\nWhen you are done recording a test, \npress SAVE and name your test\n. You can then view the test in the app.moquality.com website. \n\n\n\n\n\n\nTo \nconfirm the test was valid, move to the Tests Tab and try to run the test\n. If you are unable to run the test, you may have to re-record it, or head down to the FAQ to see possible solutions. \n\n\n\n\n\n\nFAQ\n\u2693\n\n\nWhy does my phone not connect?\n\n\nDouble-check that USB debugging is on and that you have clicked 'Allow' on the on-screen popup. You may have to unplug and replug the device in some cases.\n\n\nWhy does it say I need to re-record in 'Stable Mode'?\n\n\nFor some apps and tests, the regular mode may be unable to capture all the necessary details to successfully run the test. You can toggle 'Stable Mode' inside the recording by going into 'Settings' and toggling the option.",
-            "title": "Android"
+            "text": "Recorder Setup for Android Devices\n\u2693\n\n\nGetting Started\n\u2693\n\n\n\n\n\n\nDownload the recorder from \napp.moquality.com > Apps > Download Test Recorder\n\n\n\n\n\n\n\n\nSelect a device you would like to test with and \nturn on USB Debugging\n, which can be found inside of \nSettings > Developer Options > USB Debugging\n and connect your device to your computer. \nPress 'Always Allow\"\n on the popup on the device.\n\n\n\n\n\n\n\n\nMake sure to have \nuploaded a version of your app to test onto www.app.moquality.com\n and have filled out the package name and activity name.\n\n\n\n\n\n\n\n\nLaunch the recorder with your connected device and \nlog in with either your API key or username and password\n. Select your device and app from the drop down, as well as your screen size and keyboard preference.\n\n\n\n\n\n\n\n\nPress Record to begin\n recording your test on your device. Interact with the screen projection you see in front of you. You \nMUST use the bottom interface buttons\n for actions instead of the hardware buttons on your device.\n\n\n\n\n\n\n\n\nWhen you are done recording a test, \npress SAVE and name your test\n. You can then view the test in the app.moquality.com website.\n\n\n\n\n\n\n\n\nTo \nconfirm the test was valid, move to the Tests Tab and try to run the test\n. If you are unable to run the test, you may have to re-record it, or head down to the FAQ to see possible solutions.\n\n\n\n\n\n\n\n\nFAQ\n\u2693\n\n\nWhy does my phone not connect?\n\n\nDouble-check that USB debugging is on and that you have clicked 'Allow' on the on-screen popup. You may have to unplug and replug the device in some cases.\n\n\nWhy does it say I need to re-record in 'Stable Mode'?\n\n\nFor some apps and tests, the regular mode may be unable to capture all the necessary details to successfully run the test. You can toggle 'Stable Mode' inside the recording by going into 'Settings' and toggling the option.",
+            "title": "Android Setup"
         },
         {
             "location": "/recorder/android/#recorder-setup-for-android-devices",
@@ -67,7 +97,7 @@
         },
         {
             "location": "/recorder/android/#getting-started",
-            "text": "Download the recorder from  app.moquality.com > Apps > Download Test Recorder    Select a device you would like to test with and  turn on USB Debugging , which can be found inside of  Settings > Developer Options > USB Debugging  and connect your device to your computer.  Press 'Always Allow\"  on the popup on the device.    Make sure to have  uploaded a version of your app to test onto www.app.moquality.com  and have filled out the package name and activity name.    Launch the recorder with your connected device and  log in with either your API key or username and password . Select your device and app from the drop down, as well as your screen size and keyboard preference.    Press Record to begin  recording your test on your device. Interact with the screen projection you see in front of you. You  MUST use the bottom interface buttons  for actions instead of the hardware buttons on your device.    When you are done recording a test,  press SAVE and name your test . You can then view the test in the app.moquality.com website.     To  confirm the test was valid, move to the Tests Tab and try to run the test . If you are unable to run the test, you may have to re-record it, or head down to the FAQ to see possible solutions.",
+            "text": "Download the recorder from  app.moquality.com > Apps > Download Test Recorder     Select a device you would like to test with and  turn on USB Debugging , which can be found inside of  Settings > Developer Options > USB Debugging  and connect your device to your computer.  Press 'Always Allow\"  on the popup on the device.     Make sure to have  uploaded a version of your app to test onto www.app.moquality.com  and have filled out the package name and activity name.     Launch the recorder with your connected device and  log in with either your API key or username and password . Select your device and app from the drop down, as well as your screen size and keyboard preference.     Press Record to begin  recording your test on your device. Interact with the screen projection you see in front of you. You  MUST use the bottom interface buttons  for actions instead of the hardware buttons on your device.     When you are done recording a test,  press SAVE and name your test . You can then view the test in the app.moquality.com website.     To  confirm the test was valid, move to the Tests Tab and try to run the test . If you are unable to run the test, you may have to re-record it, or head down to the FAQ to see possible solutions.",
             "title": "Getting Started"
         },
         {
@@ -78,7 +108,7 @@
         {
             "location": "/recorder/ios/",
             "text": "Recorder Setup for iOS Devices\n\u2693\n\n\nIn order to use the recorder with iOS devices, some configuration is necessary. This page documents that configuration.\n\n\n\n\nNote\n\n\nThese steps were gathered via repeated attempts to determine the code signing process. It is possible that earlier attempts affected the steps determined, meaning that these may not work on a clean setup. Further testing is necessary.\n\n\n\n\nLog in to Apple Developer Portal\n\u2693\n\n\nFirst, log into \nthe Apple Developer Portal\n. Click the Account link at the top of the page to access your account info. In the sidebar on the left, you should see the following links:\n\n\n\n\nClick the \"Certificates, IDs & Profiles\" link.\n\n\nIf you already have a valid certificate, skip to step 3 (Alternate).\n\n\nGenerate a certificate\n\u2693\n\n\nAbove the certificate list on the next page, click the \n+\n button to generate a new certificate.\n\n\n\n\nSelect \"iOS App Development\".\n\n\n\n\nThe next page should give you instructions on how to generate a CSR. Follow those instructions before continuing.\n\n\n\n\n\n\nImport the certificate\n\u2693\n\n\nDownload the newly generated certificate.\n\n\n\n\nIf you already have a certificate generated, navigate to the certificate list, find your certificate, click on it, and then click the download button in the expanded panel.\n\n\n\n\nOnce the certificate is downloaded, locate it in Finder and double-click it. This should open the Keychain Access app with the certificate newly imported into the \"System\" keychain. To find it, click System in the sidebar, and then Certificates.\n\n\n\n\nThe certificate needs to be moved to the \"local\" keychain. To do so, simply drag it from the list of certificates on the local keychain in the sidebar. Once this is done, it should appear under \"My Certificates\", rather than just under \"Certificates\".\n\n\nGenerate an App ID\n\u2693\n\n\nBack in the developer portal, click \"App IDs\" on the sidebar.\n\n\n\n\nClick the \n+\n button at the top, much like when generating a certificate.\n\n\n\n\nName the ID something reasonable for its use, such as \"Recorder\".\n\n\n\n\nSelect \"Wildcard App ID\" and enter a single asterisk as the ID.\n\n\nTake note of the Team ID listed under the \"App ID Prefix\". You'll need it.\n\n\n\n\nClick \"Done\".\n\n\nGenerate a mobile provisioning profile\n\u2693\n\n\nClick \"All\" under \"Provisioning Profiles\" in the sidebar. You may need to scroll down to see it.\n\n\n\n\nClick the \n+\n button to generate a new profile, and then select \"iOS App Development\".\n\n\n\n\nSelect the App ID that you generated in the previous step.\n\n\n\n\nSelect the certificate generated in step 2, or your existing certificate if you did not generate one.\n\n\n\n\nClick the \"Select All\" checkbox on the device list.\n\n\n\n\nEnter a name for the profile.\n\n\n\n\nYou do \nnot\n need to download the profile. That will be handled automatically.\n\n\n\n\nSet up environment variables\n\u2693\n\n\nThe final step is to set the \n$DEVELOPMENT_TEAM\n environment variable to the Team ID from step 4. There are several ways to do this, but one of the simplest is to add the variable to the \n.bash_profile\n file in your home directory.\n\n\nOpen the \n$HOME/.bash_profile\n file in an editor of your choice and add the following line to the end of it:\n\n\nbash export DEVELOPMENT_TEAM=<Team ID>\n\n\n\n\n\nReplace \n<Team ID>\n with the your team ID.\n\n\nOnce this is done, you will need to log out and back in. Then simply run the recorder as normal.\n\n\nEnsure xcode is in system path\n\u2693\n\n\nGo to \nXcode > Preferences > Locations\n, and assign the Command Line Tools to XCode.",
-            "title": "iOS"
+            "title": "iOS Setup"
         },
         {
             "location": "/recorder/ios/#recorder-setup-for-ios-devices",
@@ -119,6 +149,161 @@
             "location": "/recorder/ios/#ensure-xcode-is-in-system-path",
             "text": "Go to  Xcode > Preferences > Locations , and assign the Command Line Tools to XCode.",
             "title": "Ensure xcode is in system path"
+        },
+        {
+            "location": "/recorder/features/",
+            "text": "Recorder Feature List\n\u2693\n\n\nAssertions\n\u2693\n\n\nAdd an assertion to your test, to check whether an element has specific text, or exists.\n\n\n\n\nAPI Requests\n\u2693\n\n\nYou can send API requests from within the app to set up your testing environment!\n\n\n\n\nExplore Tab\n\u2693\n\n\nYou can interact with the hierarchy of your app in the \nExplore Tab\n. Here you can view widget properties and add assertions for any screen in your app.\n\n\n\n\nRecording\n\u2693\n\n\nWhen you press record, you app's cache will automatically cleared, and your app launched. You can turn auto-launch off in Settings. While in record mode, all interactions on the phone projection will be recorded. If you accidentally misclick an item, or an action wasn't intentional, you can delete the action from the action list to the right. Be warned! If you delete an action that progressed the app or changed screens, deleting the action will prevent the ability to accurately replay this test!\n\n\n\n\nTest Replay\n\u2693\n\n\nAfter you have a recorded a successful test, proceed to the Tests Tab and replay your test!\n\n\n\n\nKeyboard Input\n\u2693\n\n\nTo enter keyboard input, you must go through the keyboard button below the phone screen\n\n\n\n\nTest Editing\n\u2693\n\n\nTo edit a previously recorded test, go into the Tests tab. Open up the test you would like to edit and hover over the specific step. Click the edit icon to drop down into the editor.  Here you can edit the step description, select a new widget to target, and add a sleep action to happen after the step runs. This can be helpful if your app is taking too long to process a specific screen, and the replay algorithm has already moved on.",
+            "title": "Features"
+        },
+        {
+            "location": "/recorder/features/#recorder-feature-list",
+            "text": "",
+            "title": "Recorder Feature List"
+        },
+        {
+            "location": "/recorder/features/#assertions",
+            "text": "Add an assertion to your test, to check whether an element has specific text, or exists.",
+            "title": "Assertions"
+        },
+        {
+            "location": "/recorder/features/#api-requests",
+            "text": "You can send API requests from within the app to set up your testing environment!",
+            "title": "API Requests"
+        },
+        {
+            "location": "/recorder/features/#explore-tab",
+            "text": "You can interact with the hierarchy of your app in the  Explore Tab . Here you can view widget properties and add assertions for any screen in your app.",
+            "title": "Explore Tab"
+        },
+        {
+            "location": "/recorder/features/#recording",
+            "text": "When you press record, you app's cache will automatically cleared, and your app launched. You can turn auto-launch off in Settings. While in record mode, all interactions on the phone projection will be recorded. If you accidentally misclick an item, or an action wasn't intentional, you can delete the action from the action list to the right. Be warned! If you delete an action that progressed the app or changed screens, deleting the action will prevent the ability to accurately replay this test!",
+            "title": "Recording"
+        },
+        {
+            "location": "/recorder/features/#test-replay",
+            "text": "After you have a recorded a successful test, proceed to the Tests Tab and replay your test!",
+            "title": "Test Replay"
+        },
+        {
+            "location": "/recorder/features/#keyboard-input",
+            "text": "To enter keyboard input, you must go through the keyboard button below the phone screen",
+            "title": "Keyboard Input"
+        },
+        {
+            "location": "/recorder/features/#test-editing",
+            "text": "To edit a previously recorded test, go into the Tests tab. Open up the test you would like to edit and hover over the specific step. Click the edit icon to drop down into the editor.  Here you can edit the step description, select a new widget to target, and add a sleep action to happen after the step runs. This can be helpful if your app is taking too long to process a specific screen, and the replay algorithm has already moved on.",
+            "title": "Test Editing"
+        },
+        {
+            "location": "/getting-started/auto-test/",
+            "text": "Auto-generated Test\n\u2693\n\n\nThis feature allows MQ-Bot (our AI Agent) to create tests automatically and executing them on devices users specify.\nThe MQ-Bot tries to systematically identify widgets on every screen and interacts with them. In the end, it gives you a list of test runs it has conducted and a pass or success for each of them, along with screenshots, AppMap, and various statistics. To view results and reports of the test runs, visit  \nDashboard\n.\n\n\nUse Case:\n\u2693\n\n\nIn contrast to demonstrating a test and running them, robot test can be used for quick feedback and check cases that you might otherwise miss out.The more you use this feature on your app, the smarter it gets. For example, if the robot finds a bug, it prioritizes testing towards creating test runs to produce  that bug. For enterprise customers, the robot learns the context of your app and creates test runs like a human would.\n\n\nIn order to automatically generate tests, click on Generate Tests.\nNow specify the name of the report, number of tests you want to generate and the maximum\namount of time MQ-Bot ,should run. For example, if you specify 10 tests to be generated in an hour, than the MQ-Bot will generate approximately 10 tests in an hour. If you specify\n30 min instead of an hour, it will still generate the same number of tests, but the\ntests will be shorter.\n\n\n\n\nTraining MQ-Bot\n\u2693\n\n\nOur MQ-Bot can be trained!! By recording with \nMoQuality Recorder\n, we can train the MQ-Bot to know the important\ntest flows and screens. It makes the MQ-Bot bias itself towards such flows and screen when creating tests.18 \n\n\nViewing results\n\u2693\n\n\nTo view results and reports of the test runs, visit  \nDashboard",
+            "title": "Scheduling robot tests"
+        },
+        {
+            "location": "/getting-started/auto-test/#auto-generated-test",
+            "text": "This feature allows MQ-Bot (our AI Agent) to create tests automatically and executing them on devices users specify.\nThe MQ-Bot tries to systematically identify widgets on every screen and interacts with them. In the end, it gives you a list of test runs it has conducted and a pass or success for each of them, along with screenshots, AppMap, and various statistics. To view results and reports of the test runs, visit   Dashboard .",
+            "title": "Auto-generated Test"
+        },
+        {
+            "location": "/getting-started/auto-test/#use-case",
+            "text": "In contrast to demonstrating a test and running them, robot test can be used for quick feedback and check cases that you might otherwise miss out.The more you use this feature on your app, the smarter it gets. For example, if the robot finds a bug, it prioritizes testing towards creating test runs to produce  that bug. For enterprise customers, the robot learns the context of your app and creates test runs like a human would.  In order to automatically generate tests, click on Generate Tests.\nNow specify the name of the report, number of tests you want to generate and the maximum\namount of time MQ-Bot ,should run. For example, if you specify 10 tests to be generated in an hour, than the MQ-Bot will generate approximately 10 tests in an hour. If you specify\n30 min instead of an hour, it will still generate the same number of tests, but the\ntests will be shorter.",
+            "title": "Use Case:"
+        },
+        {
+            "location": "/getting-started/auto-test/#training-mq-bot",
+            "text": "Our MQ-Bot can be trained!! By recording with  MoQuality Recorder , we can train the MQ-Bot to know the important\ntest flows and screens. It makes the MQ-Bot bias itself towards such flows and screen when creating tests.18",
+            "title": "Training MQ-Bot"
+        },
+        {
+            "location": "/getting-started/auto-test/#viewing-results",
+            "text": "To view results and reports of the test runs, visit   Dashboard",
+            "title": "Viewing results"
+        },
+        {
+            "location": "/getting-started/view-tests/",
+            "text": "View recorded test cases\n\u2693\n\n\nNavigate to Tests page. This page provides an overview of all the tests that have been recorded with the MoQuality Recorder. A test consist of a series of actions performed on an app on a device. It is displayed as a series of screenshot and a marked area indicating the action widget. The following page display all the recorded tests with MoQuality Recorder.\n\n\n\n\nBy clicking on an individual test, you can see the screenshots of the test.",
+            "title": "View recorded Tests"
+        },
+        {
+            "location": "/getting-started/view-tests/#view-recorded-test-cases",
+            "text": "Navigate to Tests page. This page provides an overview of all the tests that have been recorded with the MoQuality Recorder. A test consist of a series of actions performed on an app on a device. It is displayed as a series of screenshot and a marked area indicating the action widget. The following page display all the recorded tests with MoQuality Recorder.   By clicking on an individual test, you can see the screenshots of the test.",
+            "title": "View recorded test cases"
+        },
+        {
+            "location": "/getting-started/test-suite/",
+            "text": "Test Suites\n\u2693\n\n\nA test is a series of action that should be performed to cover a use case or check an assertion. All our tests always start after clearing any cache related to the app.\n\n\nA test suite is a series of tests that should be run in an order. A test report is a test of these test suites. A test is created using the MQRecorder. After creating a few tests, you can create test suites. \n\n\n Use case \n\n\nA music app may have several tests related to playlists, therefore a playlist test suite would contain all the test cases related to playlist. Likewise a test suite would contain  tests for a music player.\n\n\n Creating a suite \n\n\nNavigate to the Suite tab and click on the Create Test Suite.\n\n\n\n\nNow name the Test Suite and select the tests that are part of it. You can create multiple test suites this way.",
+            "title": "Creating Test Suites"
+        },
+        {
+            "location": "/getting-started/test-suite/#test-suites",
+            "text": "A test is a series of action that should be performed to cover a use case or check an assertion. All our tests always start after clearing any cache related to the app.  A test suite is a series of tests that should be run in an order. A test report is a test of these test suites. A test is created using the MQRecorder. After creating a few tests, you can create test suites.    Use case   A music app may have several tests related to playlists, therefore a playlist test suite would contain all the test cases related to playlist. Likewise a test suite would contain  tests for a music player.   Creating a suite   Navigate to the Suite tab and click on the Create Test Suite.   Now name the Test Suite and select the tests that are part of it. You can create multiple test suites this way.",
+            "title": "Test Suites"
+        },
+        {
+            "location": "/getting-started/devices/",
+            "text": "Create Devices  group\n\u2693\n\n\nA device group is a collection of devices on which you want to run tests on. A user can create a group of devices you want to run tests on. There are few presets available such as Google Devices, Samsung Devices, Popular Devices.\n\n\n\n\nIn order to create a custom device group click the + button. Custom device groups are important in many situations. For example, a user may want to run the apps on devices that have the latest android version, or to confirm it works on old versions. Another example is to create a group of devices from a certain manufacturer, or a user wants to create a group of popular devices. An example is shown below to create a custom group\n\n\n\n\nWe rent devices from various test infrastructure providers. Today we support around 50 devices and we are continuously adding new devices into our system as and when our users need them.",
+            "title": "Creating Device Groups"
+        },
+        {
+            "location": "/getting-started/devices/#create-devices-group",
+            "text": "A device group is a collection of devices on which you want to run tests on. A user can create a group of devices you want to run tests on. There are few presets available such as Google Devices, Samsung Devices, Popular Devices.   In order to create a custom device group click the + button. Custom device groups are important in many situations. For example, a user may want to run the apps on devices that have the latest android version, or to confirm it works on old versions. Another example is to create a group of devices from a certain manufacturer, or a user wants to create a group of popular devices. An example is shown below to create a custom group   We rent devices from various test infrastructure providers. Today we support around 50 devices and we are continuously adding new devices into our system as and when our users need them.",
+            "title": "Create Devices  group"
+        },
+        {
+            "location": "/getting-started/scheduling-tests/",
+            "text": "Scheduling Tests\n\u2693\n\n\nWriting test cases is hard. Using MoQuality test recorder, it is a matter of a few clicks to record a test case. In the background, AI understands the test case and ensures it is playable across multiple devices and is adaptable to future app versions and os updates.\n\n\n Features: \n\n\n\n\nPerform any action that you will in your app\n\n\nAssertions which checks for text or widgets\n\n\nConvert demonstrations to tests and run it on any device on our cloud. \n\n\n\n\nUse Case:\n\u2693\n\n\n\n\n\n\nUsing the MoQuality recorder, you have recorded a login test on Nexus 6p that checks whether login functionality works on Nexus 6p or not. Now you want to test\nit on a Samsung Galaxy S8. All you have to do is schedule a test run on Samsung Galaxy S8.\n\n\n\n\n\n\nEnsuring that a new version of your app has all the  existing tests  running smoothly.\n\n\n\n\n\n\nEnsuring that a your app has all the  existing tests  running smoothly\non a new version of android/iOS.\n\n\n\n\n\n\nBefore a user is able to schedule tests runs on devices, he has to create test cases uses  MoQuality Recorder, select devices to run on, create various test suite. \n\n\n\n\nUpload an app\n\n\nCreate test cases using Recorder\n\n\nView Recorded Tests\n\n\nCreate test suites\n\n\nCreate device group\n\n\n\n\n Note: \n\nThe test cases you create adapt to every version of the app you upload. So the test, test suites, and device groups you create show up for every new version. Only the overview page keeps changing because the test report runs on a particular version.\n\n\nExecuting Tests\n\u2693\n\n\nYou can reach the Test Reports  from the Dashboard by clicking Overview. \n\n\n\nClick on Run Tests, then the following window would pop-up. Enter the name of the report, \nselect a device group, and select tests/suites you want to run on other devices.\n\n\n\n\nViewing results\n\u2693\n\n\nTo view results and reports of the test runs, visit  \nView Results",
+            "title": "Scheduling Tests"
+        },
+        {
+            "location": "/getting-started/scheduling-tests/#scheduling-tests",
+            "text": "Writing test cases is hard. Using MoQuality test recorder, it is a matter of a few clicks to record a test case. In the background, AI understands the test case and ensures it is playable across multiple devices and is adaptable to future app versions and os updates.   Features:    Perform any action that you will in your app  Assertions which checks for text or widgets  Convert demonstrations to tests and run it on any device on our cloud.",
+            "title": "Scheduling Tests"
+        },
+        {
+            "location": "/getting-started/scheduling-tests/#use-case",
+            "text": "Using the MoQuality recorder, you have recorded a login test on Nexus 6p that checks whether login functionality works on Nexus 6p or not. Now you want to test\nit on a Samsung Galaxy S8. All you have to do is schedule a test run on Samsung Galaxy S8.    Ensuring that a new version of your app has all the  existing tests  running smoothly.    Ensuring that a your app has all the  existing tests  running smoothly\non a new version of android/iOS.    Before a user is able to schedule tests runs on devices, he has to create test cases uses  MoQuality Recorder, select devices to run on, create various test suite.    Upload an app  Create test cases using Recorder  View Recorded Tests  Create test suites  Create device group    Note:  \nThe test cases you create adapt to every version of the app you upload. So the test, test suites, and device groups you create show up for every new version. Only the overview page keeps changing because the test report runs on a particular version.",
+            "title": "Use Case:"
+        },
+        {
+            "location": "/getting-started/scheduling-tests/#executing-tests",
+            "text": "You can reach the Test Reports  from the Dashboard by clicking Overview.   Click on Run Tests, then the following window would pop-up. Enter the name of the report, \nselect a device group, and select tests/suites you want to run on other devices.",
+            "title": "Executing Tests"
+        },
+        {
+            "location": "/getting-started/scheduling-tests/#viewing-results",
+            "text": "To view results and reports of the test runs, visit   View Results",
+            "title": "Viewing results"
+        },
+        {
+            "location": "/getting-started/pushkar/",
+            "text": "TODO (PK)\n\u2693",
+            "title": "Executing Tests"
+        },
+        {
+            "location": "/getting-started/pushkar/#todo-pk",
+            "text": "",
+            "title": "TODO (PK)"
+        },
+        {
+            "location": "/getting-started/view-results/",
+            "text": "Viewing Results\n\u2693\n\n\nWhen a user has either scheduled tests or requested automatically generated tests, reports containing the results, success/failure of a tests, screenshot, various statistics, app maps are automatically generated. In order to view these\nresults,  navigate to the Overview page and a following screen shall appear.\n\n\n\n\nIf a user has not requested any tests, then there is no reporting.\nUnder \n Test Reports \n section,  each row represents a Test Report,  status, suites it ran on, device groups, and the various actions. The status is either a green tick signalling that no bugs found, red balloon showing that there are bugs, orange balloon indicating warnings or potential risks or an hour glass indicating that the tests yet to be executed. There are currently two results available now:\n\n\nView Report\n\u2693\n\n\nIt shows the test runs of all the tests in the report across all the selected devices. The report provides the details af tests as well such as if the test was successful along with any bugs. By clicking the view report button you get the details of the test runs.\n\n\n\n\nBy clicking on the individual test, you can see the screenshots of a test along with the highlighted widget that was clicked.\n\n\n\n\nView map\n\u2693\n\n\nIt present a snapshot of the whole app itself. It shows how all the screens are connected with each other and therefore is useful in understanding the whole app structure. It aids in coming up with good test cases. For example,\n if a certain screen is not present in the map, then a user might be interested in creating a test case containing that screen. Such test case can easily be created with MoQuality Recorder with a few clicks.",
+            "title": "Dashboard"
+        },
+        {
+            "location": "/getting-started/view-results/#viewing-results",
+            "text": "When a user has either scheduled tests or requested automatically generated tests, reports containing the results, success/failure of a tests, screenshot, various statistics, app maps are automatically generated. In order to view these\nresults,  navigate to the Overview page and a following screen shall appear.   If a user has not requested any tests, then there is no reporting.\nUnder   Test Reports   section,  each row represents a Test Report,  status, suites it ran on, device groups, and the various actions. The status is either a green tick signalling that no bugs found, red balloon showing that there are bugs, orange balloon indicating warnings or potential risks or an hour glass indicating that the tests yet to be executed. There are currently two results available now:",
+            "title": "Viewing Results"
+        },
+        {
+            "location": "/getting-started/view-results/#view-report",
+            "text": "It shows the test runs of all the tests in the report across all the selected devices. The report provides the details af tests as well such as if the test was successful along with any bugs. By clicking the view report button you get the details of the test runs.   By clicking on the individual test, you can see the screenshots of a test along with the highlighted widget that was clicked.",
+            "title": "View Report"
+        },
+        {
+            "location": "/getting-started/view-results/#view-map",
+            "text": "It present a snapshot of the whole app itself. It shows how all the screens are connected with each other and therefore is useful in understanding the whole app structure. It aids in coming up with good test cases. For example,\n if a certain screen is not present in the map, then a user might be interested in creating a test case containing that screen. Such test case can easily be created with MoQuality Recorder with a few clicks.",
+            "title": "View map"
         },
         {
             "location": "/integration-ci-cd/bitrise/",
