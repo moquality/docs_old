@@ -6,5 +6,5 @@ The best way to start using MoQuality is by creating an account on our website. 
 
 * [Getting Started with Android](getting-started/android)
 * [Getting Started with iOS](getting-started/ios)
-* [Getting Started with Test Report Generation](getting-started/testreport)
-* [Getting Started with web-portal](getting-started/dashboard)
+* [Getting Started with Test Execution and Report Generation](getting-started/testreport)
+* [Quickstart and Dashboard Overview](getting-started/dashboard)

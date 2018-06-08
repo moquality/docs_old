@@ -1,4 +1,4 @@
-# Executing Tests and viewing Test Reports
+# Executing Tests and Viewing Test Reports
 
 You can reach the Test Reports  from the Dashboard by clicking Overview. 
 

@@ -1,44 +1,58 @@
-# Dashboard
-## Testing with MoQuality Flow
+# Testing with MoQuality Quickstart
 
-### Testing
-In Robo testing, test cases are automatically generated and tested on a device. This article only discusses how you can test when you want to specify test cases.
 
-Learn more about our concepts:
+1.  *** Upload an app ***
+Upload an app at (http://app.moquality.com)
 
-Tests and Test Suites
-Devices and Device Groups
-Test Reports
-For testing specific test cases you will follow these steps:
-
-1. Create test cases
+2. *** Create test cases using Recorder  (only for Manual testing?): *** 
 To create test cases, go the Tests tab and click on + in the Tests module to add a test. You can download the recorder for your machine. Login to the recorder and record a test. Read more about recording test cases here.
 
-2. Create test suites
+3. *** Create test suites (only for Manual testing?): ***
 Go to the Tests tab and click on + in the Test Suites module to create test suites. You can select a number of tests that will run in order when we execute them.
 
-3. Create device groups
+4. *** Create device group (only for Manual testing?): ***
 Go to the Devices tab. You can now select a custom device group or create your own. 
 
-4. Create a test report
+5. *** Create a test report  ***
+
+(only for Manual testing?)
 Go to the Overview page and create a test report by clicking on + in the Test Reports module. Select one test suite and a device group to schedule runs for this test report.
 
-Note:
+*** For  Automated Testing: ***
+Click on *** Generate Tests ***  on the *** Overview Page*** and select the number of tests you want to generate and time limit.
+
+*** Note: ***
 The test cases you create adapt to every version of the app you upload. So the test, test suites, and device groups you create show up for every new version. Only the overview page keeps changing because the test report runs on a particular version.
 
+# Detailed Dashboard Overview
 
-## Uploading an App
-1. Login on the MoQuality URL (http://app.moquality.com) and click on the Add APP box.
+## Upload an App
+1. Go to the MoQuality URL (http://app.moquality.com) and click on the Add APP box.
 <img src="/dashboard/1.png" height="360px" />
 
-2. Upload the app by cliking the Click to select or Drop App file here box.
-s<img rc="/dashboard/2.png" height="360px" />
+2. Upload an app.
+<img rc="/dashboard/2.png" height="360px" />
 
-3. Enter the App Name, description, and select the type of App (Android/iOS).
+3. Enter the App detials such as name, description, and select the type of App (Android/iOS).
 
-## Dashboard Overview
 
-The overview tab provide the App and Test Reports details. Test Reports are described in detail in the Test Report Section. Here you can schedule the test runs recorded with Moquality recorder or Automatic Testing on a set of selected devices.
+After uploading an, a page with multiple tabs is shown. Those tabs are:
+
+1. Overview
+
+2. Tests
+
+3. Suites
+
+4. Devices
+
+5. Settings
+
+We describe each of these tabs and their functionality. There is also a button with caption *** DOWNLOAD TEST RECORDER ***. Download the recorder if you want to record the testcases.
+
+## Overview page
+
+The overview page provide the App and Test Reports details. Test Reports are described in detail in the Test Report Section. Here you can schedule the test runs recorded with Moquality recorder or Automatic Testing on a set of selected devices.
 
 <img src="/dashboard/3.png" height="360px" />
 
