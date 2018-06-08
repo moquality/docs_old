@@ -4,7 +4,11 @@
     
     <url>
      <loc>/</loc>
+<<<<<<< HEAD
      <lastmod>2018-06-08</lastmod>
+=======
+     <lastmod>2018-06-01</lastmod>
+>>>>>>> bc54975bf3785eb3160a46345a03518f3ef2e802
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,14 +16,24 @@
     
         
     <url>
+<<<<<<< HEAD
      <loc>/recorder/</loc>
      <lastmod>2018-06-08</lastmod>
+=======
+     <loc>/getting-started/android/</loc>
+     <lastmod>2018-06-01</lastmod>
+>>>>>>> bc54975bf3785eb3160a46345a03518f3ef2e802
      <changefreq>daily</changefreq>
     </url>
         
     <url>
+<<<<<<< HEAD
      <loc></loc>
      <lastmod></lastmod>
+=======
+     <loc>/getting-started/ios/</loc>
+     <lastmod>2018-06-01</lastmod>
+>>>>>>> bc54975bf3785eb3160a46345a03518f3ef2e802
      <changefreq>daily</changefreq>
     </url>
         
@@ -29,6 +43,7 @@
         
     <url>
      <loc>/integration-ci-cd/bitrise/</loc>
+<<<<<<< HEAD
      <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -58,6 +73,9 @@
     <url>
      <loc>/faq/devices/</loc>
      <lastmod>2018-06-08</lastmod>
+=======
+     <lastmod>2018-06-01</lastmod>
+>>>>>>> bc54975bf3785eb3160a46345a03518f3ef2e802
      <changefreq>daily</changefreq>
     </url>
         
