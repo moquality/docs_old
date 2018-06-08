@@ -26,6 +26,10 @@
 <img src="../android/replay.gif" height="360px" />
 <br></br>
 
+- ** Keyboards **
+<br>To enter keyboard input, you must go through the keyboard button below the phone screen</br>
+<img src="../android/keyboard.gif" height="360px" />
+<br></br>
 
-- Keyboards
+
 - Test Editing
