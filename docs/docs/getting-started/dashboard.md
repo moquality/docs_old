@@ -115,13 +115,13 @@ A device group is a collection of devices on which you want to run tests on. A u
 
 In order to create a custom device group click the + button. Custom device groups are important in many situations. For example, a user may want to run the apps on devices that have the latest android version, or to confirm it works on old versions. Another example is to create a group of devices from a certain manufacturer, or a user wants to create a group of popular devices. An example is shown below to create a custom group
 
-<img src="../dashboard/9.png" height="360px" />
+<img src="../dashboard/9.png" height="720px" />
 
 
 #Settings page
 Here you can change the name of the app and version. You can also specify Package Name of the app and launchable activity name. If you are not sure, do not change these fields.
 
-<img src="../dashboard/10.png" height="360px" />
+<img src="../dashboard/10.png" height="720px" />
 
 
 #Reporting and Executing Tests
