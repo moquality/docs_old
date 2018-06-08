@@ -1,3 +1,0 @@
-1. Find the folder that contains enviornment.yml file, then do: "conda env create -f environment.yml"
-2. Then `source activate docs`
-3. Then in the folder with Makefile, `make serve` or `mkdocs serve`
