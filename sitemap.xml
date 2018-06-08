@@ -116,6 +116,12 @@
     
         
     <url>
+     <loc>/integration-ci-cd/mq-cli/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/integration-ci-cd/bitrise/</loc>
      <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
@@ -123,6 +129,12 @@
         
     <url>
      <loc>/integration-ci-cd/circleci/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/integration-ci-cd/dockerfile/</loc>
      <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
