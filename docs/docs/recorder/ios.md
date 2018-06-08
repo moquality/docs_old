@@ -1,4 +1,4 @@
-# iOS
+# Recorder Setup for iOS Devices
 
 In order to use the recorder with iOS devices, some configuration is necessary. This page documents that configuration.
 
@@ -9,7 +9,7 @@ In order to use the recorder with iOS devices, some configuration is necessary. 
 
 First, log into [the Apple Developer Portal](https://developer.apple.com/). Click the Account link at the top of the page to access your account info. In the sidebar on the left, you should see the following links:
 
-<img src="../img/01.png" width="270px">
+<img src="../ios/01.png" style="max-width:600px;max-height:480px" />
 
 Click the "Certificates, IDs & Profiles" link.
 
@@ -19,31 +19,31 @@ If you already have a valid certificate, skip to step 3 (Alternate).
 
 Above the certificate list on the next page, click the `+` button to generate a new certificate.
 
-<img src="../img/02.png" width="320px">
+<img src="../ios/02.png" style="max-width:600px;max-height:480px" />
 
 Select "iOS App Development".
 
-<img src="../img/03.png" width="680px">
+<img src="../ios/03.png" style="max-width:600px;max-height:480px" />
 
 The next page should give you instructions on how to generate a CSR. Follow those instructions before continuing.
 
-<img src="../img/04.png" width="680px">
+<img src="../ios/04.png" style="max-width:600px;max-height:480px" />
 
-<img src="../img/05.png" width="680px">
+<img src="../ios/05.png" style="max-width:600px;max-height:480px" />
 
 ## Import the certificate
 
 Download the newly generated certificate.
 
-<img src="../img/06.png" width="680px">
+<img src="../ios/06.png" style="max-width:600px;max-height:480px" />
 
 If you already have a certificate generated, navigate to the certificate list, find your certificate, click on it, and then click the download button in the expanded panel.
 
-<img src="../img/07.png" width="680px">
+<img src="../ios/07.png" style="max-width:600px;max-height:480px" />
 
 Once the certificate is downloaded, locate it in Finder and double-click it. This should open the Keychain Access app with the certificate newly imported into the "System" keychain. To find it, click System in the sidebar, and then Certificates.
 
-<img src="../img/08.png" width="200px">
+<img src="../ios/08.png" style="max-width:600px;max-height:480px" />
 
 The certificate needs to be moved to the "local" keychain. To do so, simply drag it from the list of certificates on the local keychain in the sidebar. Once this is done, it should appear under "My Certificates", rather than just under "Certificates".
 
@@ -51,21 +51,21 @@ The certificate needs to be moved to the "local" keychain. To do so, simply drag
 
 Back in the developer portal, click "App IDs" on the sidebar.
 
-<img src="../img/10.png" width="200">
+<img src="../ios/10.png" style="max-width:600px;max-height:480px" />
 
 Click the `+` button at the top, much like when generating a certificate.
 
-<img src="../img/09.png" width="450px">
+<img src="../ios/09.png" style="max-width:600px;max-height:480px" />
 
 Name the ID something reasonable for its use, such as "Recorder".
 
-<img src="../img/11.png" width="450px">
+<img src="../ios/11.png" style="max-width:600px;max-height:480px" />
 
 Select "Wildcard App ID" and enter a single asterisk as the ID.
 
 **Take note of the Team ID listed under the "App ID Prefix". You'll need it.**
 
-<img src="../img/12.png" width="450px">
+<img src="../ios/12.png" style="max-width:600px;max-height:480px" />
 
 Click "Done".
 
@@ -73,31 +73,31 @@ Click "Done".
 
 Click "All" under "Provisioning Profiles" in the sidebar. You may need to scroll down to see it.
 
-<img src="../img/13.png" width="200px">
+<img src="../ios/13.png" style="max-width:600px;max-height:480px" />
 
 Click the `+` button to generate a new profile, and then select "iOS App Development".
 
-<img src="../img/14.png" width="450px">
+<img src="../ios/14.png" style="max-width:600px;max-height:480px" />
 
 Select the App ID that you generated in the previous step.
 
-<img src="../img/15.png" width="450px">
+<img src="../ios/15.png" style="max-width:600px;max-height:480px" />
 
 Select the certificate generated in step 2, or your existing certificate if you did not generate one.
 
-<img src="../img/16.png" width="600px">
+<img src="../ios/16.png" style="max-width:600px;max-height:480px" />
 
 Click the "Select All" checkbox on the device list.
 
-<img src="../img/17.png" width="600px">
+<img src="../ios/17.png" style="max-width:600px;max-height:480px" />
 
 Enter a name for the profile.
 
-<img src="../img/18.png" width="550px">
+<img src="../ios/18.png" style="max-width:600px;max-height:480px" />
 
 You do *not* need to download the profile. That will be handled automatically.
 
-<img src="../img/19.png" width="550px">
+<img src="../ios/19.png" style="max-width:600px;max-height:480px" />
 
 ## Set up environment variables
 

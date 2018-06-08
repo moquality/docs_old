@@ -14,14 +14,15 @@ markdown_extensions:
 
 pages:
 - "What is MoQuality?": index.md
-
 - Uploading Apps:
   - Creating an Android APK: getting-started/pushkar.md
   - Creating an iOS App: getting-started/pushkar.md
   - Upload App: getting-started/upload-app.md
-- Test Recording:
-  - Recording Tests in Android: getting-started/android.md
-  - Recording Tests in iOS: getting-started/ios.md
+- Test Recorder:
+  - Getting Started: recorder/index.md
+  - Android Setup: recorder/android.md
+  - iOS Setup: recorder/ios.md
+  - Features: recorder/features.md
 - Autogenerate Tests:
   - Scheduling robot tests : getting-started/auto-test.md
 - Scheduling Test Runs: 
@@ -35,3 +36,4 @@ pages:
 - CI/CD Integrations:
   - Integrate with Bitrise: integration-ci-cd/bitrise.md
   - Integrate with CircleCI: integration-ci-cd/circleci.md
+- FAQ: faq.md
