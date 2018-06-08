@@ -46,7 +46,7 @@ Bitrise is a Continuous Integration and Delivery Platform as a Service. MoQualit
             mq user
             mq upload -a $APP_ID -f $APK_PATH/app-debug.apk
             mq apps
-    
+
     2. `mq login -a $API_KEY` will log you in using your API key.
 
     3. `mq user` returns user information, and you can check that your user is correct.

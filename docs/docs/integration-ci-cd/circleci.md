@@ -44,7 +44,7 @@ CircleCI is a Continuous Integration and Continuous Delivery platform that allow
               mq user
               mq upload -f [APK_PATH] -a [APP_ID]
               mq apps
-        
+
     1. The first two lines create a step called `Upload to MoQuality`.
 
     2. As before, the line `command: |` indicates that you are going to issue multiple lines of commands.
