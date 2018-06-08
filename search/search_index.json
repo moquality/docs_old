@@ -2,78 +2,293 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to MQDocs\n\u2693\n\n\nMoQuality provides automated app testing services for native Android and iOS apps.\n\n\nThe best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.\n\n\n\n\nGetting Started with Android\n\n\nGetting Started with iOS",
-            "title": "Welcome to MQDocs"
+            "text": "What is MoQuality?\n\u2693\n\n\nMoQuality provides automated app testing services for native Android and iOS apps.\n\n\nThe best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.\n\n\n\n\nGetting Started with the Recorder\n\n\nRecorder Features",
+            "title": "What is MoQuality?"
         },
         {
-            "location": "/#welcome-to-mqdocs",
-            "text": "MoQuality provides automated app testing services for native Android and iOS apps.  The best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.   Getting Started with Android  Getting Started with iOS",
-            "title": "Welcome to MQDocs"
+            "location": "/#what-is-moquality",
+            "text": "MoQuality provides automated app testing services for native Android and iOS apps.  The best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.   Getting Started with the Recorder  Recorder Features",
+            "title": "What is MoQuality?"
         },
         {
-            "location": "/getting-started/android/",
-            "text": "Android\n\u2693\n\n\nGetting Started\n\u2693\n\n\n\n\n\n\nDownload the recorder from \napp.moquality.com > Apps > Download Test Recorder\n\n\n\n\n\n\nSelect a device you would like to test with and \nturn on USB Debugging\n, which can be found inside of \nSettings > Developer Options > USB Debugging\n and connect your device to your computer. \nPress 'Always Allow\"\n on the popup on the device.\n\n\n\n\n\n\nMake sure to have \nuploaded a version of your app to test onto www.app.moquality.com\n and have filled out the package name and activity name.\n\n\n\n\n\n\nLaunch the recorder with your connected device and \nlog in with either your API key or username and password\n. Select your device and app from the drop down, as well as your screen size and keyboard preference.\n\n\n\n\n\n\nPress Record to begin\n recording your test on your device. Interact with the screen projection you see in front of you. You \nMUST use the bottom interface buttons\n for actions instead of the hardware buttons on your device. \n\n\n\n\n\n\nWhen you are done recording a test, \npress SAVE and name your test\n. You can then view the test in the app.moquality.com website.\n\n\n\n\n\n\nTo \nconfirm the test was valid, move to the Replays Tab and try to replay the test\n. If you are unable to replay the test, you may have to re-record it, or head down to the FAQ to see possible solutions. \n\n\n\n\n\n\nFAQ\n\u2693\n\n\nWhy does my phone not connect?\n\n\nDouble-check that USB debugging is on and that you have clicked 'Allow' on the on-screen popup. You may have to unplug and replug the device in some cases.\n\n\nWhy does it say I need to re-record in 'Stable Mode'?\n\n\nFor some apps and tests, the regular mode may be unable to capture all the necessary details to successfully replay the test. You can toggle 'Stable Mode' inside the recording by going into 'Settings' and toggling the option.",
-            "title": "Android"
-        },
-        {
-            "location": "/getting-started/android/#android",
-            "text": "",
-            "title": "Android"
-        },
-        {
-            "location": "/getting-started/android/#getting-started",
-            "text": "Download the recorder from  app.moquality.com > Apps > Download Test Recorder    Select a device you would like to test with and  turn on USB Debugging , which can be found inside of  Settings > Developer Options > USB Debugging  and connect your device to your computer.  Press 'Always Allow\"  on the popup on the device.    Make sure to have  uploaded a version of your app to test onto www.app.moquality.com  and have filled out the package name and activity name.    Launch the recorder with your connected device and  log in with either your API key or username and password . Select your device and app from the drop down, as well as your screen size and keyboard preference.    Press Record to begin  recording your test on your device. Interact with the screen projection you see in front of you. You  MUST use the bottom interface buttons  for actions instead of the hardware buttons on your device.     When you are done recording a test,  press SAVE and name your test . You can then view the test in the app.moquality.com website.    To  confirm the test was valid, move to the Replays Tab and try to replay the test . If you are unable to replay the test, you may have to re-record it, or head down to the FAQ to see possible solutions.",
+            "location": "/recorder/",
+            "text": "Getting Started with the Recorder\n\u2693\n\n\nThe MoQuality test recorder allows a developer to record test cases for their mobile apps.\n\n\nDownloading the Recorder\n\u2693\n\n\n\n\nWindows\n\n\nMac OS X\n\n\nLinux (Coming Soon)\n\n\n\n\nSetup\n\u2693\n\n\nSetup differs rather significantly between Android and iOS. Please consult the relevant page for the device you wish to record test cases with.\n\n\n\n\nRecorder Setup for Android Devices\n\n\nRecorder Setup for iOS Devices\n\n\n\n\nRecording a Test Case\n\u2693\n\n\nTODO.\n\n\nReplaying a Test\n\u2693\n\n\nTODO.\n\n\nTroubleshooting\n\u2693\n\n\nInfinite Loading Screen\n\u2693\n\n\nIn some cases, the recorder may fail to start properly when connecting to a device. If this occurs, you will be presented with an error message, following which the loading screen will continue to load infinitely. This usually happens as a result of a desynchronization between the device and ADB, the Android Debug Bridge, resulting in ADB classifying the device as \"offline\". If this happens, try the following steps:\n\n\n\n\nClose the recorder.\n\n\nUnplug the device.\n\n\nDisable USB debugging in the devices settings.\n\n\nRe-enable USB debugging.\n\n\nPlug the device back in.\n\n\nStart the recorder again.\n\n\n\n\nIf the problem persists, please contact MoQuality for further support.\n\n\nAppendix: Differences between Android and iOS\n\u2693\n\n\nTODO.",
             "title": "Getting Started"
         },
         {
-            "location": "/getting-started/android/#faq",
-            "text": "Why does my phone not connect?  Double-check that USB debugging is on and that you have clicked 'Allow' on the on-screen popup. You may have to unplug and replug the device in some cases.  Why does it say I need to re-record in 'Stable Mode'?  For some apps and tests, the regular mode may be unable to capture all the necessary details to successfully replay the test. You can toggle 'Stable Mode' inside the recording by going into 'Settings' and toggling the option.",
+            "location": "/recorder/#getting-started-with-the-recorder",
+            "text": "The MoQuality test recorder allows a developer to record test cases for their mobile apps.",
+            "title": "Getting Started with the Recorder"
+        },
+        {
+            "location": "/recorder/#downloading-the-recorder",
+            "text": "Windows  Mac OS X  Linux (Coming Soon)",
+            "title": "Downloading the Recorder"
+        },
+        {
+            "location": "/recorder/#setup",
+            "text": "Setup differs rather significantly between Android and iOS. Please consult the relevant page for the device you wish to record test cases with.   Recorder Setup for Android Devices  Recorder Setup for iOS Devices",
+            "title": "Setup"
+        },
+        {
+            "location": "/recorder/#recording-a-test-case",
+            "text": "TODO.",
+            "title": "Recording a Test Case"
+        },
+        {
+            "location": "/recorder/#replaying-a-test",
+            "text": "TODO.",
+            "title": "Replaying a Test"
+        },
+        {
+            "location": "/recorder/#troubleshooting",
+            "text": "",
+            "title": "Troubleshooting"
+        },
+        {
+            "location": "/recorder/#infinite-loading-screen",
+            "text": "In some cases, the recorder may fail to start properly when connecting to a device. If this occurs, you will be presented with an error message, following which the loading screen will continue to load infinitely. This usually happens as a result of a desynchronization between the device and ADB, the Android Debug Bridge, resulting in ADB classifying the device as \"offline\". If this happens, try the following steps:   Close the recorder.  Unplug the device.  Disable USB debugging in the devices settings.  Re-enable USB debugging.  Plug the device back in.  Start the recorder again.   If the problem persists, please contact MoQuality for further support.",
+            "title": "Infinite Loading Screen"
+        },
+        {
+            "location": "/recorder/#appendix-differences-between-android-and-ios",
+            "text": "TODO.",
+            "title": "Appendix: Differences between Android and iOS"
+        },
+        {
+            "location": "/recorder/android/",
+            "text": "Recorder Setup for Android Devices\n\u2693\n\n\nGetting Started\n\u2693\n\n\n\n\n\n\nDownload the recorder from \napp.moquality.com > Apps > Download Test Recorder\n\n\n\n\n\n\nSelect a device you would like to test with and \nturn on USB Debugging\n, which can be found inside of \nSettings > Developer Options > USB Debugging\n and connect your device to your computer. \nPress 'Always Allow\"\n on the popup on the device.\n\n\n\n\n\n\nMake sure to have \nuploaded a version of your app to test onto www.app.moquality.com\n and have filled out the package name and activity name.\n\n\n\n\n\n\nLaunch the recorder with your connected device and \nlog in with either your API key or username and password\n. Select your device and app from the drop down, as well as your screen size and keyboard preference.\n\n\n\n\n\n\nPress Record to begin\n recording your test on your device. Interact with the screen projection you see in front of you. You \nMUST use the bottom interface buttons\n for actions instead of the hardware buttons on your device.\n\n\n\n\n\n\nWhen you are done recording a test, \npress SAVE and name your test\n. You can then view the test in the app.moquality.com website. \n\n\n\n\n\n\nTo \nconfirm the test was valid, move to the Tests Tab and try to run the test\n. If you are unable to run the test, you may have to re-record it, or head down to the FAQ to see possible solutions. \n\n\n\n\n\n\nFAQ\n\u2693\n\n\nWhy does my phone not connect?\n\n\nDouble-check that USB debugging is on and that you have clicked 'Allow' on the on-screen popup. You may have to unplug and replug the device in some cases.\n\n\nWhy does it say I need to re-record in 'Stable Mode'?\n\n\nFor some apps and tests, the regular mode may be unable to capture all the necessary details to successfully run the test. You can toggle 'Stable Mode' inside the recording by going into 'Settings' and toggling the option.",
+            "title": "Android"
+        },
+        {
+            "location": "/recorder/android/#recorder-setup-for-android-devices",
+            "text": "",
+            "title": "Recorder Setup for Android Devices"
+        },
+        {
+            "location": "/recorder/android/#getting-started",
+            "text": "Download the recorder from  app.moquality.com > Apps > Download Test Recorder    Select a device you would like to test with and  turn on USB Debugging , which can be found inside of  Settings > Developer Options > USB Debugging  and connect your device to your computer.  Press 'Always Allow\"  on the popup on the device.    Make sure to have  uploaded a version of your app to test onto www.app.moquality.com  and have filled out the package name and activity name.    Launch the recorder with your connected device and  log in with either your API key or username and password . Select your device and app from the drop down, as well as your screen size and keyboard preference.    Press Record to begin  recording your test on your device. Interact with the screen projection you see in front of you. You  MUST use the bottom interface buttons  for actions instead of the hardware buttons on your device.    When you are done recording a test,  press SAVE and name your test . You can then view the test in the app.moquality.com website.     To  confirm the test was valid, move to the Tests Tab and try to run the test . If you are unable to run the test, you may have to re-record it, or head down to the FAQ to see possible solutions.",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/recorder/android/#faq",
+            "text": "Why does my phone not connect?  Double-check that USB debugging is on and that you have clicked 'Allow' on the on-screen popup. You may have to unplug and replug the device in some cases.  Why does it say I need to re-record in 'Stable Mode'?  For some apps and tests, the regular mode may be unable to capture all the necessary details to successfully run the test. You can toggle 'Stable Mode' inside the recording by going into 'Settings' and toggling the option.",
             "title": "FAQ"
         },
         {
-            "location": "/getting-started/ios/",
-            "text": "iOS\n\u2693\n\n\nIn order to use the recorder with iOS devices, some configuration is necessary. This page documents that configuration.\n\n\n\n\nNote\n\n\nThese steps were gathered via repeated attempts to determine the code signing process. It is possible that earlier attempts affected the steps determined, meaning that these may not work on a clean setup. Further testing is necessary.\n\n\n\n\nLog in to Apple Developer Portal\n\u2693\n\n\nFirst, log into \nthe Apple Developer Portal\n. Click the Account link at the top of the page to access your account info. In the sidebar on the left, you should see the following links:\n\n\n\n\nClick the \"Certificates, IDs & Profiles\" link.\n\n\nIf you already have a valid certificate, skip to step 3 (Alternate).\n\n\nGenerate a certificate\n\u2693\n\n\nAbove the certificate list on the next page, click the \n+\n button to generate a new certificate.\n\n\n\n\nSelect \"iOS App Development\".\n\n\n\n\nThe next page should give you instructions on how to generate a CSR. Follow those instructions before continuing.\n\n\n\n\n\n\nImport the certificate\n\u2693\n\n\nDownload the newly generated certificate.\n\n\n\n\nIf you already have a certificate generated, navigate to the certificate list, find your certificate, click on it, and then click the download button in the expanded panel.\n\n\n\n\nOnce the certificate is downloaded, locate it in Finder and double-click it. This should open the Keychain Access app with the certificate newly imported into the \"System\" keychain. To find it, click System in the sidebar, and then Certificates.\n\n\n\n\nThe certificate needs to be moved to the \"local\" keychain. To do so, simply drag it from the list of certificates on the local keychain in the sidebar. Once this is done, it should appear under \"My Certificates\", rather than just under \"Certificates\".\n\n\nGenerate an App ID\n\u2693\n\n\nBack in the developer portal, click \"App IDs\" on the sidebar.\n\n\n\n\nClick the \n+\n button at the top, much like when generating a certificate.\n\n\n\n\nName the ID something reasonable for its use, such as \"Recorder\".\n\n\n\n\nSelect \"Wildcard App ID\" and enter a single asterisk as the ID.\n\n\nTake note of the Team ID listed under the \"App ID Prefix\". You'll need it.\n\n\n\n\nClick \"Done\".\n\n\nGenerate a mobile provisioning profile\n\u2693\n\n\nClick \"All\" under \"Provisioning Profiles\" in the sidebar. You may need to scroll down to see it.\n\n\n\n\nClick the \n+\n button to generate a new profile, and then select \"iOS App Development\".\n\n\n\n\nSelect the App ID that you generated in the previous step.\n\n\n\n\nSelect the certificate generated in step 2, or your existing certificate if you did not generate one.\n\n\n\n\nClick the \"Select All\" checkbox on the device list.\n\n\n\n\nEnter a name for the profile.\n\n\n\n\nYou do \nnot\n need to download the profile. That will be handled automatically.\n\n\n\n\nSet up environment variables\n\u2693\n\n\nThe final step is to set the \n$DEVELOPMENT_TEAM\n environment variable to the Team ID from step 4. There are several ways to do this, but one of the simplest is to add the variable to the \n.bash_profile\n file in your home directory.\n\n\nOpen the \n$HOME/.bash_profile\n file in an editor of your choice and add the following line to the end of it:\n\n\nbash export DEVELOPMENT_TEAM=<Team ID>\n\n\n\n\n\nReplace \n<Team ID>\n with the your team ID.\n\n\nOnce this is done, you will need to log out and back in. Then simply run the recorder as normal.\n\n\nEnsure xcode is in system path\n\u2693\n\n\nGo to \nXcode > Preferences > Locations\n, and assign the Command Line Tools to XCode.",
+            "location": "/recorder/ios/",
+            "text": "Recorder Setup for iOS Devices\n\u2693\n\n\nIn order to use the recorder with iOS devices, some configuration is necessary. This page documents that configuration.\n\n\n\n\nNote\n\n\nThese steps were gathered via repeated attempts to determine the code signing process. It is possible that earlier attempts affected the steps determined, meaning that these may not work on a clean setup. Further testing is necessary.\n\n\n\n\nLog in to Apple Developer Portal\n\u2693\n\n\nFirst, log into \nthe Apple Developer Portal\n. Click the Account link at the top of the page to access your account info. In the sidebar on the left, you should see the following links:\n\n\n\n\nClick the \"Certificates, IDs & Profiles\" link.\n\n\nIf you already have a valid certificate, skip to step 3 (Alternate).\n\n\nGenerate a certificate\n\u2693\n\n\nAbove the certificate list on the next page, click the \n+\n button to generate a new certificate.\n\n\n\n\nSelect \"iOS App Development\".\n\n\n\n\nThe next page should give you instructions on how to generate a CSR. Follow those instructions before continuing.\n\n\n\n\n\n\nImport the certificate\n\u2693\n\n\nDownload the newly generated certificate.\n\n\n\n\nIf you already have a certificate generated, navigate to the certificate list, find your certificate, click on it, and then click the download button in the expanded panel.\n\n\n\n\nOnce the certificate is downloaded, locate it in Finder and double-click it. This should open the Keychain Access app with the certificate newly imported into the \"System\" keychain. To find it, click System in the sidebar, and then Certificates.\n\n\n\n\nThe certificate needs to be moved to the \"local\" keychain. To do so, simply drag it from the list of certificates on the local keychain in the sidebar. Once this is done, it should appear under \"My Certificates\", rather than just under \"Certificates\".\n\n\nGenerate an App ID\n\u2693\n\n\nBack in the developer portal, click \"App IDs\" on the sidebar.\n\n\n\n\nClick the \n+\n button at the top, much like when generating a certificate.\n\n\n\n\nName the ID something reasonable for its use, such as \"Recorder\".\n\n\n\n\nSelect \"Wildcard App ID\" and enter a single asterisk as the ID.\n\n\nTake note of the Team ID listed under the \"App ID Prefix\". You'll need it.\n\n\n\n\nClick \"Done\".\n\n\nGenerate a mobile provisioning profile\n\u2693\n\n\nClick \"All\" under \"Provisioning Profiles\" in the sidebar. You may need to scroll down to see it.\n\n\n\n\nClick the \n+\n button to generate a new profile, and then select \"iOS App Development\".\n\n\n\n\nSelect the App ID that you generated in the previous step.\n\n\n\n\nSelect the certificate generated in step 2, or your existing certificate if you did not generate one.\n\n\n\n\nClick the \"Select All\" checkbox on the device list.\n\n\n\n\nEnter a name for the profile.\n\n\n\n\nYou do \nnot\n need to download the profile. That will be handled automatically.\n\n\n\n\nSet up environment variables\n\u2693\n\n\nThe final step is to set the \n$DEVELOPMENT_TEAM\n environment variable to the Team ID from step 4. There are several ways to do this, but one of the simplest is to add the variable to the \n.bash_profile\n file in your home directory.\n\n\nOpen the \n$HOME/.bash_profile\n file in an editor of your choice and add the following line to the end of it:\n\n\nbash export DEVELOPMENT_TEAM=<Team ID>\n\n\n\n\n\nReplace \n<Team ID>\n with the your team ID.\n\n\nOnce this is done, you will need to log out and back in. Then simply run the recorder as normal.\n\n\nEnsure xcode is in system path\n\u2693\n\n\nGo to \nXcode > Preferences > Locations\n, and assign the Command Line Tools to XCode.",
             "title": "iOS"
         },
         {
-            "location": "/getting-started/ios/#ios",
+            "location": "/recorder/ios/#recorder-setup-for-ios-devices",
             "text": "In order to use the recorder with iOS devices, some configuration is necessary. This page documents that configuration.   Note  These steps were gathered via repeated attempts to determine the code signing process. It is possible that earlier attempts affected the steps determined, meaning that these may not work on a clean setup. Further testing is necessary.",
-            "title": "iOS"
+            "title": "Recorder Setup for iOS Devices"
         },
         {
-            "location": "/getting-started/ios/#log-in-to-apple-developer-portal",
+            "location": "/recorder/ios/#log-in-to-apple-developer-portal",
             "text": "First, log into  the Apple Developer Portal . Click the Account link at the top of the page to access your account info. In the sidebar on the left, you should see the following links:   Click the \"Certificates, IDs & Profiles\" link.  If you already have a valid certificate, skip to step 3 (Alternate).",
             "title": "Log in to Apple Developer Portal"
         },
         {
-            "location": "/getting-started/ios/#generate-a-certificate",
+            "location": "/recorder/ios/#generate-a-certificate",
             "text": "Above the certificate list on the next page, click the  +  button to generate a new certificate.   Select \"iOS App Development\".   The next page should give you instructions on how to generate a CSR. Follow those instructions before continuing.",
             "title": "Generate a certificate"
         },
         {
-            "location": "/getting-started/ios/#import-the-certificate",
+            "location": "/recorder/ios/#import-the-certificate",
             "text": "Download the newly generated certificate.   If you already have a certificate generated, navigate to the certificate list, find your certificate, click on it, and then click the download button in the expanded panel.   Once the certificate is downloaded, locate it in Finder and double-click it. This should open the Keychain Access app with the certificate newly imported into the \"System\" keychain. To find it, click System in the sidebar, and then Certificates.   The certificate needs to be moved to the \"local\" keychain. To do so, simply drag it from the list of certificates on the local keychain in the sidebar. Once this is done, it should appear under \"My Certificates\", rather than just under \"Certificates\".",
             "title": "Import the certificate"
         },
         {
-            "location": "/getting-started/ios/#generate-an-app-id",
+            "location": "/recorder/ios/#generate-an-app-id",
             "text": "Back in the developer portal, click \"App IDs\" on the sidebar.   Click the  +  button at the top, much like when generating a certificate.   Name the ID something reasonable for its use, such as \"Recorder\".   Select \"Wildcard App ID\" and enter a single asterisk as the ID.  Take note of the Team ID listed under the \"App ID Prefix\". You'll need it.   Click \"Done\".",
             "title": "Generate an App ID"
         },
         {
-            "location": "/getting-started/ios/#generate-a-mobile-provisioning-profile",
+            "location": "/recorder/ios/#generate-a-mobile-provisioning-profile",
             "text": "Click \"All\" under \"Provisioning Profiles\" in the sidebar. You may need to scroll down to see it.   Click the  +  button to generate a new profile, and then select \"iOS App Development\".   Select the App ID that you generated in the previous step.   Select the certificate generated in step 2, or your existing certificate if you did not generate one.   Click the \"Select All\" checkbox on the device list.   Enter a name for the profile.   You do  not  need to download the profile. That will be handled automatically.",
             "title": "Generate a mobile provisioning profile"
         },
         {
-            "location": "/getting-started/ios/#set-up-environment-variables",
+            "location": "/recorder/ios/#set-up-environment-variables",
             "text": "The final step is to set the  $DEVELOPMENT_TEAM  environment variable to the Team ID from step 4. There are several ways to do this, but one of the simplest is to add the variable to the  .bash_profile  file in your home directory.  Open the  $HOME/.bash_profile  file in an editor of your choice and add the following line to the end of it:  bash export DEVELOPMENT_TEAM=<Team ID>  Replace  <Team ID>  with the your team ID.  Once this is done, you will need to log out and back in. Then simply run the recorder as normal.",
             "title": "Set up environment variables"
         },
         {
-            "location": "/getting-started/ios/#ensure-xcode-is-in-system-path",
+            "location": "/recorder/ios/#ensure-xcode-is-in-system-path",
             "text": "Go to  Xcode > Preferences > Locations , and assign the Command Line Tools to XCode.",
             "title": "Ensure xcode is in system path"
+        },
+        {
+            "location": "/integration-ci-cd/bitrise/",
+            "text": "Integrating with Bitrise\n\u2693\n\n\nGetting Started\n\u2693\n\n\nBitrise is a Continuous Integration and Delivery Platform as a Service. MoQuality integrates with the workflows of Bitrise by adding a step to a workflow. The following instructions outline how to integrate MoQuality with your Bitrise workflow.\n\n\nPrerequisites\n\u2693\n\n\n\n\nBitrise: If you have not yet installed Bitrise, follow the instructions \nhere\n.\n\n\nmq-cli: To install mq-cli, run \nnpm install -g mq-cli\n in your terminal.\n\n\nMoQuality app: If you intend to upload a new build of an app, ensure that you have already uploaded the first version through the \nMoQuality website\n.\n\n\n\n\nInstructions\n\u2693\n\n\n\n\n\n\nIn your command line, navigate to your desired directory, and \nclone your git repository\n.\n\n\ngit clone {git repository}\n\n\n\n\n\n\nIntegrating MoQuality with Bitrise requires \nseveral variables that you must export\n. The first variable is \nAPI_KEY\n, which will enable user login. To find your API key, run \nmq login\n to log in to MoQuality. Then, run \nmq user\n to display user information. Your API key will be in the list of returned information. The next variable is \nAPP_ID\n. This will specify which app is being uploaded. To find your app id, log in with \nmq login\n and run \nmq apps\n to see a list of your apps. Find your app in the list and locate the app id in the same row. The third variable is \nAPK_PATH\n, the path to your folder for apk's. Navigate through your file explorer to find this path. See the below code for an example of setting these variables with a Calculator app.\n\n\nexport API_KEY={obtained value}\nexport APP_ID={obtained value}\nexport APK_PATH=/Users/{username}/Calculator/app/build/outputs/apk/\n\n\n\n\n\n\n\n\n\nEnsure bitrise.yml is in your current directory\n, and \nopen the file\n in an editor.\n\n\n\n\n\n\nIn bitrise.yml, there should be environment variables \nGRADLE_BUILD_FILE_PATH\n and \nGRADLEW_PATH\n. These are the paths to your build.gradle and gradlew files, respectively. You can find these paths using your file explorer. \nWhen you know the paths, enter them in bitrise.yml for their respective variables.\n The below code is an example of how your variables should look.\n\n\napp\n:\n\n  \nenvs\n:\n\n  \n-\n \nGRADLE_BUILD_FILE_PATH\n:\n \n/Users/{username}/Calculator/\nbuild\n.\ngradle\n\n  \n-\n \nGRADLEW_PATH\n:\n \n/Users/{username}/Calculator/g\nradlew\n\n\n\n\n\n\n\n\n\n\nThere are two default workflows in bitrise.yml: deploy and primary. \nTo begin adding a step\n integrating MoQuality with either of these workflows, \nremove the last two steps, \ndeploy-to-bitrise-io@1.3.10\n and \ncache-push@2.0.5\n. In place of those steps, \nadd\n:\n\n\n-\n \nscript\n@1.1.5\n:\n\n    \ninputs\n:\n\n    \n-\n \ncontent\n:\n \n|\n\n\n\n\n\n\n\n\n\n\nThe lines following \ncontent\n are shell commands. \nYou may create a shell script\n to run MoQuality commands and run that script in Bitrise by adding \nsh {script name}.sh\n beneath \n- content: |\n, \nor you can add the MoQuality commands\n beneath \n- content: |\n without a shell script. The following \nsub-intructions exlain how to upload a new build of an app\n. Again, these commands can either be run through a shell script or placed directly into bitrise.yml.\n\n\n\n\n\n\nBelow are the commands to upload an app to MoQuality:\n\n\nmq login -a $API_KEY\nmq user\nmq upload -a $APP_ID -f $APK_PATH/app-debug.apk\nmq apps\n\n\n\n\n\n\n\n\n\nmq login -a $API_KEY\n will log you in using your API key.\n\n\n\n\n\n\nmq user\n returns user information, and you can check that your user is correct.\n\n\n\n\n\n\nmq upload -a $APP_ID -f $APK_PATH/app-debug.apk\n will upload your app, whose location is provided by \n$APK_PATH\n, and the command uses \n$APP_ID\n to determine which app is being uploaded.\n\n\n\n\n\n\nmq apps\n returns a list of the users apps, and you can confirm that your app version has incremented by one.\n\n\n\n\n\n\n\n\n\n\nYour \nnew step\n, integrating MoQuality with Bitrise, should be \nformatted like one of the two examples below\n.\n\n\n-\n \nscript\n@1.1.5\n:\n\n    \ninputs\n:\n\n    \n-\n \ncontent\n:\n \n|\n\n        \nmq\n \nlogin\n \n-\na\n \n$\nAPI_KEY\n\n        \nmq\n \nuser\n\n        \nmq\n \nupload\n \n-\na\n \n$\nAPP_ID\n \n-\nf\n \n$\nAPK_PATH\n/\napp\n-\ndebug\n.\napk\n\n        \nmq\n \napps\n\n\n\n-\n \nscript\n@1.1.5\n:\n\n    \ninputs\n:\n\n    \n-\n \ncontent\n:\n \n|\n\n        \nsh\n \n{\nscript\n \nname\n}.\nsh\n\n\n\n\n\n\n\n\n\n\nIn your command line, \nrun \nbitrise run {workflow}\n.\n\n\n\n\n\n\nTroubleshooting\n\u2693\n\n\nPermission denied when installing mq-cli\n\n\nRun \nsudo chown -R {username} /usr/local/lib/node_modules\n in your terminal. This will give you permission to write to the node_modules directory.\n\n\nGradle-runner step fails for task ':app:mergeDebugResources'\n\n\nDon't worry about this error. Run the workflow again, and it should work.",
+            "title": "Integrate with Bitrise"
+        },
+        {
+            "location": "/integration-ci-cd/bitrise/#integrating-with-bitrise",
+            "text": "",
+            "title": "Integrating with Bitrise"
+        },
+        {
+            "location": "/integration-ci-cd/bitrise/#getting-started",
+            "text": "Bitrise is a Continuous Integration and Delivery Platform as a Service. MoQuality integrates with the workflows of Bitrise by adding a step to a workflow. The following instructions outline how to integrate MoQuality with your Bitrise workflow.",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/integration-ci-cd/bitrise/#prerequisites",
+            "text": "Bitrise: If you have not yet installed Bitrise, follow the instructions  here .  mq-cli: To install mq-cli, run  npm install -g mq-cli  in your terminal.  MoQuality app: If you intend to upload a new build of an app, ensure that you have already uploaded the first version through the  MoQuality website .",
+            "title": "Prerequisites"
+        },
+        {
+            "location": "/integration-ci-cd/bitrise/#instructions",
+            "text": "In your command line, navigate to your desired directory, and  clone your git repository .  git clone {git repository}    Integrating MoQuality with Bitrise requires  several variables that you must export . The first variable is  API_KEY , which will enable user login. To find your API key, run  mq login  to log in to MoQuality. Then, run  mq user  to display user information. Your API key will be in the list of returned information. The next variable is  APP_ID . This will specify which app is being uploaded. To find your app id, log in with  mq login  and run  mq apps  to see a list of your apps. Find your app in the list and locate the app id in the same row. The third variable is  APK_PATH , the path to your folder for apk's. Navigate through your file explorer to find this path. See the below code for an example of setting these variables with a Calculator app.  export API_KEY={obtained value}\nexport APP_ID={obtained value}\nexport APK_PATH=/Users/{username}/Calculator/app/build/outputs/apk/    Ensure bitrise.yml is in your current directory , and  open the file  in an editor.    In bitrise.yml, there should be environment variables  GRADLE_BUILD_FILE_PATH  and  GRADLEW_PATH . These are the paths to your build.gradle and gradlew files, respectively. You can find these paths using your file explorer.  When you know the paths, enter them in bitrise.yml for their respective variables.  The below code is an example of how your variables should look.  app : \n   envs : \n   -   GRADLE_BUILD_FILE_PATH :   /Users/{username}/Calculator/ build . gradle \n   -   GRADLEW_PATH :   /Users/{username}/Calculator/g radlew     There are two default workflows in bitrise.yml: deploy and primary.  To begin adding a step  integrating MoQuality with either of these workflows,  remove the last two steps,  deploy-to-bitrise-io@1.3.10  and  cache-push@2.0.5 . In place of those steps,  add :  -   script @1.1.5 : \n     inputs : \n     -   content :   |     The lines following  content  are shell commands.  You may create a shell script  to run MoQuality commands and run that script in Bitrise by adding  sh {script name}.sh  beneath  - content: | ,  or you can add the MoQuality commands  beneath  - content: |  without a shell script. The following  sub-intructions exlain how to upload a new build of an app . Again, these commands can either be run through a shell script or placed directly into bitrise.yml.    Below are the commands to upload an app to MoQuality:  mq login -a $API_KEY\nmq user\nmq upload -a $APP_ID -f $APK_PATH/app-debug.apk\nmq apps    mq login -a $API_KEY  will log you in using your API key.    mq user  returns user information, and you can check that your user is correct.    mq upload -a $APP_ID -f $APK_PATH/app-debug.apk  will upload your app, whose location is provided by  $APK_PATH , and the command uses  $APP_ID  to determine which app is being uploaded.    mq apps  returns a list of the users apps, and you can confirm that your app version has incremented by one.      Your  new step , integrating MoQuality with Bitrise, should be  formatted like one of the two examples below .  -   script @1.1.5 : \n     inputs : \n     -   content :   | \n         mq   login   - a   $ API_KEY \n         mq   user \n         mq   upload   - a   $ APP_ID   - f   $ APK_PATH / app - debug . apk \n         mq   apps  -   script @1.1.5 : \n     inputs : \n     -   content :   | \n         sh   { script   name }. sh     In your command line,  run  bitrise run {workflow} .",
+            "title": "Instructions"
+        },
+        {
+            "location": "/integration-ci-cd/bitrise/#troubleshooting",
+            "text": "Permission denied when installing mq-cli  Run  sudo chown -R {username} /usr/local/lib/node_modules  in your terminal. This will give you permission to write to the node_modules directory.  Gradle-runner step fails for task ':app:mergeDebugResources'  Don't worry about this error. Run the workflow again, and it should work.",
+            "title": "Troubleshooting"
+        },
+        {
+            "location": "/integration-ci-cd/circleci/",
+            "text": "Integrating with CircleCI\n\u2693\n\n\nGetting Started\n\u2693\n\n\nCircleCI is a Continuous Integration and Continuous Delivery platform that allows developers to automate the build, test, and deployment of software for mobile, enterprise, and web applications. MoQuality integrates with CircleCI by simply adding a step to a job. This step enables devleopers to use mq-cli within their container. The following instructions walk through how to integrate MoQuality with CircleCI.\n\n\nPrerequisites\n\u2693\n\n\n\n\nCircleCI: If you have not yet installed CircleCI, follow the instructions \nhere\n.\n\n\nmq-cli: To install mq-cli, run \nnpm install -g mq-cli\n in your terminal.\n\n\nMoQuality app: If you intend to upload a new build of an app using mq-cli, ensure that you have already uploaded the first version through the \nMoQuality website\n.\n\n\n\n\nInstructions\n\u2693\n\n\n\n\n\n\nOpen your config.yml file\n in an editor.\n\n\n\n\n\n\nUnder \nsteps:\n in your job, \nadd a run step called \nInstall mq-cli\n.\n\n\n- run:\n    name: Install mq-cli\n\n\n\n\n\n\n\n\n\nBeneath \nname:\n, \nadd \ncommand: |\n. This indicates that you are going to issue multiple lines of commands. Your step should look like the below.\n\n\n- run:\n    name: Install mq-cli\n    command: |\n\n\n\n\n\n\n\n\n\nThere are \nfour commands you must run to install mq-cli\n within your container. The first tw are \ncurl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -\n and \nsudo apt-get install -y nodejs\n. These commands are based off of \nthese instructions\n for installing Nodejs via a package manager. Installing Nodejs enables the use of npm commands, which will be necessary for installing mq-cli. The third command to run is \nsudo chown -R $(whoami) /usr/lib/node_modules /usr/bin\n. This command will give the user write permissions to two directories whose write permissions are necessary for the installation of mq-cli. Finally, the command \nnpm install -g mq-cli\n installs mq-cli. You have now created the step that installs mq-cli and enables mq-cli commands within your container. \nYour step should look like the below\n.\n\n\n- run:\n    name: Install mq-cli\n    command: |\n      curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -\n      sudo apt-get install -y nodejs\n      sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin\n      npm install -g mq-cli\n\n\n\n\n\n\n\n\n\nNow that you have access to mq-cli commands, you can create a subsequent step of your own to perform a task with these commands. The following sub-instructions breakdown \nhow to write a step that uploads your app to MoQuality\n using mq-cli commands.\n\n\n- run:\n    name: Upload to MoQuality\n    command: |\n      mq login -a {API_KEY}\n      mq user\n      mq upload -f {APK_PATH} -a {APP_ID}\n      mq apps\n\n\n\n\n\n\n\n\n\nThe first two lines create a step called \nUpload to MoQuality\n.\n\n\n\n\n\n\nAs before, the line \ncommand: |\n indicates that you are going to issue multiple lines of commands.\n\n\n\n\n\n\nmq login -a {API_KEY}\n logs you in using your API key. Your API key uniquely identifies your account. To find your API key, run \nmq login\n and follow the prompts to log in to your account. Next, run \nmq user\n to display user information. Your API key will be in the list of returned information.\n\n\n\n\n\n\nmq user\n returns user information, and you can check that your user is correct.\n\n\n\n\n\n\nmq upload -f {APK_PATH} -a {APP_ID}\n will upload your app, whose location is provided by \n{APK_PATH}\n, the path to your apk file. The command uses \n{APP_ID}\n to determine which app is being uploaded. Your app id uniquely identifies your app. To find your app id, log in with \nmq login\n and run \nmq apps\n to see a list of your apps. Find your app in the list and locate the app id in the same row.\n\n\n\n\n\n\nmq apps\n returns a list of your apps, and you can confirm that your app version has incremented by one.\n\n\n\n\n\n\n\n\n\n\nNow that you have created new steps, integrating MoQuality with CircleCI, \nrun \ncircleci build\n in your command line to run the build job. If you added the steps within a job other than build, \nadd the \n--job\n flag followed by the name of the job\n to the \ncircleci build\n command.\n\n\n\n\n\n\nNotes\n\u2693\n\n\nWe do not recommend running the commands to install mq-cli within a docker image and saving that image for future use. If you do so, and updates to mq-cli are released, your docker image will not be using them. It is best to install mq-cli every time you run the workflow, so you are always using the most up-to-date version of mq-cli. This is what was done within the instructions.\n\n\nTroubleshooting\n\u2693\n\n\nWrite permissions error when installing mq-cli\n\n\nRead the error to find the directory to which you cannot write. Add the path of that directory to your \nsudo chown -R $(whoami) /usr/lib/node_modules /usr/bin\n command. The command will then look like \nsudo chown -R $(whoami) /usr/lib/node_modules /usr/bin {DIRECTORY_PATH}\n.",
+            "title": "Integrate with CircleCI"
+        },
+        {
+            "location": "/integration-ci-cd/circleci/#integrating-with-circleci",
+            "text": "",
+            "title": "Integrating with CircleCI"
+        },
+        {
+            "location": "/integration-ci-cd/circleci/#getting-started",
+            "text": "CircleCI is a Continuous Integration and Continuous Delivery platform that allows developers to automate the build, test, and deployment of software for mobile, enterprise, and web applications. MoQuality integrates with CircleCI by simply adding a step to a job. This step enables devleopers to use mq-cli within their container. The following instructions walk through how to integrate MoQuality with CircleCI.",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/integration-ci-cd/circleci/#prerequisites",
+            "text": "CircleCI: If you have not yet installed CircleCI, follow the instructions  here .  mq-cli: To install mq-cli, run  npm install -g mq-cli  in your terminal.  MoQuality app: If you intend to upload a new build of an app using mq-cli, ensure that you have already uploaded the first version through the  MoQuality website .",
+            "title": "Prerequisites"
+        },
+        {
+            "location": "/integration-ci-cd/circleci/#instructions",
+            "text": "Open your config.yml file  in an editor.    Under  steps:  in your job,  add a run step called  Install mq-cli .  - run:\n    name: Install mq-cli    Beneath  name: ,  add  command: | . This indicates that you are going to issue multiple lines of commands. Your step should look like the below.  - run:\n    name: Install mq-cli\n    command: |    There are  four commands you must run to install mq-cli  within your container. The first tw are  curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -  and  sudo apt-get install -y nodejs . These commands are based off of  these instructions  for installing Nodejs via a package manager. Installing Nodejs enables the use of npm commands, which will be necessary for installing mq-cli. The third command to run is  sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin . This command will give the user write permissions to two directories whose write permissions are necessary for the installation of mq-cli. Finally, the command  npm install -g mq-cli  installs mq-cli. You have now created the step that installs mq-cli and enables mq-cli commands within your container.  Your step should look like the below .  - run:\n    name: Install mq-cli\n    command: |\n      curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -\n      sudo apt-get install -y nodejs\n      sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin\n      npm install -g mq-cli    Now that you have access to mq-cli commands, you can create a subsequent step of your own to perform a task with these commands. The following sub-instructions breakdown  how to write a step that uploads your app to MoQuality  using mq-cli commands.  - run:\n    name: Upload to MoQuality\n    command: |\n      mq login -a {API_KEY}\n      mq user\n      mq upload -f {APK_PATH} -a {APP_ID}\n      mq apps    The first two lines create a step called  Upload to MoQuality .    As before, the line  command: |  indicates that you are going to issue multiple lines of commands.    mq login -a {API_KEY}  logs you in using your API key. Your API key uniquely identifies your account. To find your API key, run  mq login  and follow the prompts to log in to your account. Next, run  mq user  to display user information. Your API key will be in the list of returned information.    mq user  returns user information, and you can check that your user is correct.    mq upload -f {APK_PATH} -a {APP_ID}  will upload your app, whose location is provided by  {APK_PATH} , the path to your apk file. The command uses  {APP_ID}  to determine which app is being uploaded. Your app id uniquely identifies your app. To find your app id, log in with  mq login  and run  mq apps  to see a list of your apps. Find your app in the list and locate the app id in the same row.    mq apps  returns a list of your apps, and you can confirm that your app version has incremented by one.      Now that you have created new steps, integrating MoQuality with CircleCI,  run  circleci build  in your command line to run the build job. If you added the steps within a job other than build,  add the  --job  flag followed by the name of the job  to the  circleci build  command.",
+            "title": "Instructions"
+        },
+        {
+            "location": "/integration-ci-cd/circleci/#notes",
+            "text": "We do not recommend running the commands to install mq-cli within a docker image and saving that image for future use. If you do so, and updates to mq-cli are released, your docker image will not be using them. It is best to install mq-cli every time you run the workflow, so you are always using the most up-to-date version of mq-cli. This is what was done within the instructions.",
+            "title": "Notes"
+        },
+        {
+            "location": "/integration-ci-cd/circleci/#troubleshooting",
+            "text": "Write permissions error when installing mq-cli  Read the error to find the directory to which you cannot write. Add the path of that directory to your  sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin  command. The command will then look like  sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin {DIRECTORY_PATH} .",
+            "title": "Troubleshooting"
+        },
+        {
+            "location": "/faq/testing/",
+            "text": "MoQuality\n\u2693\n\n\nWhat types of apps can be tested with MoQuality?\n\u2693\n\n\nMoQuality can be used to test native Android and iOS apps.\n\n\nWhat it the maximum number of apps we can test?\n\u2693\n\n\nYou can upload a total of 100 apps for each account. When you upload a new version of your app, that counts as a new app.\n\n\nDo I need to instrument my app or supply source code?\n\u2693\n\n\nNo instrumentation or source code is required to use the built-in tests. Android apps can be submitted as is. iOS apps should be built with \u201ciOS Device\u201d as the target. If they are built with a simulator as the target, select the simulator checkbox while uploading the app.\n\n\nHow do you clean up devices after my testing is completed?\n\u2693\n\n\nAfter test execution completes, we uninstall the app and any data related to the app (cache is deleted).\n\n\nWhile we continue to add additional cleanup steps and improve the cleanup process, it is possible for data to persist between sessions. In case you want to test on a private device, contact us. In some cases you might have to provide sensitive information like login or other security-sensitive details during your automated test sessions. We advise you to create sandbox accounts to perform these tests on your staging enviornments.\n\n\nDo you modify my app?\n\u2693\n\n\nNo, we don't modify your app. However some apps need resigning for testing. However we don't support this feature currently. we advise that you upload the app with debug symbols enabled.",
+            "title": "Testing"
+        },
+        {
+            "location": "/faq/testing/#moquality",
+            "text": "",
+            "title": "MoQuality"
+        },
+        {
+            "location": "/faq/testing/#what-types-of-apps-can-be-tested-with-moquality",
+            "text": "MoQuality can be used to test native Android and iOS apps.",
+            "title": "What types of apps can be tested with MoQuality?"
+        },
+        {
+            "location": "/faq/testing/#what-it-the-maximum-number-of-apps-we-can-test",
+            "text": "You can upload a total of 100 apps for each account. When you upload a new version of your app, that counts as a new app.",
+            "title": "What it the maximum number of apps we can test?"
+        },
+        {
+            "location": "/faq/testing/#do-i-need-to-instrument-my-app-or-supply-source-code",
+            "text": "No instrumentation or source code is required to use the built-in tests. Android apps can be submitted as is. iOS apps should be built with \u201ciOS Device\u201d as the target. If they are built with a simulator as the target, select the simulator checkbox while uploading the app.",
+            "title": "Do I need to instrument my app or supply source code?"
+        },
+        {
+            "location": "/faq/testing/#how-do-you-clean-up-devices-after-my-testing-is-completed",
+            "text": "After test execution completes, we uninstall the app and any data related to the app (cache is deleted).  While we continue to add additional cleanup steps and improve the cleanup process, it is possible for data to persist between sessions. In case you want to test on a private device, contact us. In some cases you might have to provide sensitive information like login or other security-sensitive details during your automated test sessions. We advise you to create sandbox accounts to perform these tests on your staging enviornments.",
+            "title": "How do you clean up devices after my testing is completed?"
+        },
+        {
+            "location": "/faq/testing/#do-you-modify-my-app",
+            "text": "No, we don't modify your app. However some apps need resigning for testing. However we don't support this feature currently. we advise that you upload the app with debug symbols enabled.",
+            "title": "Do you modify my app?"
+        },
+        {
+            "location": "/faq/recorder/",
+            "text": "Test Recording and Editing\n\u2693\n\n\nDoes it support both Android and iOS?\n\u2693\n\n\nYes. We also support iOS apps targetted to run on simulators.\n\n\nDo I need to additional software on my machine?\n\u2693\n\n\nNot for Android. For iOS, you need to have XCode installed with command line tools enabled.\n\n\nCan I connect to multiple Android devices from my local machine?\n\u2693\n\n\nYes.\n\n\nWhat is the maximum test time allowed?\n\u2693\n\n\nThe maximum time for each test is 5 minutes. If you need a longer timeout, please\u00a0contact us.\n\n\nIs there a way to download the results?\n\u2693\n\n\nWe offer this feature as an extra package. After you enable it, a link appears in our dashboard that enables you to download tests and test reports. They are also JSONified so that other tools can consume this data easily.",
+            "title": "Test Recording"
+        },
+        {
+            "location": "/faq/recorder/#test-recording-and-editing",
+            "text": "",
+            "title": "Test Recording and Editing"
+        },
+        {
+            "location": "/faq/recorder/#does-it-support-both-android-and-ios",
+            "text": "Yes. We also support iOS apps targetted to run on simulators.",
+            "title": "Does it support both Android and iOS?"
+        },
+        {
+            "location": "/faq/recorder/#do-i-need-to-additional-software-on-my-machine",
+            "text": "Not for Android. For iOS, you need to have XCode installed with command line tools enabled.",
+            "title": "Do I need to additional software on my machine?"
+        },
+        {
+            "location": "/faq/recorder/#can-i-connect-to-multiple-android-devices-from-my-local-machine",
+            "text": "Yes.",
+            "title": "Can I connect to multiple Android devices from my local machine?"
+        },
+        {
+            "location": "/faq/recorder/#what-is-the-maximum-test-time-allowed",
+            "text": "The maximum time for each test is 5 minutes. If you need a longer timeout, please\u00a0contact us.",
+            "title": "What is the maximum test time allowed?"
+        },
+        {
+            "location": "/faq/recorder/#is-there-a-way-to-download-the-results",
+            "text": "We offer this feature as an extra package. After you enable it, a link appears in our dashboard that enables you to download tests and test reports. They are also JSONified so that other tools can consume this data easily.",
+            "title": "Is there a way to download the results?"
+        },
+        {
+            "location": "/faq/devices/",
+            "text": "Devices\n\u2693\n\n\nAre devices able to communicate with other services or systems that are available on the Internet?\n\u2693\n\n\nYes. All devices have a WiFi connection with Internet access.\u00a0\n\n\nCan I make phone calls or send SMS from the devices?\n\u2693\n\n\nNo, devices do not have carrier connections and cannot make phone calls or send SMS messages.\n\n\nCan I use the device camera?\n\u2693\n\n\nYes, you can use the device cameras, both front- and rear-facing. Images might be dark or blurry.\n\n\nAndroid: Is there a default Google account on the devices?\n\u2693\n\n\nNo, devices do not have an active Google account.\u00a0We do however allow you to add webhooks in our tests through the recorder. You can use the webhooks to create a Google account and then login into it on the phone. Then you can use another webook at the end of the test to deactive the account.\n\n\nAndroid: Is Google Play Services available on your devices? Which version is installed?\n\u2693\n\n\nYes, Google Play Services is installed on devices that support it. The services are updated as new versions become available.",
+            "title": "Devices"
+        },
+        {
+            "location": "/faq/devices/#devices",
+            "text": "",
+            "title": "Devices"
+        },
+        {
+            "location": "/faq/devices/#are-devices-able-to-communicate-with-other-services-or-systems-that-are-available-on-the-internet",
+            "text": "Yes. All devices have a WiFi connection with Internet access.",
+            "title": "Are devices able to communicate with other services or systems that are available on the Internet?"
+        },
+        {
+            "location": "/faq/devices/#can-i-make-phone-calls-or-send-sms-from-the-devices",
+            "text": "No, devices do not have carrier connections and cannot make phone calls or send SMS messages.",
+            "title": "Can I make phone calls or send SMS from the devices?"
+        },
+        {
+            "location": "/faq/devices/#can-i-use-the-device-camera",
+            "text": "Yes, you can use the device cameras, both front- and rear-facing. Images might be dark or blurry.",
+            "title": "Can I use the device camera?"
+        },
+        {
+            "location": "/faq/devices/#android-is-there-a-default-google-account-on-the-devices",
+            "text": "No, devices do not have an active Google account.\u00a0We do however allow you to add webhooks in our tests through the recorder. You can use the webhooks to create a Google account and then login into it on the phone. Then you can use another webook at the end of the test to deactive the account.",
+            "title": "Android: Is there a default Google account on the devices?"
+        },
+        {
+            "location": "/faq/devices/#android-is-google-play-services-available-on-your-devices-which-version-is-installed",
+            "text": "Yes, Google Play Services is installed on devices that support it. The services are updated as new versions become available.",
+            "title": "Android: Is Google Play Services available on your devices? Which version is installed?"
         }
     ]
 }

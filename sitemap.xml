@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-05-31</lastmod>
+     <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,14 +12,52 @@
     
         
     <url>
-     <loc>/getting-started/android/</loc>
-     <lastmod>2018-05-31</lastmod>
+     <loc>/recorder/</loc>
+     <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/getting-started/ios/</loc>
-     <lastmod>2018-05-31</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/integration-ci-cd/bitrise/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/integration-ci-cd/circleci/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/faq/testing/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/faq/recorder/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/faq/devices/</loc>
+     <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

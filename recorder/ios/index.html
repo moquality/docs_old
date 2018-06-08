@@ -1,0 +1,749 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>iOS - MQ Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#recorder-setup-for-ios-devices" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="MQ Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                MQ Docs
+              </span>
+              <span class="md-header-nav__topic">
+                iOS
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/moquality/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      MQ Docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    MQ Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/moquality/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      MQ Docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="What is MoQuality?" class="md-nav__link">
+      What is MoQuality?
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Test Recorder
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Test Recorder
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/" title="Android" class="md-nav__link">
+      Android
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        iOS
+      </label>
+    
+    <a href="./" title="iOS" class="md-nav__link md-nav__link--active">
+      iOS
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#log-in-to-apple-developer-portal" title="Log in to Apple Developer Portal" class="md-nav__link">
+    Log in to Apple Developer Portal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-a-certificate" title="Generate a certificate" class="md-nav__link">
+    Generate a certificate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-the-certificate" title="Import the certificate" class="md-nav__link">
+    Import the certificate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-an-app-id" title="Generate an App ID" class="md-nav__link">
+    Generate an App ID
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-a-mobile-provisioning-profile" title="Generate a mobile provisioning profile" class="md-nav__link">
+    Generate a mobile provisioning profile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-up-environment-variables" title="Set up environment variables" class="md-nav__link">
+    Set up environment variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ensure-xcode-is-in-system-path" title="Ensure xcode is in system path" class="md-nav__link">
+    Ensure xcode is in system path
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      CI/CD Integrations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        CI/CD Integrations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integration-ci-cd/bitrise/" title="Integrate with Bitrise" class="md-nav__link">
+      Integrate with Bitrise
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integration-ci-cd/circleci/" title="Integrate with CircleCI" class="md-nav__link">
+      Integrate with CircleCI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      FAQs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        FAQs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faq/testing/" title="Testing" class="md-nav__link">
+      Testing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faq/recorder/" title="Test Recording" class="md-nav__link">
+      Test Recording
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faq/devices/" title="Devices" class="md-nav__link">
+      Devices
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#log-in-to-apple-developer-portal" title="Log in to Apple Developer Portal" class="md-nav__link">
+    Log in to Apple Developer Portal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-a-certificate" title="Generate a certificate" class="md-nav__link">
+    Generate a certificate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-the-certificate" title="Import the certificate" class="md-nav__link">
+    Import the certificate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-an-app-id" title="Generate an App ID" class="md-nav__link">
+    Generate an App ID
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-a-mobile-provisioning-profile" title="Generate a mobile provisioning profile" class="md-nav__link">
+    Generate a mobile provisioning profile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-up-environment-variables" title="Set up environment variables" class="md-nav__link">
+    Set up environment variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ensure-xcode-is-in-system-path" title="Ensure xcode is in system path" class="md-nav__link">
+    Ensure xcode is in system path
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/moquality/docs/tree/master/docs/docs/recorder/ios.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="recorder-setup-for-ios-devices">Recorder Setup for iOS Devices<a class="headerlink" href="#recorder-setup-for-ios-devices" title="Permanent link">⚓</a></h1>
+<p>In order to use the recorder with iOS devices, some configuration is necessary. This page documents that configuration.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These steps were gathered via repeated attempts to determine the code signing process. It is possible that earlier attempts affected the steps determined, meaning that these may not work on a clean setup. Further testing is necessary.</p>
+</div>
+<h3 id="log-in-to-apple-developer-portal">Log in to Apple Developer Portal<a class="headerlink" href="#log-in-to-apple-developer-portal" title="Permanent link">⚓</a></h3>
+<p>First, log into <a href="https://developer.apple.com/">the Apple Developer Portal</a>. Click the Account link at the top of the page to access your account info. In the sidebar on the left, you should see the following links:</p>
+<p><img src="../ios/01.png" width="270px" /></p>
+<p>Click the "Certificates, IDs &amp; Profiles" link.</p>
+<p>If you already have a valid certificate, skip to step 3 (Alternate).</p>
+<h2 id="generate-a-certificate">Generate a certificate<a class="headerlink" href="#generate-a-certificate" title="Permanent link">⚓</a></h2>
+<p>Above the certificate list on the next page, click the <code>+</code> button to generate a new certificate.</p>
+<p><img src="../ios/02.png" width="320px" /></p>
+<p>Select "iOS App Development".</p>
+<p><img src="../ios/03.png" width="680px" /></p>
+<p>The next page should give you instructions on how to generate a CSR. Follow those instructions before continuing.</p>
+<p><img src="../ios/04.png" width="680px" /></p>
+<p><img src="../ios/05.png" width="680px" /></p>
+<h2 id="import-the-certificate">Import the certificate<a class="headerlink" href="#import-the-certificate" title="Permanent link">⚓</a></h2>
+<p>Download the newly generated certificate.</p>
+<p><img src="../ios/06.png" width="680px" /></p>
+<p>If you already have a certificate generated, navigate to the certificate list, find your certificate, click on it, and then click the download button in the expanded panel.</p>
+<p><img src="../ios/07.png" width="680px" /></p>
+<p>Once the certificate is downloaded, locate it in Finder and double-click it. This should open the Keychain Access app with the certificate newly imported into the "System" keychain. To find it, click System in the sidebar, and then Certificates.</p>
+<p><img src="../ios/08.png" width="200px" /></p>
+<p>The certificate needs to be moved to the "local" keychain. To do so, simply drag it from the list of certificates on the local keychain in the sidebar. Once this is done, it should appear under "My Certificates", rather than just under "Certificates".</p>
+<h2 id="generate-an-app-id">Generate an App ID<a class="headerlink" href="#generate-an-app-id" title="Permanent link">⚓</a></h2>
+<p>Back in the developer portal, click "App IDs" on the sidebar.</p>
+<p><img src="../ios/10.png" width="200" /></p>
+<p>Click the <code>+</code> button at the top, much like when generating a certificate.</p>
+<p><img src="../ios/09.png" width="450px" /></p>
+<p>Name the ID something reasonable for its use, such as "Recorder".</p>
+<p><img src="../ios/11.png" width="450px" /></p>
+<p>Select "Wildcard App ID" and enter a single asterisk as the ID.</p>
+<p><strong>Take note of the Team ID listed under the "App ID Prefix". You'll need it.</strong></p>
+<p><img src="../ios/12.png" width="450px" /></p>
+<p>Click "Done".</p>
+<h2 id="generate-a-mobile-provisioning-profile">Generate a mobile provisioning profile<a class="headerlink" href="#generate-a-mobile-provisioning-profile" title="Permanent link">⚓</a></h2>
+<p>Click "All" under "Provisioning Profiles" in the sidebar. You may need to scroll down to see it.</p>
+<p><img src="../ios/13.png" width="200px" /></p>
+<p>Click the <code>+</code> button to generate a new profile, and then select "iOS App Development".</p>
+<p><img src="../ios/14.png" width="450px" /></p>
+<p>Select the App ID that you generated in the previous step.</p>
+<p><img src="../ios/15.png" width="450px" /></p>
+<p>Select the certificate generated in step 2, or your existing certificate if you did not generate one.</p>
+<p><img src="../ios/16.png" width="600px" /></p>
+<p>Click the "Select All" checkbox on the device list.</p>
+<p><img src="../ios/17.png" width="600px" /></p>
+<p>Enter a name for the profile.</p>
+<p><img src="../ios/18.png" width="550px" /></p>
+<p>You do <em>not</em> need to download the profile. That will be handled automatically.</p>
+<p><img src="../ios/19.png" width="550px" /></p>
+<h2 id="set-up-environment-variables">Set up environment variables<a class="headerlink" href="#set-up-environment-variables" title="Permanent link">⚓</a></h2>
+<p>The final step is to set the <code>$DEVELOPMENT_TEAM</code> environment variable to the Team ID from step 4. There are several ways to do this, but one of the simplest is to add the variable to the <code>.bash_profile</code> file in your home directory.</p>
+<p>Open the <code>$HOME/.bash_profile</code> file in an editor of your choice and add the following line to the end of it:</p>
+<div class="code"><pre><span></span>bash export DEVELOPMENT_TEAM=&lt;Team ID&gt;
+</pre></div>
+
+
+<p>Replace <code>&lt;Team ID&gt;</code> with the your team ID.</p>
+<p>Once this is done, you will need to log out and back in. Then simply run the recorder as normal.</p>
+<h2 id="ensure-xcode-is-in-system-path">Ensure xcode is in system path<a class="headerlink" href="#ensure-xcode-is-in-system-path" title="Permanent link">⚓</a></h2>
+<p>Go to <code>Xcode &gt; Preferences &gt; Locations</code>, and assign the Command Line Tools to XCode.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../android/" title="Android" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Android
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../integration-ci-cd/bitrise/" title="Integrate with Bitrise" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Integrate with Bitrise
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
