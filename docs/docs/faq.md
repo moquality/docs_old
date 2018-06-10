@@ -51,20 +51,28 @@ We offer this feature as an extra package. After you enable it, a link appears i
 
 ### Are devices able to communicate with other services or systems that are available on the Internet?
 
-Yes. All devices have a WiFi connection with internet access.
+Yes. All devices have internet access through a Wifi connection.
 
 ### Can I make phone calls or send SMS from the devices?
 
-No, devices do not have carrier connections and cannot make phone calls or send SMS messages.
+No, devices do not have carrier SIM setup and cannot make phone calls or send SMS messages. Please contact us via our support challels (see end) with your specific usecase.
 
 ### Can I use the device camera?
 
 Yes, you can use the device cameras, both front and rear facing. Images might be dark or blurry.
 
-### Android: Is there a default Google account on the devices?
+### Android: Are there any default accounts (e.g., Google) available on cloud devices?
 
-No, devices do not have an active Google account. We do however allow you to add webhooks in our tests through the recorder. You can use the webhooks to create a Google account and then login into it on the phone. Then you can use another webhook at the end of the test to deactivate the account.
+No, cloud devices should be clean and you cannot rely on any active accounts being present on them. 
 
-### Android: Is Google Play Services available on your devices? Which version is installed?
+We do however allow you to add webhooks in the tests recorded through the recorder, which can be used in conjuction with a server side script to partly facilitate co-ordination with account creation and use within tests. Please contact us via our support challels (see end) with your specific usecase.
+
+### Android: Is Google Play Services available on cloud devices? Which version is installed?
 
 Yes, Google Play Services is installed on devices that support it. The services are updated as new versions become available.
+
+### I didn't find an answer for my question?
+Please contact us at any of our following support channels:
+- Intercom chat on our website 
+- Slack chat at http://slack.moquality.com
+- Email at support@moquality.com
