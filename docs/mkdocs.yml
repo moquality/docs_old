@@ -1,9 +1,9 @@
-site_name: MQ Docs
+site_name: MoQuality Docs
 theme:
   name: 'material'
 
 edit_uri: /moquality/docs/tree/master/docs/docs
-repo_name: 'MQ Docs'
+repo_name: 'MoQuality Docs'
 repo_url: 'https://github.com/moquality/docs'
 
 markdown_extensions:
