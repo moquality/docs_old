@@ -44,7 +44,7 @@ CircleCI is a Continuous Integration and Continuous Delivery platform that allow
               mq user
               mq upload -f [APK_PATH] -a [APP_ID]
               mq apps
-        
+
     1. The first two lines create a step called `Upload to MoQuality`.
 
     2. As before, the line `command: |` indicates that you are going to issue multiple lines of commands.
@@ -67,4 +67,8 @@ We do not recommend running the commands to install MQ CLI within a docker image
 
 **Write permissions error when installing MQ CLI**
 
+<<<<<<< HEAD
 Read the error to find the directory to which you cannot write. Add the path of that directory to your `sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin` command. The command will then look like `sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin [DIRECTORY_PATH]`.
+=======
+Read the error to find the directory to which you cannot write. Add the path of that directory to your `sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin` command. The command will then look like `sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin [DIRECTORY_PATH]`.
+>>>>>>> 1db7ac4e78364dd34d2f64b856eeef12125d7f45
