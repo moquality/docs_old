@@ -35,14 +35,8 @@ pages:
   - Dashboard: getting-started/view-results.md
 - CI/CD Integrations:
   - MoQuality CLI: integration-ci-cd/mq-cli.md
+  - Integrate with fastlane: integration-ci-cd/fastlane.md
   - Integrate with Bitrise: integration-ci-cd/bitrise.md
   - Integrate with CircleCI: integration-ci-cd/circleci.md
   - Custom Docker Images: integration-ci-cd/dockerfile.md
-<<<<<<< HEAD
-- FAQs:
-  - Testing: faq/testing.md
-  - Test Recording: faq/recorder.md
-  - Devices: faq/devices.md
-=======
 - FAQ: faq.md
->>>>>>> 1db7ac4e78364dd34d2f64b856eeef12125d7f45
