@@ -36,7 +36,7 @@
     
     
       
-        <title>Custom Docker Images - MoQuality Docs</title>
+        <title>Integrate with fastlane - MoQuality Docs</title>
       
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#custom-docker-images" tabindex="1" class="md-skip">
+      <a href="#integrate-with-fastlane" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +115,7 @@
                 MoQuality Docs
               </span>
               <span class="md-header-nav__topic">
-                Custom Docker Images
+                Integrate with fastlane
               </span>
             
           
@@ -563,42 +563,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../fastlane/" title="Integrate with fastlane" class="md-nav__link">
-      Integrate with fastlane
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../bitrise/" title="Integrate with Bitrise" class="md-nav__link">
-      Integrate with Bitrise
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../circleci/" title="Integrate with CircleCI" class="md-nav__link">
-      Integrate with CircleCI
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -610,11 +574,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Custom Docker Images
+        Integrate with fastlane
       </label>
     
-    <a href="./" title="Custom Docker Images" class="md-nav__link md-nav__link--active">
-      Custom Docker Images
+    <a href="./" title="Integrate with fastlane" class="md-nav__link md-nav__link--active">
+      Integrate with fastlane
     </a>
     
       
@@ -646,33 +610,6 @@
     Instructions
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-a-custom-docker-image" title="Create a Custom Docker Image" class="md-nav__link">
-    Create a Custom Docker Image
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#circleci-and-custom-docker-images" title="CircleCI and Custom Docker Images" class="md-nav__link">
-    CircleCI and Custom Docker Images
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#circleci-and-custom-docker-image-for-moquality-app" title="CircleCI and Custom Docker Image for MoQuality App" class="md-nav__link">
-    CircleCI and Custom Docker Image for MoQuality App
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
       
@@ -683,6 +620,42 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bitrise/" title="Integrate with Bitrise" class="md-nav__link">
+      Integrate with Bitrise
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../circleci/" title="Integrate with CircleCI" class="md-nav__link">
+      Integrate with CircleCI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dockerfile/" title="Custom Docker Images" class="md-nav__link">
+      Custom Docker Images
+    </a>
   </li>
 
         
@@ -742,33 +715,6 @@
     Instructions
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-a-custom-docker-image" title="Create a Custom Docker Image" class="md-nav__link">
-    Create a Custom Docker Image
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#circleci-and-custom-docker-images" title="CircleCI and Custom Docker Images" class="md-nav__link">
-    CircleCI and Custom Docker Images
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#circleci-and-custom-docker-image-for-moquality-app" title="CircleCI and Custom Docker Image for MoQuality App" class="md-nav__link">
-    CircleCI and Custom Docker Image for MoQuality App
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
       
@@ -787,173 +733,67 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/moquality/docs/tree/master/docs/docs/integration-ci-cd/dockerfile.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/moquality/docs/tree/master/docs/docs/integration-ci-cd/fastlane.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="custom-docker-images">Custom Docker Images<a class="headerlink" href="#custom-docker-images" title="Permanent link">⚓</a></h1>
+                <h1 id="integrate-with-fastlane">Integrate with <em>fastlane</em><a class="headerlink" href="#integrate-with-fastlane" title="Permanent link">⚓</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">⚓</a></h2>
-<p>A source of difficulty when developing applications is creating the perfect environment on one's machine to run said application. However, by using Docker, you can set up the perfect environment to run your application. Dockerfiles define the environment within a container, a runtime instance of an image. An image is an executable package that cointains an application's code, runtime, libraries, environment variables, and configuration files. A Dockerfile can use an image, such as Ubuntu, and define the environment on top of the image. Thus, we can run an app in, for example, an Ubuntu container with all the necessary dependencies installed, as defined in our Dockerfile. These instructions follow the creation of a Dockerfile for testing a calculator app, available [here], and are based off of <a href="https://docs.docker.com/get-started/part2/#introduction">this</a> Docker documentation.</p>
+<p><em>fastlane</em> is a Continuous Integration and Continuous Delivery tool for iOS and Android apps. MoQuality integrates with <em>fastlane</em> through the simple addition of a step to a lane.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">⚓</a></h2>
 <ul>
-<li>Docker: Install your preferred version of Docker <a href="https://docs.docker.com/install/">here</a> and use the <a href="https://docs.docker.com/get-started/">official Docker getting started guide</a> to familiarize yourself with Docker.</li>
-<li>Docker account: Set up a Docker account <a href="https://cloud.docker.com/">here</a>.</li>
+<li><em>fastlane</em>: If you have not yet installed <em>fastlane</em>, follow the instructions <a href="https://docs.fastlane.tools/">here</a>.</li>
+<li>MQ CLI: <a href="../mq-cli/#installation">Install MQ CLI</a>.</li>
+<li>MoQuality app: If you intend to upload a new build of an app, ensure that you have already uploaded the first version through the <a href="https://app.moquality.com/">MoQuality website</a>.</li>
 </ul>
 <h2 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">⚓</a></h2>
-<h3 id="create-a-custom-docker-image">Create a Custom Docker Image<a class="headerlink" href="#create-a-custom-docker-image" title="Permanent link">⚓</a></h3>
-<ol>
-<li>
-<p><strong>Create an empty directory</strong> and navigate into that directory within your command line.</p>
-<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> <span class="o">[</span>EMPTY_DIRECTORY<span class="o">]</span>
+<p>To integrate MoQuality with <em>fastlane</em>, you will add a step to your lane that runs a shell script containing your MQ CLI commands. For this documentation, we will call that script <code>mq.sh</code>, but you can call it whatever you wish.</p>
+<p>There are <strong>two environment variables that you must set</strong>. The first variable is <strong><code>API_KEY</code></strong>, which will enable user login. To find your API key, run <code>mq login</code> in your command line to log in to MoQuality. Then, run <code>mq user</code> to display user information. Your API key will be in the list of returned information. The second variable is <strong><code>APP_ID</code></strong>. This will specify which app is being uploaded. To find your app id, log in with <code>mq login</code> and run <code>mq apps</code> to see a list of your apps. Find your app in the list and locate the app id in the same row. See the below example commands for setting these variables.</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">API_KEY</span><span class="o">=[</span>OBTAINED_VALUE<span class="o">]</span>
+$ <span class="nb">export</span> <span class="nv">APP_ID</span><span class="o">=[</span>OBTAINED_VALUE<span class="o">]</span>
 </pre></div>
 
 
+<p><strong>Create a shell script</strong> in the same directory as your <code>Fastfile</code> called <code>mq.sh</code>. <strong>Open that shell script</strong> in an editor.</p>
+<p>This shell script will contain the MQ CLI commands that your new step will run. Before writing that step, we will write the shell script. The next section follows the creation of a shell script to upload an apk file, built using Gradle, to MoQuality.</p>
+<div class="codehilite"><pre><span></span><span class="ch">#!/bin/sh</span>
+
+mq login -a <span class="nv">$API_KEY</span>
+mq user
+mq upload -a <span class="nv">$APP_ID</span> -f <span class="nv">$1</span>
+mq apps
+</pre></div>
+
+
+<ul>
+<li>
+<p><code>mq login -a $API_KEY</code> logs you in using your API key.</p>
 </li>
 <li>
-<p>Within that directory, <strong>create a file called <code>Dockerfile</code></strong>. This is where you will define the environment of your container.</p>
+<p><code>mq user</code> returns user information, and you can check that your user is correct.</p>
 </li>
 <li>
-<p>Open <code>Dockerfile</code> in an editor of your choice.</p>
+<p><code>mq upload -a $APP_ID -f $1</code> will upload your app, whose location is provided by <code>$1</code>, the path to your apk file that will be passed as an argument. The command uses <code>$APP_ID</code> to determine which app is being uploaded.</p>
 </li>
 <li>
-<p>Fill the Dockerfile while following the format below. A very short example Dockerfile is beneath the format. The <a href="https://docs.docker.com/engine/reference/builder/#from">FROM instruction</a> initializes a new build stage and sets the base image. The <a href="https://docs.docker.com/engine/reference/builder/#run">RUN instruction</a> runs a command within our docker container. For more reference on instructions and information on Docker syntax, click <a href="https://docs.docker.com/engine/reference/builder/#usage">here</a>.</p>
+<p><code>mq apps</code> returns a list of your apps, and you can confirm that your app version has incremented by one.</p>
 </li>
-</ol>
-<p><strong>Format</strong></p>
-<div class="codehilite"><pre><span></span><span class="c"># Comment</span>
-INSTRUCTION arguments
+</ul>
+<p><strong>Open your <code>Fastfile</code> in an editor</strong>. Find the lane to which you want to add the MoQuality step. If you build your app in this lane, make sure you add the new step after the app has been built. Below is an example lane before the step has been added.</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">lane :beta do</span>
+  <span class="l l-Scalar l-Scalar-Plain">gradle(task</span><span class="p p-Indicator">:</span> <span class="s">&quot;clean</span><span class="nv"> </span><span class="s">assembleDebug&quot;</span><span class="l l-Scalar l-Scalar-Plain">)</span>
+<span class="l l-Scalar l-Scalar-Plain">end</span>
 </pre></div>
 
 
-<p><strong>Example</strong></p>
-<div class="codehilite"><pre><span></span><span class="c">#Use an official Ubuntu runtime as a parent image</span>
-<span class="k">FROM</span><span class="s"> ubuntu</span>
-
-<span class="c">#Say hello</span>
-<span class="k">RUN</span> <span class="nb">echo</span> <span class="s2">&quot;Hello world!&quot;</span>
+<p><strong>Add a shell method that runs your shell script</strong> to the lane. If you are following the example upload script, pass as an argument to the script the output variable from the Gradle step that provides the apk path. Below is the updated example lane.</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">lane :beta do</span>
+  <span class="l l-Scalar l-Scalar-Plain">gradle(task</span><span class="p p-Indicator">:</span> <span class="s">&quot;clean</span><span class="nv"> </span><span class="s">assembleDebug&quot;</span><span class="l l-Scalar l-Scalar-Plain">)</span>
+  <span class="l l-Scalar l-Scalar-Plain">sh(“sh”,”mqtest.sh”,&quot;#{lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH]}&quot;)</span>
+<span class="l l-Scalar l-Scalar-Plain">end</span>
 </pre></div>
 
 
-<ol>
-<li>
-<p>Now that you have a Dockerfile with instructions, it's time to <strong>build your image</strong>. Run the below command, inserting your own tag for the image. <strong>Note the period</strong> after the image tag.</p>
-<div class="codehilite"><pre><span></span>$ docker build -t <span class="o">[</span>LOCAL_IMAGE_TAG<span class="o">]</span> .
-</pre></div>
-
-
-</li>
-<li>
-<p>Once your image is done building, you can confirm that it is in your machine’s local Docker image registry with the below command.</p>
-<div class="codehilite"><pre><span></span>$ docker image ls
-</pre></div>
-
-
-</li>
-<li>
-<p>To share your image, log in to docker with the below command.</p>
-<div class="codehilite"><pre><span></span>$ docker login
-</pre></div>
-
-
-</li>
-<li>
-<p>Before uploading your image, you should give it a tag for Docker Hub using the following command. An example of a repository name and tag could be <code>dockertesting:latest</code>. If no tag is given, Docker will tag the image with <code>latest</code> by default.</p>
-<div class="codehilite"><pre><span></span>$ docker tag <span class="o">[</span>LOCAL_IMAGE_TAG<span class="o">]</span> <span class="o">[</span>DOCKER_USERNAME<span class="o">]</span>/<span class="o">[</span>REPOSITORY_NAME<span class="o">]</span>:<span class="o">[</span>TAG<span class="o">]</span>
-</pre></div>
-
-
-</li>
-<li>
-<p>Publish the image with below command.</p>
-<div class="codehilite"><pre><span></span>$ docker push <span class="o">[</span>DOCKER_USERNAME<span class="o">]</span>/<span class="o">[</span>REPOSITORY_NAME<span class="o">]</span>:<span class="o">[</span>TAG<span class="o">]</span>
-</pre></div>
-
-
-</li>
-</ol>
-<p>Now your image is accessible from online and can be pulled at any time. The next set of instructions explain how you can use your Docker image in CircleCI.</p>
-<h3 id="circleci-and-custom-docker-images">CircleCI and Custom Docker Images<a class="headerlink" href="#circleci-and-custom-docker-images" title="Permanent link">⚓</a></h3>
-<p>CircleCI supports the use of custom Docker images, and the CircleCI documentation on customizing Docker images for CircleCI can be found <a href="https://circleci.com/docs/2.0/custom-images/">here</a>. If you have built and pushed a custom Docker image, you can use it in your CircleCI job by adding the image path to the Docker executor in your job.</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">job</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">build</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">docker</span><span class="p p-Indicator">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="nv">DOCKER_USERNAME</span><span class="p p-Indicator">]</span><span class="l l-Scalar l-Scalar-Plain">/[REPOSITORY_NAME]:[TAG]</span>
-</pre></div>
-
-
-<p>The information in brackets can be found by visiting your image on <a href="https://hub.docker.com/">Docker Hub</a> and selecting your repository. The Docker pull command will be on the repository page, and you can find your tag under the Tags tab.</p>
-<p>You can also build your custom Docker image on top of a CirlceCI image. Say you want to use the <code>circleci/android:api-25-alpha</code> image, but you need to add more dependencies. You can create a Dockerfile and begin it with the following.</p>
-<div class="codehilite"><pre><span></span><span class="k">FROM</span><span class="s"> circleci/android:api-25-alpha</span>
-</pre></div>
-
-
-<p>Now you can add your instructions to set up an environment within a CircleCI container. The next section breaks down an exmaple Docker image used with CircleCI to build and upload an app to MoQuality.</p>
-<h3 id="circleci-and-custom-docker-image-for-moquality-app">CircleCI and Custom Docker Image for MoQuality App<a class="headerlink" href="#circleci-and-custom-docker-image-for-moquality-app" title="Permanent link">⚓</a></h3>
-<p>MoQuality has created a [Github repository] with all the necessary files to build and upload a calculator app to MoQuality by using CircleCI and a custom Dockerfile. Our Dockerfile uses Ubuntu as our parent image and installs dependencies such as Gradle to build the app. The Docker image path is <code>jragonemq/mqubuntutest:latest</code>. Before beginning, create an app on MoQuality that you can use to test the upload properties of this build. It does not matter what apk file you upload upon creation of the app.</p>
-<p>The following is the code behind the <code>jragonemq/mqubuntutest:latest</code> Dockerfile. This creates an environment for running the calculator app on top of an Ubuntu parent image. We are essentially filling a fresh Ubuntu container with our dependencies. The comments explain what each set of instructions is doing. However, understanding each instruction is less important than understanding what these instructions accomplish holistically: they build the environment.</p>
-<div class="codehilite"><pre><span></span><span class="c">#Use an official Ubuntu runtime as a parent image</span>
-<span class="k">FROM</span><span class="s"> ubuntu</span>
-
-<span class="c">#Set user to root</span>
-USER root
-
-<span class="c">#Update apt-get and install dependencies</span>
-<span class="k">RUN</span> apt-get -y update <span class="o">&amp;&amp;</span> apt-get install -y wget bzip2 unzip gcc nodejs npm openjdk-8-jdk git sudo curl
-
-<span class="c">#Install Gradle</span>
-<span class="k">RUN</span> wget https://services.gradle.org/distributions/gradle-4.1-bin.zip
-<span class="k">RUN</span> mkdir /opt/gradle
-<span class="k">RUN</span> unzip -d /opt/gradle gradle-4.1-bin.zip
-<span class="c">#Define environment variable</span>
-<span class="k">ENV</span><span class="s"> PATH=$PATH:/opt/gradle/gradle-4.1/bin</span>
-<span class="k">RUN</span> gradle -v
-
-<span class="c">#Install Android tools for sdkmanager</span>
-<span class="k">RUN</span> mkdir /android-sdk
-<span class="k">RUN</span> wget https://dl.google.com/android/repository/sdk-tools-darwin-3859397.zip
-<span class="k">RUN</span> unzip -d /android-sdk sdk-tools*.zip
-<span class="k">ENV</span><span class="s"> ANDROID_HOME=/android-sdk</span>
-<span class="k">ENV</span><span class="s"> PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/tools/platform-tools:$ANDROID_HOME/build-tools/26.0.2</span>
-
-<span class="c">#Accept all licenses and install dependencies</span>
-<span class="k">RUN</span> yes <span class="p">|</span> sdkmanager --licenses
-<span class="k">RUN</span> sdkmanager <span class="s2">&quot;platforms;android-22&quot;</span>
-<span class="k">RUN</span> sdkmanager <span class="s2">&quot;build-tools;26.0.2&quot;</span>
-
-<span class="c">#Copy Android</span>
-COPY android-8.0.0 android
-<span class="k">ENV</span><span class="s"> PATH=&quot;/android:$PATH&quot;</span>
-</pre></div>
-
-
-<p>Create an empty directory and <code>cd</code> into it. Then, clone the repository using <code>git clone</code>. Within the hidden <code>.circleci</code> folder is the <code>config.yml</code> file. In this file are steps which build the app using <code>gradle build</code>, <a href="../circleci/#instructions">install the mq-cli</a>, and <a href="../circleci/#instructions">login and upload the app to MoQuality</a>. By the <code>mq login</code> and <code>mq upload</code> commands, fill in [API_KEY] and [APP_ID] with the API key of your account and app id of your app. To find your API key, run <code>mq login</code> in your command line and follow the prompts to log in to your account. Next, run <code>mq user</code> to display user information. Your API key will be in the list of returned information. To find your app id, log in with <code>mq login</code> and run <code>mq apps</code> to see a list of your apps. Find your app in the list and locate the app id in the same row. Using the above instructions and <a href="../circleci/">CircleCI MQ CLI integration documentation</a>, we have created our own custom Dockerfile, integrated it with CircleCI, and integrated the CircleCI with MoQuality.</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
-<span class="l l-Scalar l-Scalar-Plain">jobs</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">build</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">docker</span><span class="p p-Indicator">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">jragonemq/mqubuntutest:latest</span>
-    <span class="l l-Scalar l-Scalar-Plain">environment</span><span class="p p-Indicator">:</span>
-      <span class="l l-Scalar l-Scalar-Plain">JVM_OPTS</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">-Xmx3200m</span>
-    <span class="l l-Scalar l-Scalar-Plain">steps</span><span class="p p-Indicator">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">checkout</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">run</span><span class="p p-Indicator">:</span>
-          <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Build app</span>
-          <span class="l l-Scalar l-Scalar-Plain">command</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">gradle build</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">run</span><span class="p p-Indicator">:</span>
-          <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Install mq-cli</span>
-          <span class="l l-Scalar l-Scalar-Plain">command</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">|</span>
-            <span class="no">curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</span>
-            <span class="no">sudo apt-get install -y nodejs</span>
-            <span class="no">sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin</span>
-            <span class="no">npm -g config set user root</span>
-            <span class="no">npm install -g mq-cli</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">run</span><span class="p p-Indicator">:</span>
-          <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Login and Upload to MoQuality</span>
-          <span class="l l-Scalar l-Scalar-Plain">command</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">|</span>
-            <span class="no">mq login -a [API_KEY]</span>
-            <span class="no">mq user</span>
-            <span class="no">mq upload -f app/build/outputs/apk/debug/app-debug.apk -a [APP_ID]</span>
-            <span class="no">mq apps</span>
-</pre></div>
+<p>Now that you have integrated MoQuality with <em>fastlane</em>, <strong>try running the lane with <code>fastlane [LANE_NAME]</code></strong> in your command line.</p>
                 
                   
                 
@@ -974,7 +814,7 @@ COPY android-8.0.0 android
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../circleci/" title="Integrate with CircleCI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mq-cli/" title="MoQuality CLI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -983,19 +823,19 @@ COPY android-8.0.0 android
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Integrate with CircleCI
+                MoQuality CLI
               </span>
             </div>
           </a>
         
         
-          <a href="../../faq/" title="FAQ" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../bitrise/" title="Integrate with Bitrise" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                FAQ
+                Integrate with Bitrise
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

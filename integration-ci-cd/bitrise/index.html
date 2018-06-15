@@ -36,7 +36,7 @@
     
     
       
-        <title>Integrate with Bitrise - MQ Docs</title>
+        <title>Integrate with Bitrise - MoQuality Docs</title>
       
     
     
@@ -98,7 +98,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="MQ Docs" class="md-header-nav__button md-logo">
+        <a href="../.." title="MoQuality Docs" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -112,7 +112,7 @@
           
             
               <span class="md-header-nav__topic">
-                MQ Docs
+                MoQuality Docs
               </span>
               <span class="md-header-nav__topic">
                 Integrate with Bitrise
@@ -169,7 +169,7 @@
       </div>
     
     <div class="md-source__repository">
-      MQ Docs
+      MoQuality Docs
     </div>
   </a>
 
@@ -199,7 +199,7 @@
         <i class="md-icon"></i>
       
     </span>
-    MQ Docs
+    MoQuality Docs
   </label>
   
     <div class="md-nav__source">
@@ -218,7 +218,7 @@
       </div>
     
     <div class="md-source__repository">
-      MQ Docs
+      MoQuality Docs
     </div>
   </a>
 
@@ -563,6 +563,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../fastlane/" title="Integrate with fastlane" class="md-nav__link">
+      Integrate with fastlane
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -744,7 +756,7 @@
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">⚓</a></h2>
 <ul>
 <li>Bitrise: If you have not yet installed Bitrise, follow the instructions <a href="https://www.bitrise.io/cli">here</a>.</li>
-<li>MQ CLI: To install MQ CLI, run <code>npm install -g mq-cli</code> in your terminal.</li>
+<li>MQ CLI: <a href="../mq-cli/#installation">Install MQ CLI</a>.</li>
 <li>MoQuality app: If you intend to upload a new build of an app, ensure that you have already uploaded the first version through the <a href="https://app.moquality.com/">MoQuality website</a>.</li>
 </ul>
 <h2 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">⚓</a></h2>
@@ -757,10 +769,10 @@
 
 </li>
 <li>
-<p>Integrating MoQuality with Bitrise requires <strong>several variables that you must export</strong>. The first variable is <strong><code>API_KEY</code></strong>, which will enable user login. To find your API key, run <code>mq login</code> to log in to MoQuality. Then, run <code>mq user</code> to display user information. Your API key will be in the list of returned information. The next variable is <strong><code>APP_ID</code></strong>. This will specify which app is being uploaded. To find your app id, log in with <code>mq login</code> and run <code>mq apps</code> to see a list of your apps. Find your app in the list and locate the app id in the same row. The third variable is <strong><code>APK_PATH</code></strong>, the path to your folder for apk's. Navigate through your file explorer to find this path. See the below code for an example of setting these variables with a Calculator app.</p>
-<div class="codehilite"><pre><span></span><span class="err">$</span> <span class="n">export</span> <span class="n">API_KEY</span><span class="o">=</span><span class="p">[</span><span class="n">obtained</span> <span class="n">value</span><span class="p">]</span>
-<span class="err">$</span> <span class="n">export</span> <span class="n">APP_ID</span><span class="o">=</span><span class="p">[</span><span class="n">obtained</span> <span class="n">value</span><span class="p">]</span>
-<span class="err">$</span> <span class="n">export</span> <span class="n">APK_PATH</span><span class="o">=/</span><span class="n">Users</span><span class="o">/</span><span class="p">[</span><span class="n">USERNAME</span><span class="p">]</span><span class="o">/</span><span class="n">Calculator</span><span class="o">/</span><span class="n">app</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">outputs</span><span class="o">/</span><span class="n">apk</span><span class="o">/</span>
+<p>Integrating MoQuality with Bitrise requires <strong>several variables that you must export</strong>. The first variable is <strong><code>API_KEY</code></strong>, which will enable user login. To find your API key, run <code>mq login</code> in your command line to log in to MoQuality. Then, run <code>mq user</code> to display user information. Your API key will be in the list of returned information. The next variable is <strong><code>APP_ID</code></strong>. This will specify which app is being uploaded. To find your app id, log in with <code>mq login</code> and run <code>mq apps</code> to see a list of your apps. Find your app in the list and locate the app id in the same row. The third variable is <strong><code>APK_PATH</code></strong>, the path to your folder for apk's. Navigate through your file explorer to find this path. See the below commands for an example of setting these variables with a Calculator app.</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">API_KEY</span><span class="o">=[</span>OBTAINED_VALUE<span class="o">]</span>
+$ <span class="nb">export</span> <span class="nv">APP_ID</span><span class="o">=[</span>OBTAINED_VALUE<span class="o">]</span>
+$ <span class="nb">export</span> <span class="nv">APK_PATH</span><span class="o">=</span>/Users/<span class="o">[</span>USERNAME<span class="o">]</span>/Calculator/app/build/outputs/apk/
 </pre></div>
 
 
@@ -861,7 +873,7 @@ mq apps
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../mq-cli/" title="MoQuality CLI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../fastlane/" title="Integrate with fastlane" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -870,7 +882,7 @@ mq apps
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                MoQuality CLI
+                Integrate with fastlane
               </span>
             </div>
           </a>
