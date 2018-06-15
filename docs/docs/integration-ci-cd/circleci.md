@@ -7,7 +7,7 @@ CircleCI is a Continuous Integration and Continuous Delivery platform that allow
 ## Prerequisites
 
 * CircleCI: If you have not yet installed CircleCI, follow the instructions [here](https://circleci.com/docs/2.0/local-cli/).
-* MQ CLI: To install MQ CLI, run `npm install -g mq-cli` in your terminal.
+* MQ CLI: [Install MQ CLI](mq-cli.md#installation).
 * MoQuality app: If you intend to upload a new build of an app using MQ CLI, ensure that you have already uploaded the first version through the [MoQuality website](https://app.moquality.com/).
 
 ## Instructions
@@ -25,7 +25,7 @@ CircleCI is a Continuous Integration and Continuous Delivery platform that allow
             name: Install MQ CLI
             command: |
 
-4. There are **four commands you must run to install MQ CLI** within your container. The first tw are **`curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`** and **`sudo apt-get install -y nodejs`**. These commands are based off of [these instructions](https://nodejs.org/en/download/package-manager/) for installing Nodejs via a package manager. Installing Nodejs enables the use of npm commands, which will be necessary for installing MQ CLI. The third command to run is **`sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin`**. This command will give the user write permissions to two directories whose write permissions are necessary for the installation of MQ CLI. Finally, the command **`npm install -g mq-cli`** installs MQ CLI. You have now created the step that installs MQ CLI and enables MQ CLI commands within your container. **Your step should look like the below**.
+4. There are **four commands you must run to install MQ CLI** within your container. The first two are **`curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`** and **`sudo apt-get install -y nodejs`**. These commands are based off of [these instructions](https://nodejs.org/en/download/package-manager/) for installing Nodejs via a package manager. Installing Nodejs enables the use of npm commands, which will be necessary for installing MQ CLI. The third command to run is **`sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin`**. This command will give the user write permissions to two directories whose write permissions are necessary for the installation of MQ CLI. Finally, the command **`npm install -g mq-cli`** installs MQ CLI. You have now created the step that installs MQ CLI and enables MQ CLI commands within your container. **Your step should look like the below**.
 
         - run:
             name: Install MQ CLI
@@ -49,7 +49,7 @@ CircleCI is a Continuous Integration and Continuous Delivery platform that allow
 
     2. As before, the line `command: |` indicates that you are going to issue multiple lines of commands.
 
-    3. `mq login -a [API_KEY]` logs you in using your API key. Your API key uniquely identifies your account. To find your API key, run `mq login` and follow the prompts to log in to your account. Next, run `mq user` to display user information. Your API key will be in the list of returned information.
+    3. `mq login -a [API_KEY]` logs you in using your API key. Your API key uniquely identifies your account. To find your API key, run `mq login` in your command line and follow the prompts to log in to your account. Next, run `mq user` to display user information. Your API key will be in the list of returned information.
 
     4. `mq user` returns user information, and you can check that your user is correct.
 
@@ -57,7 +57,7 @@ CircleCI is a Continuous Integration and Continuous Delivery platform that allow
 
     6. `mq apps` returns a list of your apps, and you can confirm that your app version has incremented by one.
 
-7. Now that you have created new steps, integrating MoQuality with CircleCI, **run `circleci build`** in your command line to run the build job. If you added the steps within a job other than build, **add the `--job` option followed by the name of the job** to the `circleci build` command.
+6. Now that you have created new steps, integrating MoQuality with CircleCI, **run `circleci build`** in your command line to run the build job. If you added the steps within a job other than build, **add the `--job` option followed by the name of the job** to the `circleci build` command.
 
 ## Notes
 

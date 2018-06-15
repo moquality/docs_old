@@ -7,7 +7,7 @@ Bitrise is a Continuous Integration and Delivery Platform as a Service. MoQualit
 ## Prerequisites
 
 * Bitrise: If you have not yet installed Bitrise, follow the instructions [here](https://www.bitrise.io/cli).
-* MQ CLI: To install MQ CLI, run `npm install -g mq-cli` in your terminal.
+* MQ CLI: [Install MQ CLI](mq-cli.md#installation).
 * MoQuality app: If you intend to upload a new build of an app, ensure that you have already uploaded the first version through the [MoQuality website](https://app.moquality.com/).
 
 ## Instructions
@@ -16,10 +16,10 @@ Bitrise is a Continuous Integration and Delivery Platform as a Service. MoQualit
 
         $ git clone [git repository] 
 
-2. Integrating MoQuality with Bitrise requires **several variables that you must export**. The first variable is **`API_KEY`**, which will enable user login. To find your API key, run `mq login` to log in to MoQuality. Then, run `mq user` to display user information. Your API key will be in the list of returned information. The next variable is **`APP_ID`**. This will specify which app is being uploaded. To find your app id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app id in the same row. The third variable is **`APK_PATH`**, the path to your folder for apk's. Navigate through your file explorer to find this path. See the below code for an example of setting these variables with a Calculator app.
+2. Integrating MoQuality with Bitrise requires **several variables that you must export**. The first variable is **`API_KEY`**, which will enable user login. To find your API key, run `mq login` in your command line to log in to MoQuality. Then, run `mq user` to display user information. Your API key will be in the list of returned information. The next variable is **`APP_ID`**. This will specify which app is being uploaded. To find your app id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app id in the same row. The third variable is **`APK_PATH`**, the path to your folder for apk's. Navigate through your file explorer to find this path. See the below commands for an example of setting these variables with a Calculator app.
 
-        $ export API_KEY=[obtained value]
-        $ export APP_ID=[obtained value]
+        $ export API_KEY=[OBTAINED_VALUE]
+        $ export APP_ID=[OBTAINED_VALUE]
         $ export APK_PATH=/Users/[USERNAME]/Calculator/app/build/outputs/apk/
 
 3. **Ensure bitrise.yml is in your current directory**, and **open the file** in an editor.
