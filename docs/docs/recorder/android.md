@@ -18,7 +18,7 @@
 
     <img src="../android/login.gif" style="max-width:600px;max-height:480px" />
 
-5. **Press Record to begin** recording your test on your device. Interact with the screen projection you see in front of you. You **MUST use the bottom interface buttons** for actions instead of the hardware buttons on your device.
+5. **Press Record to begin** recording your test on your device. Interact with the screen projection you see in front of you. You **MUST use the bottom interface buttons** for actions instead of the hardware buttons on your device. If your device has software buttons, **do not click them**. Using the software buttons will cause mistakes in the recording.
 
     <img src="../android/recording_demo.gif" style="max-width:600px;max-height:480px" />
 
