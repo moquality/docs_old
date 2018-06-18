@@ -1,15 +1,18 @@
 # Uploading an App
-1. Go to the MoQuality URL (http://app.moquality.com) and click on the Add APP box.
-<img src="../dashboard-img/1.png" height="240px" />
 
-2. Upload an app. It accepts .apk file for android and .app for iOS.
-<img src="../dashboard-img/2.png" height="360px" />
-3. Enter the App details such as name, description, and select the type of App (Android/iOS).
+1. Navigate to [app.moquality.com](https://app.moquality.com).
 
+2. Click "ADD APP".
 
-After uploading an app, a user can either do
+    <img src="../dashboard-img/add-app.png" style='max-width:480px;max-height:480px' />
 
-1. [Test recording](getting-started/recorder-link) using MoQuality Test Recorder and [scheduled Test runs](getting-started/scheduling-tests) of  recorded tests to run on multiple devices. 
-2. Request an  [Autogenerate tests](getting-started/auto-test).
+3. Choose the type of app you would like to add, enter a name and, optionally, a description, and click submit. If you are adding an Android app, choose an APK to upload. If you are adding an iOS app, choose either a `.ipa` file or a `.app` directory in a Zip file. If the iOS app in question is a simulator build, make sure to check the "Is Simulator" checkbox, or the app will not work correctly.
 
+    <img src="../dashboard-img/upload-app.png" style='max-width:480px;max-height:480px' />
 
+## Now what?
+
+After uploading an app, a user can either
+
+* [Record tests](getting-started/recorder-link) using the MoQuality Test Recorder and [schedule runs](getting-started/scheduling-tests) of recorded tests to run on multiple devices.
+* Request an [autogeneration of tests](getting-started/auto-test).
