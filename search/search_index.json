@@ -42,7 +42,7 @@
         },
         {
             "location": "/recorder/",
-            "text": "Getting Started with the Recorder\n\u2693\n\n\nThe MoQuality test recorder provides functionality for recording test cases for mobile apps, as well as for both replaying test cases on a local device and editing them. In addition, it offers useful supplementary functionality, such as the ability to automatically download and install the app being recorded on a new device.\n\n\nFor a full overview of the recorder's functionality, see \nthe Recorder Feature List\n.\n\n\nDownloading the Recorder\n\u2693\n\n\n\n\nWindows\n\n\nMac OS X\n\n\nLinux (Coming Soon)\n\n\n\n\nSetup\n\u2693\n\n\nSetup differs rather significantly between Android and iOS. Please consult the relevant page for the device you wish to record test cases with.\n\n\n\n\nRecorder Setup for Android Devices\n\n\nRecorder Setup for iOS Devices\n\n\n\n\nRecording a Test Case\n\u2693\n\n\n\n\n\n\nChoose a device and an app.\n\n\n\n\n\n\n\n\nChoose device settings.\n\n\n\n\nOptional: Install app.\n\n\nClick \"Record\".\n\n\nPerform actions in the app.\n\n\nClick \"Save\".\n\n\nEnter a name for the test.\n\n\nClick \"Save\".\n\n\n\n\nReplaying a Test\n\u2693\n\n\n\n\nChoose a device.\n\n\nChoose the app that the test was recorded for.\n\n\nChoose device settings.\n\n\nOptional: Install app.\n\n\nSwitch to the \"Tests\" tab.\n\n\nFind the test that you would like to replay and expand it.\n\n\nClick \"Run\".\n\n\n\n\nTroubleshooting\n\u2693\n\n\nInfinite Loading Screen\n\u2693\n\n\nIn some cases, the recorder may fail to start properly when connecting to a device. If this occurs, you will be presented with an error message, following which the loading screen will continue to load infinitely. This usually happens as a result of a desynchronization between the device and ADB, the Android Debug Bridge, resulting in ADB classifying the device as \"offline\". If this happens, try the following steps:\n\n\n\n\nClose the recorder.\n\n\nUnplug the device.\n\n\nDisable USB debugging in the devices settings.\n\n\nRe-enable USB debugging.\n\n\nPlug the device back in.\n\n\nStart the recorder again.\n\n\n\n\nIf the problem persists, please contact MoQuality for further support.\n\n\nAppendix: Differences between Android and iOS\n\u2693\n\n\nFor the most part, Android and iOS devices behave similarly in the recorder, but there are a few differences. Some of these are obvious, as they pertain to unique features that one device type or the other has, such as the back button, which doesn't exist on iOS.\n\n\nA larger, less obvious difference is that of touch control. On Android, the mouse emulates a touch input, providing a clean 1-to-1 interaction between the recorder and the app. Unfortunately, due to limitations in iOS automation, the recorder is unable to do this 1-to-1 interaction with iOS devices.\n\n\nWhen clicking on the screen while using an iOS device, a circle will appear where the mouse button was pressed. If the mouse is dragged past a threshold distance away from that starting point, a second circle will appear under the mouse with a line connecting the two. If this appears, releasing the mouse will perform a drag from the first circle to the second; if it has not appeared, a click will be performed at the location of the circle instead.",
+            "text": "Getting Started with the Recorder\n\u2693\n\n\nThe MoQuality test recorder provides functionality for recording test cases for mobile apps, as well as for both replaying test cases on a local device and editing them. In addition, it offers useful supplementary functionality, such as the ability to automatically download and install the app being recorded on a new device.\n\n\nFor a full overview of the recorder's functionality, see \nthe Recorder Feature List\n.\n\n\nDownloading the Recorder\n\u2693\n\n\n\n\nWindows\n\n\nMac OS X\n\n\nLinux (Coming Soon)\n\n\n\n\nSetup\n\u2693\n\n\nSetup differs rather significantly between Android and iOS. Please consult the relevant page for the device you wish to record test cases with.\n\n\n\n\nRecorder Setup for Android Devices\n\n\nRecorder Setup for iOS Devices\n\n\n\n\nRecording a Test Case\n\u2693\n\n\n\n\n\n\nChoose a device and an app.\n\n\n\n\n\n\n\n\nChoose device settings.\n\n\n\n\nOptional: Install app.\n\n\nClick \"Record\".\n\n\nPerform actions in the app.\n\n\nClick \"Save\".\n\n\nEnter a name for the test.\n\n\nClick \"Save\".\n\n\n\n\nReplaying a Test\n\u2693\n\n\n\n\nChoose a device.\n\n\nChoose the app that the test was recorded for.\n\n\nChoose device settings.\n\n\nOptional: Install app.\n\n\nSwitch to the \"Tests\" tab.\n\n\nFind the test that you would like to replay and expand it.\n\n\nClick \"Run\".\n\n\n\n\nEditing a Test\n\u2693\n\n\nSee (test-editing)\n\n\nTroubleshooting\n\u2693\n\n\nInfinite Loading Screen\n\u2693\n\n\nIn some cases, the recorder may fail to start properly when connecting to a device. If this occurs, you will be presented with an error message, following which the loading screen will continue to load infinitely. This usually happens as a result of a desynchronization between the device and ADB, the Android Debug Bridge, resulting in ADB classifying the device as \"offline\". If this happens, try the following steps:\n\n\n\n\nClose the recorder.\n\n\nUnplug the device.\n\n\nDisable USB debugging in the devices settings.\n\n\nRe-enable USB debugging.\n\n\nPlug the device back in.\n\n\nStart the recorder again.\n\n\n\n\nIf the problem persists, please contact MoQuality for further support.\n\n\nAppendix: Differences between Android and iOS\n\u2693\n\n\nFor the most part, Android and iOS devices behave similarly in the recorder, but there are a few differences. Some of these are obvious, as they pertain to unique features that one device type or the other has, such as the back button, which doesn't exist on iOS.\n\n\nA larger, less obvious difference is that of touch control. On Android, the mouse emulates a touch input, providing a clean 1-to-1 interaction between the recorder and the app. Unfortunately, due to limitations in iOS automation, the recorder is unable to do this 1-to-1 interaction with iOS devices.\n\n\nWhen clicking on the screen while using an iOS device, a circle will appear where the mouse button was pressed. If the mouse is dragged past a threshold distance away from that starting point, a second circle will appear under the mouse with a line connecting the two. If this appears, releasing the mouse will perform a drag from the first circle to the second; if it has not appeared, a click will be performed at the location of the circle instead.",
             "title": "Getting Started"
         },
         {
@@ -69,6 +69,11 @@
             "location": "/recorder/#replaying-a-test",
             "text": "Choose a device.  Choose the app that the test was recorded for.  Choose device settings.  Optional: Install app.  Switch to the \"Tests\" tab.  Find the test that you would like to replay and expand it.  Click \"Run\".",
             "title": "Replaying a Test"
+        },
+        {
+            "location": "/recorder/#editing-a-test",
+            "text": "See (test-editing)",
+            "title": "Editing a Test"
         },
         {
             "location": "/recorder/#troubleshooting",
@@ -194,6 +199,46 @@
             "location": "/recorder/features/#test-replay",
             "text": "After you have a recorded a successful test, proceed to the Tests Tab and replay your test!",
             "title": "Test Replay"
+        },
+        {
+            "location": "/recorder/test-editing/",
+            "text": "Test Editing in the Recorder\n\u2693\n\n\nIntroduction\n\u2693\n\n\nUsing the recorder to record test cases is one of the fastest, and most efficient ways to test your app. However, there may be times when you would like to tweak your individual test steps for more control, test editing allows you to do that!\n\n\nOpening the Edit Menu\n\u2693\n\n\nThe \nEdit Menu\n can be accessed by hovering over the selected \nTest Step\n, and clicking the \nEdit Button\n.\n\n\n\n\nEditing Step Description\n\u2693\n\n\nIf you would like to change the description of a test step, it's as easy as replacing the content inside the \nDescription\n tab and pressing \nSubmit\n\n\n\n\nEditing Test Parameters (Coming Soon)\n\u2693\n\n\nWe are currently in the process of adding the ability to parameterize test inputs, such as usernames and passwords, to expand the testing capabilities of an individual test.\n\n\n\n\nAdding Sleep Actions (Wait)\n\u2693\n\n\nSometimes\n our AI will try to continue through a test, despite the device not being ready to receive the additional information. This can happen for several reasons, including changes in internet connection speed, or background apps hogging the phone's processing power. The simplest way to tell the app to wait, is to add a sleep action immediately following a problematic action. \n\n\n\n\nSelecting a New Target (Beta)\n\u2693\n\n\nOccasionally\n, our AI will be unable to detect the appropriate widget or it may select the incorrect widget. To correct this we have added the ability to select a new target within current screenshot. To select a new widget, hover over the screenshot until you see a red box surround the particular item you would like to designate as a target.",
+            "title": "Test Editing"
+        },
+        {
+            "location": "/recorder/test-editing/#test-editing-in-the-recorder",
+            "text": "",
+            "title": "Test Editing in the Recorder"
+        },
+        {
+            "location": "/recorder/test-editing/#introduction",
+            "text": "Using the recorder to record test cases is one of the fastest, and most efficient ways to test your app. However, there may be times when you would like to tweak your individual test steps for more control, test editing allows you to do that!",
+            "title": "Introduction"
+        },
+        {
+            "location": "/recorder/test-editing/#opening-the-edit-menu",
+            "text": "The  Edit Menu  can be accessed by hovering over the selected  Test Step , and clicking the  Edit Button .",
+            "title": "Opening the Edit Menu"
+        },
+        {
+            "location": "/recorder/test-editing/#editing-step-description",
+            "text": "If you would like to change the description of a test step, it's as easy as replacing the content inside the  Description  tab and pressing  Submit",
+            "title": "Editing Step Description"
+        },
+        {
+            "location": "/recorder/test-editing/#editing-test-parameters-coming-soon",
+            "text": "We are currently in the process of adding the ability to parameterize test inputs, such as usernames and passwords, to expand the testing capabilities of an individual test.",
+            "title": "Editing Test Parameters (Coming Soon)"
+        },
+        {
+            "location": "/recorder/test-editing/#adding-sleep-actions-wait",
+            "text": "Sometimes  our AI will try to continue through a test, despite the device not being ready to receive the additional information. This can happen for several reasons, including changes in internet connection speed, or background apps hogging the phone's processing power. The simplest way to tell the app to wait, is to add a sleep action immediately following a problematic action.",
+            "title": "Adding Sleep Actions (Wait)"
+        },
+        {
+            "location": "/recorder/test-editing/#selecting-a-new-target-beta",
+            "text": "Occasionally , our AI will be unable to detect the appropriate widget or it may select the incorrect widget. To correct this we have added the ability to select a new target within current screenshot. To select a new widget, hover over the screenshot until you see a red box surround the particular item you would like to designate as a target.",
+            "title": "Selecting a New Target (Beta)"
         },
         {
             "location": "/getting-started/auto-test/",
