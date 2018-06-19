@@ -1,8 +1,8 @@
 ### Test Suites  
 
-A test is a series of action that should be performed to cover a use case or check an assertion. All our tests always start after clearing any cache related to the app.
+A **test** is a *series of actions* that should be performed to cover a use case or check an assertion. All of our tests start after clearing the cached data related to the app.
 
-A test suite is a series of tests that should be run in an order. A test report is a test of these test suites. A test is created using the MQRecorder. After creating a few tests, you can create test suites. 
+A **test suite** is a *series of tests* that should be run in an order. A test report is a test of these test suites. A test is created using the MoQuality Recorder. After creating a few tests, you can create test suites. 
 
 *** Use case ***
 
@@ -10,7 +10,7 @@ A music app may have several tests related to playlists, therefore a playlist te
 
 *** Creating a suite ***
 
-Navigate to the Suite tab and click on the Create Test Suite.
+Navigate to the **Suites** tab and click on the Create Test Suite.
 
 <img src="../dashboard-img/11.png" height="220px" />
 
