@@ -27,7 +27,7 @@ pages:
 - Autogenerate Tests:
   - Scheduling robot tests : getting-started/auto-test.md
 - Scheduling Test Runs: 
-  - View recorded Tests: getting-started/view-tests.md
+  - View Recorded Tests: getting-started/view-tests.md
   - Creating Test Suites: getting-started/test-suite.md
   - Creating Device Groups: getting-started/devices.md
   - Scheduling Tests : getting-started/scheduling-tests.md
