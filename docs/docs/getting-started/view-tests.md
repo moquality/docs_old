@@ -1,6 +1,6 @@
 ### View recorded test cases
 
-Navigate to Tests page. This page provides an overview of all the tests that have been recorded with the MoQuality Recorder. A test consist of a series of actions performed on an app on a device. It is displayed as a series of screenshot and a marked area indicating the action widget. The following page displays all the recorded tests with MoQuality Recorder.
+To view your recorded tests, navigate to *Tests* page. If you have not recorded a test yet, download the MoQuality Test Recorder and record your first test. A test consist of a series of actions performed on an app on a device. It is displayed as a series of screenshot and a marked area indicating the action widget. The following page displays all the recorded tests with MoQuality Recorder.
 
 <img src="../dashboard-img/16.png" height="480px" />
 
