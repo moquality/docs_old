@@ -23,6 +23,7 @@ pages:
   - Android Setup: recorder/android.md
   - iOS Setup: recorder/ios.md
   - Features: recorder/features.md
+  - Test Editing: recorder/test-editing.md
 - Autogenerate Tests:
   - Scheduling robot tests : getting-started/auto-test.md
 - Scheduling Test Runs: 

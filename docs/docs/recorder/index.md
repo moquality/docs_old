@@ -41,6 +41,10 @@ Setup differs rather significantly between Android and iOS. Please consult the r
 6. Find the test that you would like to replay and expand it.
 7. Click "Run".
 
+## Editing a Test
+
+See (test-editing)
+
 ## Troubleshooting
 
 ### Infinite Loading Screen
