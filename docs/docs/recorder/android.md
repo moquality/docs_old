@@ -14,11 +14,11 @@
 
     <img src="../android/package_name.png" style="max-width:600px;max-height:480px" />
 
-4. Launch the recorder with your connected device and **log in with either your API key or username and password**. Select your device and app from the drop down, as well as your screen size and keyboard preference.
+4. Launch the recorder with your connected device and **log in with either your API key or username and password**. Select your device and app from the drop down, as well as your screen size and keyboard preference (we recommend setting it to no-keyboard).
 
     <img src="../android/login.gif" style="max-width:600px;max-height:480px" />
 
-5. **Press Record to begin** recording your test on your device. Interact with the screen projection you see in front of you. You **MUST use the bottom interface buttons** for actions instead of the hardware buttons on your device. If your device has software buttons, **do not click them**. Using the software buttons will cause mistakes in the recording.
+5. **Press Record** (on top left) to begin  recording your test on your device. Interact with the screen projection you see in front of you. You **MUST use the bottom interface buttons** for actions instead of the hardware buttons on your device. Hardware buttons include back button, home screen button and show apps button. Similarly, if your device has software buttons, **do not click them**. Using the software buttons will cause mistakes in the recording.
 
     <img src="../android/recording_demo.gif" style="max-width:600px;max-height:480px" />
 
