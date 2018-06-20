@@ -400,6 +400,19 @@
     Infinite Loading Screen
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-a-screenshot" title="Get a screenshot" class="md-nav__link">
+    Get a screenshot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -539,8 +552,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../getting-started/view-tests/" title="View recorded Tests" class="md-nav__link">
-      View recorded Tests
+    <a href="../getting-started/view-tests/" title="View Recorded Tests" class="md-nav__link">
+      View Recorded Tests
     </a>
   </li>
 
@@ -798,6 +811,19 @@
     Infinite Loading Screen
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-a-screenshot" title="Get a screenshot" class="md-nav__link">
+    Get a screenshot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -832,7 +858,7 @@
                 
                 
                 <h1 id="getting-started-with-the-recorder">Getting Started with the Recorder<a class="headerlink" href="#getting-started-with-the-recorder" title="Permanent link">⚓</a></h1>
-<p>The MoQuality test recorder provides functionality for recording test cases for mobile apps, as well as for both replaying test cases on a local device and editing them. In addition, it offers useful supplementary functionality, such as the ability to automatically download and install the app being recorded on a new device.</p>
+<p>The MoQuality test recorder provides functionality for recording test cases for mobile apps, as well as for both replaying test cases on a local device and editing them. In addition, it offers useful supplementary functionality, such as the ability to automatically download and install the app  on a new device.</p>
 <p>For a full overview of the recorder's functionality, see <a href="./features">the Recorder Feature List</a>.</p>
 <h2 id="downloading-the-recorder">Downloading the Recorder<a class="headerlink" href="#downloading-the-recorder" title="Permanent link">⚓</a></h2>
 <ul>
@@ -855,7 +881,7 @@
 <li>
 <p>Choose device settings.</p>
 </li>
-<li>Optional: Install app.</li>
+<li>Install app (for the first time use).</li>
 <li>Click "Record".</li>
 <li>Perform actions in the app.</li>
 <li>Click "Save".</li>
@@ -867,20 +893,21 @@
 <li>Choose a device.</li>
 <li>Choose the app that the test was recorded for.</li>
 <li>Choose device settings.</li>
-<li>Optional: Install app.</li>
+<li>Install app (if it is not previously installed).</li>
 <li>Switch to the "Tests" tab.</li>
 <li>Find the test that you would like to replay and expand it.</li>
 <li>Click "Run".</li>
 </ol>
 <h2 id="editing-a-test">Editing a Test<a class="headerlink" href="#editing-a-test" title="Permanent link">⚓</a></h2>
-<p>See (test-editing)</p>
+<p>After saving a test, a user may want to edit a test such as adding a time delay, or deleting a step. For more information see <a href="./test-editing">Test editing</a></p>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">⚓</a></h2>
 <h3 id="infinite-loading-screen">Infinite Loading Screen<a class="headerlink" href="#infinite-loading-screen" title="Permanent link">⚓</a></h3>
+<h4 id="get-a-screenshot">Get a screenshot<a class="headerlink" href="#get-a-screenshot" title="Permanent link">⚓</a></h4>
 <p>In some cases, the recorder may fail to start properly when connecting to a device. If this occurs, you will be presented with an error message, following which the loading screen will continue to load infinitely. This usually happens as a result of a desynchronization between the device and ADB, the Android Debug Bridge, resulting in ADB classifying the device as "offline". If this happens, try the following steps:</p>
 <ol>
 <li>Close the recorder.</li>
 <li>Unplug the device.</li>
-<li>Disable USB debugging in the devices settings.</li>
+<li>Disable USB debugging in the devices settings (<a href="./android">Click here to know how</a>). </li>
 <li>Re-enable USB debugging.</li>
 <li>Plug the device back in.</li>
 <li>Start the recorder again.</li>
