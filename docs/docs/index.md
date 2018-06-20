@@ -1,8 +1,8 @@
 # What is MoQuality?
 
-MoQuality provides automated app testing services for native Android and iOS apps.
+MoQuality provides an automated testing service for mobile apps. It works with native and web apps on Android and iOS.
 
-The best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.
+The best way to start using MoQuality is by creating an account on our [website](https://app.moquality.com). Then simply upload your app, and use use our test recorder to create tests. MoQuality will run these tests across multiple devices and help you maintain them by adapting the tests each time your app changes.
 
 * [Getting Started with Android](getting-started/android)
 * [Getting Started with iOS](getting-started/ios)
