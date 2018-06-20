@@ -1,6 +1,6 @@
 # Getting Started with the Recorder
 
-The MoQuality test recorder provides functionality for recording test cases for mobile apps, as well as for both replaying test cases on a local device and editing them. In addition, it offers useful supplementary functionality, such as the ability to automatically download and install the app being recorded on a new device.
+The MoQuality test recorder provides functionality for recording test cases for mobile apps, as well as for both replaying test cases on a local device and editing them. In addition, it offers useful supplementary functionality, such as the ability to automatically download and install the app  on a new device.
 
 For a full overview of the recorder's functionality, see [the Recorder Feature List](features).
 
@@ -24,7 +24,7 @@ Setup differs rather significantly between Android and iOS. Please consult the r
     <img src="common/select-device-and-settings.gif" style="max-width:600px;max-height:480px" />
 
 2. Choose device settings.
-3. Optional: Install app.
+3. Install app (for the first time use).
 4. Click "Record".
 5. Perform actions in the app.
 6. Click "Save".
@@ -36,24 +36,25 @@ Setup differs rather significantly between Android and iOS. Please consult the r
 1. Choose a device.
 2. Choose the app that the test was recorded for.
 3. Choose device settings.
-4. Optional: Install app.
+4. Install app (if it is not previously installed).
 5. Switch to the "Tests" tab.
 6. Find the test that you would like to replay and expand it.
 7. Click "Run".
 
 ## Editing a Test
-
-See (test-editing)
+After saving a test, a user may want to edit a test such as adding a time delay, or deleting a step. For more information see [Test editing](test-editing)
 
 ## Troubleshooting
 
 ### Infinite Loading Screen
 
+####Get a screenshot
+
 In some cases, the recorder may fail to start properly when connecting to a device. If this occurs, you will be presented with an error message, following which the loading screen will continue to load infinitely. This usually happens as a result of a desynchronization between the device and ADB, the Android Debug Bridge, resulting in ADB classifying the device as "offline". If this happens, try the following steps:
 
 1. Close the recorder.
 2. Unplug the device.
-3. Disable USB debugging in the devices settings.
+3. Disable USB debugging in the devices settings ([Click here to know how](android)). 
 4. Re-enable USB debugging.
 5. Plug the device back in.
 6. Start the recorder again.
