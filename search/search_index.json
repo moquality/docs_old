@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "What is MoQuality?\n\u2693\n\n\nMoQuality provides automated app testing services for native Android and iOS apps.\n\n\nThe best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.\n\n\n\n\nGetting Started with Android\n\n\nGetting Started with iOS\n\n\nGetting Started with the Recorder\n\n\nGetting Started with Test Execution and Report Generation\n\n\nQuickstart and Dashboard Overview\n\n\nUploading APK or IPA for iOS\n\n\nScheduling tests\n\n\nAuto generating tests\n\n\nViewing results in the dashboard",
+            "text": "What is MoQuality?\n\u2693\n\n\nMoQuality provides an automated testing service for mobile apps. It works with native and web apps on Android and iOS.\n\n\nThe best way to start using MoQuality is by creating an account on our \nwebsite\n. Then simply upload your app, and use use our test recorder to create tests. MoQuality will run these tests across multiple devices and help you maintain them by adapting the tests each time your app changes.\n\n\n\n\nGetting Started with Android\n\n\nGetting Started with iOS\n\n\nGetting Started with the Recorder\n\n\nGetting Started with Test Execution and Report Generation\n\n\nQuickstart and Dashboard Overview\n\n\nUploading APK or IPA for iOS\n\n\nScheduling tests\n\n\nAuto generating tests\n\n\nViewing results in the dashboard",
             "title": "What is MoQuality?"
         },
         {
             "location": "/#what-is-moquality",
-            "text": "MoQuality provides automated app testing services for native Android and iOS apps.  The best way to start using MoQuality is by creating an account on our website. Then you can use our test recorder to create tests.   Getting Started with Android  Getting Started with iOS  Getting Started with the Recorder  Getting Started with Test Execution and Report Generation  Quickstart and Dashboard Overview  Uploading APK or IPA for iOS  Scheduling tests  Auto generating tests  Viewing results in the dashboard",
+            "text": "MoQuality provides an automated testing service for mobile apps. It works with native and web apps on Android and iOS.  The best way to start using MoQuality is by creating an account on our  website . Then simply upload your app, and use use our test recorder to create tests. MoQuality will run these tests across multiple devices and help you maintain them by adapting the tests each time your app changes.   Getting Started with Android  Getting Started with iOS  Getting Started with the Recorder  Getting Started with Test Execution and Report Generation  Quickstart and Dashboard Overview  Uploading APK or IPA for iOS  Scheduling tests  Auto generating tests  Viewing results in the dashboard",
             "title": "What is MoQuality?"
         },
         {
