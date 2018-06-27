@@ -36,7 +36,7 @@
     
     
       
-        <title>Scheduling Tests - MoQuality Docs</title>
+        <title>Creating an iOS Native App - MoQuality Docs</title>
       
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#scheduling-tests" tabindex="1" class="md-skip">
+      <a href="#building-an-ios-native-app" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +115,7 @@
                 MoQuality Docs
               </span>
               <span class="md-header-nav__topic">
-                Scheduling Tests
+                Creating an iOS Native App
               </span>
             
           
@@ -242,10 +242,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Uploading Apps
@@ -285,11 +287,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../ios-native/" title="Creating an iOS Native App" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Creating an iOS Native App" class="md-nav__link md-nav__link--active">
       Creating an iOS Native App
     </a>
+    
   </li>
 
         
@@ -434,12 +445,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Scheduling Test Runs
@@ -491,49 +500,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Scheduling Tests
-      </label>
-    
-    <a href="./" title="Scheduling Tests" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../scheduling-tests/" title="Scheduling Tests" class="md-nav__link">
       Scheduling Tests
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#use-case" title="Use Case:" class="md-nav__link">
-    Use Case:
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -703,22 +674,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#use-case" title="Use Case:" class="md-nav__link">
-    Use Case:
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -729,49 +684,51 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/moquality/docs/tree/master/docs/docs/getting-started/scheduling-tests.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/moquality/docs/tree/master/docs/docs/getting-started/ios-native.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="scheduling-tests">Scheduling Tests<a class="headerlink" href="#scheduling-tests" title="Permanent link">⚓</a></h1>
-<p>Writing test cases is hard. Using MoQuality test recorder, it is a matter of a few clicks to record a test case. In the background, AI understands the test case and ensures it is playable across multiple devices and is adaptable to future app versions and os updates.</p>
-<p><strong><em> Features: </em></strong></p>
-<ol>
-<li>Perform any action that you will in your app</li>
-<li>Assertions which checks for text or widgets</li>
-<li>Convert demonstrations to tests and run it on any device on our cloud. </li>
-</ol>
-<h4 id="use-case">Use Case:<a class="headerlink" href="#use-case" title="Permanent link">⚓</a></h4>
+                <h1 id="building-an-ios-native-app">Building an iOS Native App<a class="headerlink" href="#building-an-ios-native-app" title="Permanent link">⚓</a></h1>
+<p>This document gives you an overview of how you can upload your iOS app for real device testing through MoQuality. The steps below walk you through the process of exporting your app as an IPA file (iPhone Application).</p>
 <ol>
 <li>
-<p>Using the MoQuality recorder, you have recorded a login test on Nexus 6p that checks whether login functionality works on Nexus 6p or not. Now you want to test
-it on a Samsung Galaxy S8. All you have to do is schedule a test run on Samsung Galaxy S8.</p>
+<p>In your build scheme, choose a "Generic Device", this allows you to Archive for multiple architectures and build without having the device plugged in.</p>
+<p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/597447a5042863033a1b4fa1/images/59a9e309042863033a1c8a25/file-4ZAJu167B3.png" style="width: 368px;"></p>
 </li>
 <li>
-<p>Ensuring that a new version of your app has all the  existing tests  running smoothly.</p>
+<p>After this change, build your app for testing to ensure the binaries are in the right place.</p>
+<p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/597447a5042863033a1b4fa1/images/5a7392d40428634376cfbae7/file-3Zxqa1GouU.png" style="width: 238px;"></p>
 </li>
 <li>
-<p>Ensuring that a your app has all the  existing tests  running smoothly
-on a new version of android/iOS.</p>
+<p>Build an <em>Archive</em> for your project by selecting <em>Product &gt; Archive</em>.</p>
+<p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/597447a5042863033a1b4fa1/images/5a73920a2c7d3a4a4198b966/file-Vo1LZXeXW1.png" style="width: 187px;"></p>
+</li>
+<li>
+<p>Navigate to the <em>Archives organizer</em> (Go to the Window &gt; Organizer) to export the app IPA</p>
+<p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/597447a5042863033a1b4fa1/images/59a9e404042863033a1c8a2f/file-qs8QefyNiY.png" style="background-color: initial; width: 467px;"></p>
+</li>
+<li>
+<p>On the method of distribution screen, select <em>Ad Hoc Distribution</em>.</p>
+<p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/597447a5042863033a1b4fa1/images/59d4690c042863379ddc6199/file-cKWAZJ7gzb.png" style="width: 481px;"></p>
+</li>
+<li>
+<p>Follow the later prompts to login to your Apple account, if necessary.</p>
+</li>
+<li>
+<p>On the Ad hoc distribution screen, make sure to select <em>App Thinning</em> to <strong>None</strong>.</p>
+<p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/597447a5042863033a1b4fa1/images/59d469af042863379ddc619f/file-rXHn3kqgtr.png" style="width: 470px;"></p>
+</li>
+<li>
+<p>Select <em>Automatically manage </em>signing<em>,</em> unless you would like to manually create/select the provisioning profiles.</p>
+<p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/597447a5042863033a1b4fa1/images/59d469c7042863379ddc61a0/file-Pw99iFEsvy.png" style="width: 472px;"></p>
+</li>
+<li>
+<p>On the final screen, select Export and choose the path for the destination folder.</p>
+<p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/597447a5042863033a1b4fa1/images/59d46d202c7d3a40f0ed2b61/file-K4oVNyqbLY.png" style="width: 470px;"></p>
+</li>
+<li>
+<p>In this folder you will find the IPA file that you need to upload to your MoQuality account for testing.</p>
 </li>
 </ol>
-<p>Before a user is able to schedule tests runs on devices, he has to create test cases uses  MoQuality Recorder, select devices to run on, create various test suite. </p>
-<ol>
-<li><a href="../getting-started/upload-app">Upload an app</a></li>
-<li><a href="../getting-started/recorder-link">Create test cases using Recorder</a></li>
-<li><a href="../getting-started/view-tests">View Recorded Tests</a></li>
-<li><a href="../getting-started/test-suite">Create test suites</a></li>
-<li><a href="../getting-started/devices">Create device group</a></li>
-</ol>
-<p><strong><em> Note: </em></strong>
-The test cases you create adapt to every version of the app you upload. So the test, test suites, and device groups you create show up for every new version. Only the overview page keeps changing because the test report runs on a particular version.</p>
-<h1 id="executing-tests">Executing Tests<a class="headerlink" href="#executing-tests" title="Permanent link">⚓</a></h1>
-<p>You can reach the Test Reports  from the Dashboard by clicking Overview. 
-<img src="../dashboard-img/3.png" height="480px" /></p>
-<p>Click on Run Tests, then the following window would pop-up. Enter the name of the report, 
-select a device group, and select tests/suites you want to run on other devices.</p>
-<p><img src="../dashboard-img/7.png" height="400px" /></p>
-<h1 id="viewing-results">Viewing results<a class="headerlink" href="#viewing-results" title="Permanent link">⚓</a></h1>
-<p>To view results and reports of the test runs, visit  <a href="../getting-started/view-results">View Results</a></p>
                 
                   
                 
@@ -792,7 +749,7 @@ select a device group, and select tests/suites you want to run on other devices.
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../devices/" title="Creating Device Groups" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../ios-sim/" title="Creating an iOS Simulator App" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -801,19 +758,19 @@ select a device group, and select tests/suites you want to run on other devices.
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Creating Device Groups
+                Creating an iOS Simulator App
               </span>
             </div>
           </a>
         
         
-          <a href="../pushkar/" title="Executing Tests" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../upload-app/" title="Upload App" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Executing Tests
+                Upload App
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

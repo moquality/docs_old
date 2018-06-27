@@ -36,7 +36,7 @@
     
     
       
-        <title>Scheduling Tests - MoQuality Docs</title>
+        <title>Creating an iOS Simulator App - MoQuality Docs</title>
       
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#scheduling-tests" tabindex="1" class="md-skip">
+      <a href="#building-an-ios-simulator-app" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +115,7 @@
                 MoQuality Docs
               </span>
               <span class="md-header-nav__topic">
-                Scheduling Tests
+                Creating an iOS Simulator App
               </span>
             
           
@@ -242,10 +242,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Uploading Apps
@@ -273,11 +275,63 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../ios-sim/" title="Creating an iOS Simulator App" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Creating an iOS Simulator App
+      </label>
+    
+    <a href="./" title="Creating an iOS Simulator App" class="md-nav__link md-nav__link--active">
       Creating an iOS Simulator App
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ios-simulator-app" title="iOS Simulator App" class="md-nav__link">
+    iOS Simulator App
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xcode-workflow" title="XCode Workflow" class="md-nav__link">
+    XCode Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cli-workflow" title="CLI Workflow" class="md-nav__link">
+    CLI Workflow
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -434,12 +488,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Scheduling Test Runs
@@ -491,49 +543,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Scheduling Tests
-      </label>
-    
-    <a href="./" title="Scheduling Tests" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../scheduling-tests/" title="Scheduling Tests" class="md-nav__link">
       Scheduling Tests
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#use-case" title="Use Case:" class="md-nav__link">
-    Use Case:
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -707,8 +721,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-case" title="Use Case:" class="md-nav__link">
-    Use Case:
+  <a href="#ios-simulator-app" title="iOS Simulator App" class="md-nav__link">
+    iOS Simulator App
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xcode-workflow" title="XCode Workflow" class="md-nav__link">
+    XCode Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cli-workflow" title="CLI Workflow" class="md-nav__link">
+    CLI Workflow
   </a>
   
 </li>
@@ -729,49 +757,42 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/moquality/docs/tree/master/docs/docs/getting-started/scheduling-tests.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/moquality/docs/tree/master/docs/docs/getting-started/ios-sim.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="scheduling-tests">Scheduling Tests<a class="headerlink" href="#scheduling-tests" title="Permanent link">⚓</a></h1>
-<p>Writing test cases is hard. Using MoQuality test recorder, it is a matter of a few clicks to record a test case. In the background, AI understands the test case and ensures it is playable across multiple devices and is adaptable to future app versions and os updates.</p>
-<p><strong><em> Features: </em></strong></p>
-<ol>
-<li>Perform any action that you will in your app</li>
-<li>Assertions which checks for text or widgets</li>
-<li>Convert demonstrations to tests and run it on any device on our cloud. </li>
-</ol>
-<h4 id="use-case">Use Case:<a class="headerlink" href="#use-case" title="Permanent link">⚓</a></h4>
+                <h1 id="building-an-ios-simulator-app">Building an iOS Simulator App<a class="headerlink" href="#building-an-ios-simulator-app" title="Permanent link">⚓</a></h1>
+<p>We test iOS simulator apps and native apps.</p>
+<h2 id="ios-simulator-app">iOS Simulator App<a class="headerlink" href="#ios-simulator-app" title="Permanent link">⚓</a></h2>
+<p>Although it is strongly recommended to test an app on real devices, some developers might want to quickly test their apps on a simulator. Below are the steps you can follow to build your iOS app to run on the iOS Simulator through XCode and the command-line.</p>
+<h2 id="xcode-workflow">XCode Workflow<a class="headerlink" href="#xcode-workflow" title="Permanent link">⚓</a></h2>
 <ol>
 <li>
-<p>Using the MoQuality recorder, you have recorded a login test on Nexus 6p that checks whether login functionality works on Nexus 6p or not. Now you want to test
-it on a Samsung Galaxy S8. All you have to do is schedule a test run on Samsung Galaxy S8.</p>
+<p>Select a iOS simulator target for the project inside XCode.</p>
+<p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/597447a5042863033a1b4fa1/images/5a71dda50428634376cfaba1/file-qcitH9H5eG.png"></p>
 </li>
 <li>
-<p>Ensuring that a new version of your app has all the  existing tests  running smoothly.</p>
+<p>Select the .app file under Products and choose to "Show in Finder" to get the file.</p>
+<p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/597447a5042863033a1b4fa1/images/5a71ded50428634376cfabb3/file-rpnM91aLEn.png"></p>
+<p>Alternately, you can also navigate to the output folder, which should be located at <code>~/Library/Developer/Xcode/DerivedData/&lt;project&gt;/Build/Products/&lt;device&gt;</code></p>
 </li>
 <li>
-<p>Ensuring that a your app has all the  existing tests  running smoothly
-on a new version of android/iOS.</p>
+<p>Compress the .app folder to create an archived zip file.
+    <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/597447a5042863033a1b4fa1/images/5a71e6da2c7d3a4a4198aaf8/file-vXBRsoCDIm.png"></p>
+<p>You can now upload this zip file to MoQuality for recording tests.</p>
 </li>
 </ol>
-<p>Before a user is able to schedule tests runs on devices, he has to create test cases uses  MoQuality Recorder, select devices to run on, create various test suite. </p>
-<ol>
-<li><a href="../getting-started/upload-app">Upload an app</a></li>
-<li><a href="../getting-started/recorder-link">Create test cases using Recorder</a></li>
-<li><a href="../getting-started/view-tests">View Recorded Tests</a></li>
-<li><a href="../getting-started/test-suite">Create test suites</a></li>
-<li><a href="../getting-started/devices">Create device group</a></li>
-</ol>
-<p><strong><em> Note: </em></strong>
-The test cases you create adapt to every version of the app you upload. So the test, test suites, and device groups you create show up for every new version. Only the overview page keeps changing because the test report runs on a particular version.</p>
-<h1 id="executing-tests">Executing Tests<a class="headerlink" href="#executing-tests" title="Permanent link">⚓</a></h1>
-<p>You can reach the Test Reports  from the Dashboard by clicking Overview. 
-<img src="../dashboard-img/3.png" height="480px" /></p>
-<p>Click on Run Tests, then the following window would pop-up. Enter the name of the report, 
-select a device group, and select tests/suites you want to run on other devices.</p>
-<p><img src="../dashboard-img/7.png" height="400px" /></p>
-<h1 id="viewing-results">Viewing results<a class="headerlink" href="#viewing-results" title="Permanent link">⚓</a></h1>
-<p>To view results and reports of the test runs, visit  <a href="../getting-started/view-results">View Results</a></p>
+<h2 id="cli-workflow">CLI Workflow<a class="headerlink" href="#cli-workflow" title="Permanent link">⚓</a></h2>
+<p>Go into the directory containing your XCode project and use xcodebuild to build the app.</p>
+<div class="codehilite"><pre><span></span>xcodebuild -sdk iphonesimulator -configuration Debug
+</pre></div>
+
+
+<p>Then zip the .app bundle in <code>build/Debug-iphonesimulator</code></p>
+<div class="codehilite"><pre><span></span>zip -r UIKitCatalog.zip UIKitCatalog.app
+</pre></div>
+
+
+<p>You can now upload this zip file to MoQuality for recording tests.</p>
                 
                   
                 
@@ -792,7 +813,7 @@ select a device group, and select tests/suites you want to run on other devices.
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../devices/" title="Creating Device Groups" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../android/" title="Creating an Android APK" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -801,19 +822,19 @@ select a device group, and select tests/suites you want to run on other devices.
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Creating Device Groups
+                Creating an Android APK
               </span>
             </div>
           </a>
         
         
-          <a href="../pushkar/" title="Executing Tests" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../ios-native/" title="Creating an iOS Native App" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Executing Tests
+                Creating an iOS Native App
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
