@@ -16,7 +16,8 @@ pages:
 - "What is MoQuality?": index.md
 - Uploading Apps:
   - Creating an Android APK: getting-started/android.md
-  - Creating an iOS App: getting-started/ios.md
+  - Creating an iOS Simulator App: getting-started/ios-sim.md
+  - Creating an iOS Native App: getting-started/ios-native.md
   - Upload App: getting-started/upload-app.md
 - Test Recorder:
   - Getting Started: recorder/index.md

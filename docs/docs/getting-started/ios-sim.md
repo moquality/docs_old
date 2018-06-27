@@ -1,12 +1,12 @@
-## Building an iOS App
+# Building an iOS Simulator App
 
 We test iOS simulator apps and native apps.
 
-### iOS Simulator App
+## iOS Simulator App
 
 Although it is strongly recommended to test an app on real devices, some developers might want to quickly test their apps on a simulator. Below are the steps you can follow to build your iOS app to run on the iOS Simulator through XCode and the command-line.
 
-### XCode Workflow
+## XCode Workflow
 
 1. Select a iOS simulator target for the project inside XCode.
 
@@ -23,7 +23,7 @@ Although it is strongly recommended to test an app on real devices, some develop
 
 	 You can now upload this zip file to MoQuality for recording tests.
 
-### CLI Workflow
+## CLI Workflow
 Go into the directory containing your XCode project and use xcodebuild to build the app.
 
 ```
