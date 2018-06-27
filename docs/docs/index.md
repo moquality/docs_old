@@ -4,7 +4,7 @@ MoQuality provides an automated testing service for mobile apps. It works with n
 
 The best way to start using MoQuality is by creating an account on our [website](https://app.moquality.com). Then simply upload your app, and use use our test recorder to create tests. MoQuality will run these tests across multiple devices and help you maintain them by adapting the tests each time your app changes.
 
-* [Uploading APK or IPA for iOS](getting-started/upload-app)
+* [Uploading your mobile app to MoQuality](getting-started/upload-app)
 * [Getting Started with the Recorder](recorder)
 * [Scheduling tests](getting-started/scheduling-tests)
 * [Auto generating tests](getting-started/auto-test)
