@@ -1,113 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
+    
+        
     <url>
      <loc>/getting-started/pushkar/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/getting-started/pushkar/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/getting-started/upload-app/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
      <loc>/recorder/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/recorder/android/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/recorder/ios/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/recorder/features/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/recorder/test-editing/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
      <loc>/getting-started/auto-test/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
      <loc>/getting-started/view-tests/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/getting-started/test-suite/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/getting-started/devices/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/getting-started/scheduling-tests/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/getting-started/pushkar/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
      <loc>/getting-started/view-results/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
      <loc>/integration-ci-cd/mq-cli/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/integration-ci-cd/fastlane/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/integration-ci-cd/bitrise/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/integration-ci-cd/circleci/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
      <loc>/integration-ci-cd/dockerfile/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
     <url>
      <loc>/faq/</loc>
-     <lastmod>2018-06-18</lastmod>
+     <lastmod>2018-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
 </urlset>

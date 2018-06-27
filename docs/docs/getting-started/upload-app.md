@@ -1,6 +1,6 @@
 # Uploading an App
 
-1. Navigate to [app.moquality.com](https://app.moquality.com).
+1. Go to [app.moquality.com](https://app.moquality.com).
 
 2. Click "ADD APP".
 

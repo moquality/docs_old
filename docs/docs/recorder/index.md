@@ -6,11 +6,9 @@ For a full overview of the recorder's functionality, see [the Recorder Feature L
 
 ## Downloading the Recorder
 
-* [Windows](https://storage.googleapis.com/moquality/releases/prod-recorder/latest/recorder-win32-x64.zip)
-* [Mac OS X](https://storage.googleapis.com/moquality/releases/prod-recorder/latest/recorder-darwin-x64.tar.gz)
-* Linux (Coming Soon)
+Download the recorder from [app.moquality.com/download](https://app.moquality.com/download).
 
-## Setup
+## Setup the Device
 
 Setup differs rather significantly between Android and iOS. Please consult the relevant page for the device you wish to record test cases with.
 

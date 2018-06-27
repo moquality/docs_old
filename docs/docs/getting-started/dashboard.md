@@ -2,7 +2,7 @@
 
 
 1.  *** Upload an app ***
-Upload an app at (http://app.moquality.com)
+Upload an app on (http://app.moquality.com)
 
 2. *** Create test cases using Recorder  (only for Manual testing?): *** 
 To create test cases, go the Tests tab and click on + in the Tests module to add a test. You can download the recorder for your machine. Login to the recorder and record a test. Read more about recording test cases here.
@@ -31,7 +31,7 @@ The test cases you create adapt to every version of the app you upload. So the t
 # Detailed Dashboard Overview
 
 ## Upload an App
-1. Go to the MoQuality URL (http://app.moquality.com) and click on the Add APP box.
+1. Go to [app.moquality.com](http://app.moquality.com) and click on the Add APP box.
 <img src="../dashboard/1.png" height="360px" />
 
 2. Upload an app.
