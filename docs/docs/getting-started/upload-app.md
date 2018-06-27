@@ -14,5 +14,5 @@
 
 After uploading an app, a user can either
 
-* [Record tests](getting-started/recorder-link) using the MoQuality Test Recorder and [schedule runs](getting-started/scheduling-tests) of recorded tests to run on multiple devices.
-* Request an [auto-generation of tests](getting-started/auto-test).
+* [Record tests](../recorder) using the MoQuality Test Recorder and [schedule runs](scheduling-tests) of recorded tests to run on multiple devices.
+* Request an [auto-generation of tests](auto-test).

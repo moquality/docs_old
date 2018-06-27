@@ -6,7 +6,6 @@ The best way to start using MoQuality is by creating an account on our [website]
 
 * [Uploading APK or IPA for iOS](getting-started/upload-app)
 * [Getting Started with the Recorder](recorder)
-* [Getting Started with Test Execution and Report Generation](getting-started/testreport)
 * [Scheduling tests](getting-started/scheduling-tests)
 * [Auto generating tests](getting-started/auto-test)
 * [Viewing results in the dashboard](getting-started/view-results)

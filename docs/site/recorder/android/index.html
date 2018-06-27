@@ -263,7 +263,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/pushkar/" title="Creating an Android APK" class="md-nav__link">
+    <a href="../../getting-started/android/" title="Creating an Android APK" class="md-nav__link">
       Creating an Android APK
     </a>
   </li>
@@ -275,8 +275,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/pushkar/" title="Creating an iOS App" class="md-nav__link">
-      Creating an iOS App
+    <a href="../../getting-started/ios-sim/" title="Creating an iOS Simulator App" class="md-nav__link">
+      Creating an iOS Simulator App
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/ios-native/" title="Creating an iOS Native App" class="md-nav__link">
+      Creating an iOS Native App
     </a>
   </li>
 
@@ -364,8 +376,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" title="Getting Started" class="md-nav__link">
-    Getting Started
+  <a href="#enable-usb-debugging" title="Enable USB Debugging" class="md-nav__link">
+    Enable USB Debugging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-app" title="Upload App" class="md-nav__link">
+    Upload App
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launch-recorder" title="Launch Recorder" class="md-nav__link">
+    Launch Recorder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replay-tests" title="Replay Tests" class="md-nav__link">
+    Replay Tests
   </a>
   
 </li>
@@ -702,8 +735,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" title="Getting Started" class="md-nav__link">
-    Getting Started
+  <a href="#enable-usb-debugging" title="Enable USB Debugging" class="md-nav__link">
+    Enable USB Debugging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-app" title="Upload App" class="md-nav__link">
+    Upload App
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launch-recorder" title="Launch Recorder" class="md-nav__link">
+    Launch Recorder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replay-tests" title="Replay Tests" class="md-nav__link">
+    Replay Tests
   </a>
   
 </li>
@@ -735,32 +789,37 @@
                 
                 
                 <h1 id="recorder-setup-for-android-devices">Recorder Setup for Android Devices<a class="headerlink" href="#recorder-setup-for-android-devices" title="Permanent link">⚓</a></h1>
-<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">⚓</a></h2>
+<h2 id="enable-usb-debugging">Enable USB Debugging<a class="headerlink" href="#enable-usb-debugging" title="Permanent link">⚓</a></h2>
 <ol>
 <li>
-<p>Download the recorder from <strong>app.moquality.com &gt; Apps &gt; Download Test Recorder</strong></p>
-<p><img src="../android/download_test_recorder.png" style="max-width:600px;max-height:480px" /></p>
-</li>
-<li>
-<p>Select a device you would like to test with and <strong>turn on USB Debugging</strong>, which can be found inside of <strong>Settings &gt; Developer Options &gt; USB Debugging</strong> and connect your device to your computer. <strong>Press 'Always Allow"</strong> on the popup on the device.</p>
+<p>Select a device you would like to test with and then <strong>turn on USB Debugging</strong>, which can be found inside of <strong>Settings &gt; Developer Options &gt; USB Debugging</strong> and connect your device to your computer. <strong>Press 'Always Allow"</strong> on the popup on the device.</p>
 <p><img src="../android/usb_debugging.png" style="max-width:600px;max-height:480px" /></p>
 </li>
+</ol>
+<h2 id="upload-app">Upload App<a class="headerlink" href="#upload-app" title="Permanent link">⚓</a></h2>
+<ol>
 <li>
-<p>Make sure to have <strong>uploaded a version of your app to test onto www.app.moquality.com</strong> and have filled out the package name and activity name.</p>
+<p>Make sure to have uploaded a version of your app to test on <a href="https://app.moquality.com">app.moquality.com</a>. We automatically will find the <code>package name</code> and <code>activity name</code> for the app. You can verify it under the Settings tab.</p>
 <p><img src="../android/package_name.png" style="max-width:600px;max-height:480px" /></p>
 </li>
+</ol>
+<h2 id="launch-recorder">Launch Recorder<a class="headerlink" href="#launch-recorder" title="Permanent link">⚓</a></h2>
+<ol>
 <li>
-<p>Launch the recorder with your connected device and <strong>log in with either your API key or username and password</strong>. Select your device and app from the drop down, as well as your screen size and keyboard preference (we recommend setting it to no-keyboard).</p>
+<p>Launch the recorder with your connected device and log in with either your <em>API key</em> or <em>username/password</em>. Select your device and app from the drop down, as well as your screen size and keyboard preference. We recommend setting it to no-keyboard, tests are more reliable without flaky keyboard. The recorder itself has a text input feature which will allow you to input text into text boxes.</p>
 <p><img src="../android/login.gif" style="max-width:600px;max-height:480px" /></p>
 </li>
 <li>
-<p><strong>Press Record</strong> (on top left) to begin  recording your test on your device. Interact with the screen projection you see in front of you. You <strong>MUST use the bottom interface buttons</strong> for actions instead of the hardware buttons on your device. Hardware buttons include back button, home screen button and show apps button. Similarly, if your device has software buttons, <strong>do not click them</strong>. Using the software buttons will cause mistakes in the recording.</p>
+<p><strong>Press Record</strong> (on top left) to begin  recording your test on your device. Interact with the screen projection you see in front of you. You <strong>MUST use the bottom interface buttons</strong> for actions instead of the hardware buttons on your device. Hardware buttons include back button, home screen button and show apps button. Similarly, if your device has software buttons, do not click them. We assume that software buttoms will never be a part of a test case and discard them.</p>
 <p><img src="../android/recording_demo.gif" style="max-width:600px;max-height:480px" /></p>
 </li>
 <li>
 <p>When you are done recording a test, <strong>press SAVE and name your test</strong>. You can then view the test in the app.moquality.com website.</p>
 <p><img src="../android/save_test.gif" style="max-width:600px;max-height:480px" /></p>
 </li>
+</ol>
+<h2 id="replay-tests">Replay Tests<a class="headerlink" href="#replay-tests" title="Permanent link">⚓</a></h2>
+<ol>
 <li>
 <p>To <strong>confirm the test was valid, move to the Tests Tab and try to run the test</strong>. If you are unable to run the test, you may have to re-record it, or head down to the FAQ to see possible solutions.</p>
 <p><img src="../android/test_replay.gif" style="max-width:600px;max-height:480px" /></p>

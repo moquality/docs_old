@@ -73,6 +73,7 @@ Yes, Google Play Services is installed on devices that support it. The services 
 
 ### I didn't find an answer for my question?
 Please contact us at any of our following support channels:
-- Intercom chat on our website 
-- Slack chat at http://slack.moquality.com
-- Email at support@moquality.com
+
+- Intercom chat on our website.
+- Slack with us at [slack.moquality.com](http://slack.moquality.com).
+- Email at [support@moquality.com](mailto:support@moquality.com).

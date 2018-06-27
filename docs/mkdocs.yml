@@ -32,7 +32,7 @@ pages:
   - Creating Test Suites: getting-started/test-suite.md
   - Creating Device Groups: getting-started/devices.md
   - Scheduling Tests : getting-started/scheduling-tests.md
-  - Executing Tests: getting-started/pushkar.md
+  # - Executing Tests: getting-started/pushkar.md
 - View Test Reports:
   - Dashboard: getting-started/view-results.md
 - CI/CD Integrations:

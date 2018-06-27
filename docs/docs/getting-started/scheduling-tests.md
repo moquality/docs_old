@@ -5,13 +5,13 @@
 Writing test cases is hard. Using MoQuality test recorder, it is a matter of a few clicks to record a test case. In the background, AI understands the test case and ensures it is playable across multiple devices and is adaptable to future app versions and os updates.
 
 
-*** Features: ***
+## Features
 
 1. Perform any action that you will in your app
 2. Assertions which checks for text or widgets
 3. Convert demonstrations to tests and run it on any device on our cloud. 
 
-#### Use Case:
+## Use Case
 1. Using the MoQuality recorder, you have recorded a login test on Nexus 6p that checks whether login functionality works on Nexus 6p or not. Now you want to test
 it on a Samsung Galaxy S8. All you have to do is schedule a test run on Samsung Galaxy S8.
 
@@ -34,12 +34,7 @@ Before a user is able to schedule tests runs on devices, he has to create test c
 The test cases you create adapt to every version of the app you upload. So the test, test suites, and device groups you create show up for every new version. Only the overview page keeps changing because the test report runs on a particular version.
 
 
-
-
-
-
-
-#Executing Tests 
+## Executing Tests 
 
 You can reach the Test Reports  from the Dashboard by clicking Overview. 
 <img src="../dashboard-img/3.png" height="480px" />
@@ -49,8 +44,6 @@ select a device group, and select tests/suites you want to run on other devices.
 
 <img src="../dashboard-img/7.png" height="400px" />
 
+## Viewing results
 
-
-#Viewing results
-
-To view results and reports of the test runs, visit  [View Results](getting-started/view-results)
+To view results and reports of the test runs, visit  [View Results](view-results)
