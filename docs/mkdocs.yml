@@ -15,8 +15,8 @@ markdown_extensions:
 pages:
 - "What is MoQuality?": index.md
 - Uploading Apps:
-  - Creating an Android APK: getting-started/pushkar.md
-  - Creating an iOS App: getting-started/pushkar.md
+  - Creating an Android APK: getting-started/android.md
+  - Creating an iOS App: getting-started/ios.md
   - Upload App: getting-started/upload-app.md
 - Test Recorder:
   - Getting Started: recorder/index.md
