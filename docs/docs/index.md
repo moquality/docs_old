@@ -1,6 +1,6 @@
 # What is MoQuality?
 
-MoQuality is an AI based automated testing platform for mobile apps. It works with native and hybrid on Android and iOS.
+MoQuality is an AI based automated testing platform for native android and iOS mobile apps. 
 
 The best way to start using MoQuality is by creating an account on our [website](https://app.moquality.com). Then simply upload your app, and use use our test recorder to create tests. MoQuality will run these tests across multiple devices and help you maintain them by adapting the tests each time your app changes.
 
