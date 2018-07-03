@@ -337,22 +337,22 @@
         },
         {
             "location": "/getting-started/test-suite/",
-            "text": "Test Suites\n\u2693\n\n\nA \ntest\n is a \nseries of actions\n that should be performed to cover a use case or check an assertion. All of our tests start after clearing the cached data related to the app.\n\n\nA \ntest suite\n is a \nseries of tests\n that should be run in an order. A test report is a test of these test suites. A test is created using the MoQuality Recorder. After creating a few tests, you can create test suites. \n\n\nUse case\n\u2693\n\n\nA music app may have several tests related to playlists, therefore a playlist test suite would contain all the test cases related to playlist. Likewise a test suite would contain  tests for a music player.\n\n\nCreating a test suite\n\u2693\n\n\nNavigate to the \nSuites\n tab and click on the Create Test Suite.\n\n\n\n\nNow name the Test Suite and select the tests that are part of it. You can create multiple test suites this way.",
+            "text": "Test Suites\n\u2693\n\n\nA \ntest suite\n is an \nordered sequence of tests\n. After recording the test cases through the recorder, you can create a Test Suite and schedule it to run on a \ndevie group\n. \n\n\nTest Suite Example\n\u2693\n\n\nA music app may have several tests related to playlists, therefore a playlist test suite would contain all the test cases related to playlist. Likewise a test suite would contain tests for a music player.\n\n\nCreating a test suite\n\u2693\n\n\nNavigate to the \nSuites\n tab and click on the Create Test Suite.\n\n\n\n\nNow name the Test Suite and select the tests that you want to run. You can create multiple test suites this way.",
             "title": "Creating Test Suites"
         },
         {
             "location": "/getting-started/test-suite/#test-suites",
-            "text": "A  test  is a  series of actions  that should be performed to cover a use case or check an assertion. All of our tests start after clearing the cached data related to the app.  A  test suite  is a  series of tests  that should be run in an order. A test report is a test of these test suites. A test is created using the MoQuality Recorder. After creating a few tests, you can create test suites.",
+            "text": "A  test suite  is an  ordered sequence of tests . After recording the test cases through the recorder, you can create a Test Suite and schedule it to run on a  devie group .",
             "title": "Test Suites"
         },
         {
-            "location": "/getting-started/test-suite/#use-case",
-            "text": "A music app may have several tests related to playlists, therefore a playlist test suite would contain all the test cases related to playlist. Likewise a test suite would contain  tests for a music player.",
-            "title": "Use case"
+            "location": "/getting-started/test-suite/#test-suite-example",
+            "text": "A music app may have several tests related to playlists, therefore a playlist test suite would contain all the test cases related to playlist. Likewise a test suite would contain tests for a music player.",
+            "title": "Test Suite Example"
         },
         {
             "location": "/getting-started/test-suite/#creating-a-test-suite",
-            "text": "Navigate to the  Suites  tab and click on the Create Test Suite.   Now name the Test Suite and select the tests that are part of it. You can create multiple test suites this way.",
+            "text": "Navigate to the  Suites  tab and click on the Create Test Suite.   Now name the Test Suite and select the tests that you want to run. You can create multiple test suites this way.",
             "title": "Creating a test suite"
         },
         {
@@ -367,27 +367,17 @@
         },
         {
             "location": "/getting-started/scheduling-tests/",
-            "text": "Scheduling Tests\n\u2693\n\n\nWriting test cases is hard. Using MoQuality test recorder, it is a matter of a few clicks to record a test case. In the background, AI understands the test case and ensures it is playable across multiple devices and is adaptable to future app versions and os updates.\n\n\nFeatures\n\u2693\n\n\n\n\nPerform any action that you will in your app\n\n\nAssertions which checks for text or widgets\n\n\nConvert demonstrations to tests and run it on any device on our cloud. \n\n\n\n\nUse Case\n\u2693\n\n\n\n\n\n\nUsing the MoQuality recorder, you have recorded a login test on Nexus 6p that checks whether login functionality works on Nexus 6p or not. Now you want to test\nit on a Samsung Galaxy S8. All you have to do is schedule a test run on Samsung Galaxy S8.\n\n\n\n\n\n\nEnsuring that a new version of your app has all the  existing tests  running smoothly.\n\n\n\n\n\n\nEnsuring that a your app has all the  existing tests  running smoothly\non a new version of android/iOS.\n\n\n\n\n\n\nBefore a user is able to schedule tests runs on devices, he has to create test cases uses  MoQuality Recorder, select devices to run on, create various test suite. \n\n\n\n\nUpload an app\n\n\nCreate test cases using Recorder\n\n\nView Recorded Tests\n\n\nCreate test suites\n\n\nCreate device group\n\n\n\n\n Note: \n\nThe test cases you create adapt to every version of the app you upload. So the test, test suites, and device groups you create show up for every new version. Only the overview page keeps changing because the test report runs on a particular version.\n\n\nExecuting Tests\n\u2693\n\n\nYou can reach the Test Reports  from the Dashboard by clicking Overview. \n\n\n\nClick on Run Tests, then the following window would pop-up. Enter the name of the report, \nselect a device group, and select tests/suites you want to run on other devices.\n\n\n\n\nViewing results\n\u2693\n\n\nTo view results and reports of the test runs, visit  \nView Results",
+            "text": "Scheduling Tests\n\u2693\n\n\nYou will be able to schedule test runs on devices, after you have created tests using MoQuality Recorder, created Test Suites and device groups. \n\n\n Note: \n\nThe test cases you create adapt to every version of the app you upload. So the test, test suites, and device groups you create show up for every new version. Only the overview page keeps changing because the test report runs on a particular version.\n\n\nExecuting Tests\n\u2693\n\n\nClick Overview tab and scroll down to Test Reports section.\n\n\n\n\nClick on Run Tests, then the following window would pop-up. Enter the name of the report, \nselect a device group, and select tests/suites you want to run on other devices.\n\n\n\n\nViewing results\n\u2693\n\n\nTo view results and reports of the test runs, visit  \nView Results",
             "title": "Scheduling Tests"
         },
         {
             "location": "/getting-started/scheduling-tests/#scheduling-tests",
-            "text": "Writing test cases is hard. Using MoQuality test recorder, it is a matter of a few clicks to record a test case. In the background, AI understands the test case and ensures it is playable across multiple devices and is adaptable to future app versions and os updates.",
+            "text": "You will be able to schedule test runs on devices, after you have created tests using MoQuality Recorder, created Test Suites and device groups.    Note:  \nThe test cases you create adapt to every version of the app you upload. So the test, test suites, and device groups you create show up for every new version. Only the overview page keeps changing because the test report runs on a particular version.",
             "title": "Scheduling Tests"
         },
         {
-            "location": "/getting-started/scheduling-tests/#features",
-            "text": "Perform any action that you will in your app  Assertions which checks for text or widgets  Convert demonstrations to tests and run it on any device on our cloud.",
-            "title": "Features"
-        },
-        {
-            "location": "/getting-started/scheduling-tests/#use-case",
-            "text": "Using the MoQuality recorder, you have recorded a login test on Nexus 6p that checks whether login functionality works on Nexus 6p or not. Now you want to test\nit on a Samsung Galaxy S8. All you have to do is schedule a test run on Samsung Galaxy S8.    Ensuring that a new version of your app has all the  existing tests  running smoothly.    Ensuring that a your app has all the  existing tests  running smoothly\non a new version of android/iOS.    Before a user is able to schedule tests runs on devices, he has to create test cases uses  MoQuality Recorder, select devices to run on, create various test suite.    Upload an app  Create test cases using Recorder  View Recorded Tests  Create test suites  Create device group    Note:  \nThe test cases you create adapt to every version of the app you upload. So the test, test suites, and device groups you create show up for every new version. Only the overview page keeps changing because the test report runs on a particular version.",
-            "title": "Use Case"
-        },
-        {
             "location": "/getting-started/scheduling-tests/#executing-tests",
-            "text": "You can reach the Test Reports  from the Dashboard by clicking Overview.   Click on Run Tests, then the following window would pop-up. Enter the name of the report, \nselect a device group, and select tests/suites you want to run on other devices.",
+            "text": "Click Overview tab and scroll down to Test Reports section.   Click on Run Tests, then the following window would pop-up. Enter the name of the report, \nselect a device group, and select tests/suites you want to run on other devices.",
             "title": "Executing Tests"
         },
         {
