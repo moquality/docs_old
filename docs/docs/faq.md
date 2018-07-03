@@ -65,16 +65,14 @@ Yes, you can access both front and rear facing device cameras.
 
 No. By default, every device is clean and there is no account data setup.  
 
-However, the test recorder provides the functionality to add webhooks which allows it to communicate with server-side scripts that you may use for account setup. 
+However, the test recorder provides the functionality to add webhooks which allows it to communicate with server-side scripts that you may use for account setup. See [Recorder Features](../recorder/features)
 
 
 ### Android: Is Google Play Services available on cloud devices? Which version is installed?
 
-Yes, Google Play Services is installed on devices that support it. The services are updated as new versions become available.
+Yes, Google Play Services is installed on supported devices. The services are updated as new versions become available.
 
-### I didn't find an answer for my question?
-Please contact us at any of our following support channels:
-
+### If you didn't find answer to your questions, please contact us at any of our following support channels:
 - Intercom chat on our website.
 - Slack with us at [slack.moquality.com](http://slack.moquality.com).
 - Email at [support@moquality.com](mailto:support@moquality.com).
