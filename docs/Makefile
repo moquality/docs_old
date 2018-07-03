@@ -11,7 +11,7 @@ publish:
 	git push origin
 	mkdocs gh-deploy
 	git checkout gh-pages
-	@echo docs.moquality.com >> ../CNAME
+	@echo docs.moquality.com > ../CNAME
 	git add ../CNAME
 	git commit -a -m "Adds CNAME"
 	git push origin gh-pages
