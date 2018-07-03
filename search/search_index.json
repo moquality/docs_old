@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "What is MoQuality?\n\u2693\n\n\nMoQuality provides an automated testing service for mobile apps. It works with native, hybrid and web apps on Android and iOS.\n\n\nThe best way to start using MoQuality is by creating an account on our \nwebsite\n. Then simply upload your app, and use use our test recorder to create tests. MoQuality will run these tests across multiple devices and help you maintain them by adapting the tests each time your app changes.\n\n\n\n\nUploading APK or IPA for iOS\n\n\nGetting Started with the Recorder\n\n\nScheduling tests\n\n\nAuto generating tests\n\n\nViewing results in the dashboard",
+            "text": "What is MoQuality?\n\u2693\n\n\nMoQuality is an AI based automated testing platform for native android and iOS mobile apps. It provides an easier way to record tests and run across multiple devices at once. You can expand your test coverage as the AI explores your app just like humans would do and discover more errors in the process.  \n\n\nGet started in few simple steps:\n\n\n\n\nCreate an account\n\n\nUpload your mobile app\n\n\nDownload the Recorder desktop app and start creating test-cases\n\n\nSchedule test runs on multiple devices\n\n\nGenerate more tests using MoQuality AI\n\n\nView results",
             "title": "What is MoQuality?"
         },
         {
             "location": "/#what-is-moquality",
-            "text": "MoQuality provides an automated testing service for mobile apps. It works with native, hybrid and web apps on Android and iOS.  The best way to start using MoQuality is by creating an account on our  website . Then simply upload your app, and use use our test recorder to create tests. MoQuality will run these tests across multiple devices and help you maintain them by adapting the tests each time your app changes.   Uploading APK or IPA for iOS  Getting Started with the Recorder  Scheduling tests  Auto generating tests  Viewing results in the dashboard",
+            "text": "MoQuality is an AI based automated testing platform for native android and iOS mobile apps. It provides an easier way to record tests and run across multiple devices at once. You can expand your test coverage as the AI explores your app just like humans would do and discover more errors in the process.    Get started in few simple steps:   Create an account  Upload your mobile app  Download the Recorder desktop app and start creating test-cases  Schedule test runs on multiple devices  Generate more tests using MoQuality AI  View results",
             "title": "What is MoQuality?"
         },
         {
@@ -632,7 +632,7 @@
         },
         {
             "location": "/faq/",
-            "text": "Frequently Asked Questions\n\u2693\n\n\nTesting\n\u2693\n\n\nWhat types of apps can be tested with MoQuality?\n\u2693\n\n\nMoQuality can be used to test native Android and iOS apps.\n\n\nWhat it the maximum number of apps we can test?\n\u2693\n\n\nYou can upload a total of 100 apps for each account. Note that two versions of the same app counts as two apps towards this total.\n\n\nDo I need to instrument my app or supply source code?\n\u2693\n\n\nNo instrumentation or source code is required to use the built-in tests. Android apps can be submitted as is. iOS apps should be built with \u201ciOS Device\u201d as the target. If they are built with a simulator as the target, select the simulator checkbox while uploading the app.\n\n\nHow do you clean up devices after my testing is completed?\n\u2693\n\n\nAfter test execution completes, we uninstall the app and any data related to the app (cache is deleted).\n\n\nWhile we continue to add additional cleanup steps and improve the cleanup process, it is possible for data to persist between sessions. In case you want to test on a private device, contact us. In some cases you might have to provide sensitive information like login or other security-sensitive details during your automated test sessions. We advise you to create sandbox accounts to perform these tests on your staging environments.\n\n\nDo you modify my app?\n\u2693\n\n\nNo, we don't modify your app. Some iOS apps may require re-signing, but this feature is not currently supported. We recommend uploading a version of your app with debugging symbols enabled.\n\n\nTest Recording and Editing\n\u2693\n\n\nDoes the recorder support both Android and iOS?\n\u2693\n\n\nYes, both Android and iOS, including iOS simulators, are supported.\n\n\nDo I need to additional software on my machine?\n\u2693\n\n\nAndroid does not require any additional software. iOS requires Xcode to be installed and the command-line tools enabled. For details on how to setup a system for use with iOS, see \nRecorder Setup for iOS Devices\n.\n\n\nCan I connect to multiple Android devices from my local machine?\n\u2693\n\n\nYes. The recorder allows you to choose which you would like to use after you have logged in.\n\n\nWhat is the maximum test time allowed?\n\u2693\n\n\nThe maximum time for each test is 5 minutes. If you need a longer timeout, please\u00a0contact us.\n\n\nIs there a way to download the results?\n\u2693\n\n\nWe offer this feature as an extra package. After you enable it, a link appears in our dashboard that enables you to download tests and test reports in JSON format.\n\n\nDevices\n\u2693\n\n\nAre devices able to communicate with other services or systems that are available on the Internet?\n\u2693\n\n\nYes. All devices have internet access through a Wifi connection.\n\n\nCan I make phone calls or send SMS from the devices?\n\u2693\n\n\nNo, devices do not have carrier SIM setup and cannot make phone calls or send SMS messages. Please contact us via our support challels (see end) with your specific usecase.\n\n\nCan I use the device camera?\n\u2693\n\n\nYes, you can use the device cameras, both front and rear facing. Images might be dark or blurry.\n\n\nAndroid: Are there any default accounts (e.g., Google) available on cloud devices?\n\u2693\n\n\nNo, cloud devices should be clean and you cannot rely on any active accounts being present on them. \n\n\nWe do however allow you to add webhooks in the tests recorded through the recorder, which can be used in conjuction with a server side script to partly facilitate co-ordination with account creation and use within tests. Please contact us via our support challels (see end) with your specific usecase.\n\n\nAndroid: Is Google Play Services available on cloud devices? Which version is installed?\n\u2693\n\n\nYes, Google Play Services is installed on devices that support it. The services are updated as new versions become available.\n\n\nI didn't find an answer for my question?\n\u2693\n\n\nPlease contact us at any of our following support channels:\n\n\n\n\nIntercom chat on our website.\n\n\nSlack with us at \nslack.moquality.com\n.\n\n\nEmail at \nsupport@moquality.com\n.",
+            "text": "Frequently Asked Questions\n\u2693\n\n\nTesting\n\u2693\n\n\nWhat types of apps can be tested with MoQuality?\n\u2693\n\n\nMoQuality can be used to test native Android and iOS apps.\n\n\nWhat is the maximum number of apps we can test?\n\u2693\n\n\nYou can upload a total of 100 apps for each account. Note that two versions of the same app count as two apps towards this total.\n\n\nDo I need to instrument my app or supply source code?\n\u2693\n\n\nNo instrumentation or source code is required to use the built-in tests. Android apps can be submitted as .apk files. iOS apps should be built with \u201ciOS Device\u201d as the target. If they are built with a simulator as the target, select the simulator checkbox while uploading the app.\n\n\nHow do you clean up devices after my testing is completed?\n\u2693\n\n\nAfter test execution completes, we uninstall the app and any data related to the app (cache is deleted).\n\n\nWhile we continue to add additional cleanup steps and improve the cleanup process, it is possible for data to persist between sessions. In case you want to test on a private device, contact us. In some cases you might have to provide sensitive information like login or other security-sensitive details during your automated test sessions. We advise you to create sandbox accounts to perform these tests on your staging environments.\n\n\nDo you modify my app?\n\u2693\n\n\nNo, we don't modify your app. Some iOS apps may require re-signing, but this feature is not currently supported. We recommend uploading a version of your app with debugging symbols enabled.\n\n\nTest Recording and Editing\n\u2693\n\n\nDoes the recorder support both Android and iOS?\n\u2693\n\n\nYes, both Android and iOS, including iOS simulators, are supported.\n\n\nDo I need any additional software on my machine?\n\u2693\n\n\nAndroid does not require any additional software. iOS requires Xcode to be installed and the command-line tools enabled. For details on how to setup a system for use with iOS, see \nRecorder Setup for iOS Devices\n.\n\n\nCan I connect to multiple Android devices from my local machine?\n\u2693\n\n\nYes. The recorder allows you to choose which device you would like to use after you have logged in.\n\n\nWhat is the maximum test time allowed?\n\u2693\n\n\nThe maximum time for each test is 5 minutes. If you need a longer timeout, please\u00a0contact us at \nsupport@moquality.com\n\n\nIs there a way to download the results?\n\u2693\n\n\nWe offer this feature as an add-on. After you enable it, a link appears in our dashboard that enables you to download tests and test reports in JSON format.\n\n\nDevices\n\u2693\n\n\nCan the cloud devices communicate with external web-services?\n\u2693\n\n\nYes. All devices have internet access through a Wifi connection.\n\n\nCan I make phone calls or send SMS from the test devices?\n\u2693\n\n\nNo, currently our cloud devices do not have carrier SIM setup and cannot make phone calls or send SMS messages. \n\n\nCan I access the cloud device camera?\n\u2693\n\n\nYes, you can access both front and rear facing device cameras.\n\n\nAndroid: Are there any default accounts (e.g., Google) available on cloud devices?\n\u2693\n\n\nNo. By default, every device is clean and there is no account data setup.  \n\n\nHowever, the test recorder provides the functionality to add webhooks which allows it to communicate with server-side scripts that you may use for account setup. See \nRecorder Features\n\n\nAndroid: Is Google Play Services available on cloud devices? Which version is installed?\n\u2693\n\n\nYes, Google Play Services is installed on supported devices. The services are updated as new versions become available.\n\n\nIf you didn't find answer to your questions, please contact us at any of our following support channels:\n\u2693\n\n\n\n\nIntercom chat on our website.\n\n\nSlack with us at \nslack.moquality.com\n.\n\n\nEmail at \nsupport@moquality.com\n.",
             "title": "FAQ"
         },
         {
@@ -651,13 +651,13 @@
             "title": "What types of apps can be tested with MoQuality?"
         },
         {
-            "location": "/faq/#what-it-the-maximum-number-of-apps-we-can-test",
-            "text": "You can upload a total of 100 apps for each account. Note that two versions of the same app counts as two apps towards this total.",
-            "title": "What it the maximum number of apps we can test?"
+            "location": "/faq/#what-is-the-maximum-number-of-apps-we-can-test",
+            "text": "You can upload a total of 100 apps for each account. Note that two versions of the same app count as two apps towards this total.",
+            "title": "What is the maximum number of apps we can test?"
         },
         {
             "location": "/faq/#do-i-need-to-instrument-my-app-or-supply-source-code",
-            "text": "No instrumentation or source code is required to use the built-in tests. Android apps can be submitted as is. iOS apps should be built with \u201ciOS Device\u201d as the target. If they are built with a simulator as the target, select the simulator checkbox while uploading the app.",
+            "text": "No instrumentation or source code is required to use the built-in tests. Android apps can be submitted as .apk files. iOS apps should be built with \u201ciOS Device\u201d as the target. If they are built with a simulator as the target, select the simulator checkbox while uploading the app.",
             "title": "Do I need to instrument my app or supply source code?"
         },
         {
@@ -681,23 +681,23 @@
             "title": "Does the recorder support both Android and iOS?"
         },
         {
-            "location": "/faq/#do-i-need-to-additional-software-on-my-machine",
+            "location": "/faq/#do-i-need-any-additional-software-on-my-machine",
             "text": "Android does not require any additional software. iOS requires Xcode to be installed and the command-line tools enabled. For details on how to setup a system for use with iOS, see  Recorder Setup for iOS Devices .",
-            "title": "Do I need to additional software on my machine?"
+            "title": "Do I need any additional software on my machine?"
         },
         {
             "location": "/faq/#can-i-connect-to-multiple-android-devices-from-my-local-machine",
-            "text": "Yes. The recorder allows you to choose which you would like to use after you have logged in.",
+            "text": "Yes. The recorder allows you to choose which device you would like to use after you have logged in.",
             "title": "Can I connect to multiple Android devices from my local machine?"
         },
         {
             "location": "/faq/#what-is-the-maximum-test-time-allowed",
-            "text": "The maximum time for each test is 5 minutes. If you need a longer timeout, please\u00a0contact us.",
+            "text": "The maximum time for each test is 5 minutes. If you need a longer timeout, please\u00a0contact us at  support@moquality.com",
             "title": "What is the maximum test time allowed?"
         },
         {
             "location": "/faq/#is-there-a-way-to-download-the-results",
-            "text": "We offer this feature as an extra package. After you enable it, a link appears in our dashboard that enables you to download tests and test reports in JSON format.",
+            "text": "We offer this feature as an add-on. After you enable it, a link appears in our dashboard that enables you to download tests and test reports in JSON format.",
             "title": "Is there a way to download the results?"
         },
         {
@@ -706,34 +706,34 @@
             "title": "Devices"
         },
         {
-            "location": "/faq/#are-devices-able-to-communicate-with-other-services-or-systems-that-are-available-on-the-internet",
+            "location": "/faq/#can-the-cloud-devices-communicate-with-external-web-services",
             "text": "Yes. All devices have internet access through a Wifi connection.",
-            "title": "Are devices able to communicate with other services or systems that are available on the Internet?"
+            "title": "Can the cloud devices communicate with external web-services?"
         },
         {
-            "location": "/faq/#can-i-make-phone-calls-or-send-sms-from-the-devices",
-            "text": "No, devices do not have carrier SIM setup and cannot make phone calls or send SMS messages. Please contact us via our support challels (see end) with your specific usecase.",
-            "title": "Can I make phone calls or send SMS from the devices?"
+            "location": "/faq/#can-i-make-phone-calls-or-send-sms-from-the-test-devices",
+            "text": "No, currently our cloud devices do not have carrier SIM setup and cannot make phone calls or send SMS messages.",
+            "title": "Can I make phone calls or send SMS from the test devices?"
         },
         {
-            "location": "/faq/#can-i-use-the-device-camera",
-            "text": "Yes, you can use the device cameras, both front and rear facing. Images might be dark or blurry.",
-            "title": "Can I use the device camera?"
+            "location": "/faq/#can-i-access-the-cloud-device-camera",
+            "text": "Yes, you can access both front and rear facing device cameras.",
+            "title": "Can I access the cloud device camera?"
         },
         {
             "location": "/faq/#android-are-there-any-default-accounts-eg-google-available-on-cloud-devices",
-            "text": "No, cloud devices should be clean and you cannot rely on any active accounts being present on them.   We do however allow you to add webhooks in the tests recorded through the recorder, which can be used in conjuction with a server side script to partly facilitate co-ordination with account creation and use within tests. Please contact us via our support challels (see end) with your specific usecase.",
+            "text": "No. By default, every device is clean and there is no account data setup.    However, the test recorder provides the functionality to add webhooks which allows it to communicate with server-side scripts that you may use for account setup. See  Recorder Features",
             "title": "Android: Are there any default accounts (e.g., Google) available on cloud devices?"
         },
         {
             "location": "/faq/#android-is-google-play-services-available-on-cloud-devices-which-version-is-installed",
-            "text": "Yes, Google Play Services is installed on devices that support it. The services are updated as new versions become available.",
+            "text": "Yes, Google Play Services is installed on supported devices. The services are updated as new versions become available.",
             "title": "Android: Is Google Play Services available on cloud devices? Which version is installed?"
         },
         {
-            "location": "/faq/#i-didnt-find-an-answer-for-my-question",
-            "text": "Please contact us at any of our following support channels:   Intercom chat on our website.  Slack with us at  slack.moquality.com .  Email at  support@moquality.com .",
-            "title": "I didn't find an answer for my question?"
+            "location": "/faq/#if-you-didnt-find-answer-to-your-questions-please-contact-us-at-any-of-our-following-support-channels",
+            "text": "Intercom chat on our website.  Slack with us at  slack.moquality.com .  Email at  support@moquality.com .",
+            "title": "If you didn't find answer to your questions, please contact us at any of our following support channels:"
         }
     ]
 }
