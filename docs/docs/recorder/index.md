@@ -62,6 +62,6 @@ If the problem persists, please contact MoQuality for further support.
 
 Android and iOS devices behave similarly in the recorder, but there are a few differences in the touch control.
 
-On Android, the mouse emulates a touch input, providing a clean 1-to-1 interaction between the recorder and the app. Unfortunately, due to limitations in iOS automation, the recorder is unable to do this 1-to-1 interaction with iOS devices.
+On Android, the mouse pointer emulates a touch input, providing a clean 1-to-1 interaction between the recorder and the app. Unfortunately, due to limitations in iOS automation, the recorder is unable to do this 1-to-1 interaction with iOS devices.
 
 When clicking on the screen while using an iOS device, a circle will appear where the mouse button was pressed. If the mouse is dragged past a threshold distance away from that starting point, a second circle will appear under the mouse with a line connecting the two. If this appears, releasing the mouse will perform a drag from the first circle to the second; if it does not appear, then a click action will be performed at the location of the first circle instead.
