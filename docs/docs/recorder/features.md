@@ -1,15 +1,13 @@
 # Recorder Feature List
 
 ## Assertions
-In testing, users want to assert a particular output. For example, after a user login, the user want to see the name displayed correctly.
-Through the recorder we can assert that.
-Add an assertion to your test, to check whether an element has specific text, or exists.
+Add an assertion to your test, to force-check expected outcomes such as checking for specific text or UI element. For example, at the login screen, incase of incorrect username or password, you can add an assertion in the recorder to check for the 'Invalid login credentials' text message.
 
 <img src="../android/assertion.gif" style="max-width:800px;max-height:600px" />
 
 ## API Requests
 Our recorder allows to make API requests. It is useful in many scenarios where a user has to record a step and make an API request.
-You can send API requests from within the app to set up your testing environment!
+You can send API requests from within the app to set up your testing environment.
 
 <img src="../android/api_request.gif" style="max-width:800px;max-height:600px" />
 
