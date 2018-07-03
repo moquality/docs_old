@@ -426,15 +426,15 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#differences-between-android-and-ios-test-recording" title="Differences between Android and iOS test recording" class="md-nav__link">
+    Differences between Android and iOS test recording
+  </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#appendix-differences-between-android-and-ios" title="Appendix: Differences between Android and iOS" class="md-nav__link">
-    Appendix: Differences between Android and iOS
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -825,15 +825,15 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#differences-between-android-and-ios-test-recording" title="Differences between Android and iOS test recording" class="md-nav__link">
+    Differences between Android and iOS test recording
+  </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#appendix-differences-between-android-and-ios" title="Appendix: Differences between Android and iOS" class="md-nav__link">
-    Appendix: Differences between Android and iOS
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -857,12 +857,12 @@
                 
                 
                 <h1 id="getting-started-with-the-recorder">Getting Started with the Recorder<a class="headerlink" href="#getting-started-with-the-recorder" title="Permanent link">⚓</a></h1>
-<p>The MoQuality test recorder provides functionality for recording test cases for mobile apps, as well as for both replaying test cases on a local device and editing them. In addition, it offers useful supplementary functionality, such as the ability to automatically download and install the app  on a new device.</p>
+<p>The MoQuality test recorder is used to record, replay and edit tests using a local mobile device. It automatically downloads and installs the app  on a new device.</p>
 <p>For a full overview of the recorder's functionality, see <a href="./features">the Recorder Feature List</a>.</p>
 <h2 id="downloading-the-recorder">Downloading the Recorder<a class="headerlink" href="#downloading-the-recorder" title="Permanent link">⚓</a></h2>
 <p>Download the recorder from <a href="https://app.moquality.com/download">app.moquality.com/download</a>.</p>
 <h2 id="setup-the-device">Setup the Device<a class="headerlink" href="#setup-the-device" title="Permanent link">⚓</a></h2>
-<p>Setup differs rather significantly between Android and iOS. Please consult the relevant page for the device you wish to record test cases with.</p>
+<p>Android and iOS devices are setup differently, as follows:</p>
 <ul>
 <li><a href="./android">Recorder Setup for Android Devices</a></li>
 <li><a href="./ios">Recorder Setup for iOS Devices</a></li>
@@ -894,11 +894,11 @@
 <li>Click "Run".</li>
 </ol>
 <h2 id="editing-a-test">Editing a Test<a class="headerlink" href="#editing-a-test" title="Permanent link">⚓</a></h2>
-<p>After saving a test, a user may want to edit a test such as adding a time delay, or deleting a step. For more information see <a href="./test-editing">Test editing</a></p>
+<p>After saving a test recording, you can make changes to a test such as adding a time delay, or deleting a step. For more information see <a href="./test-editing">Test editing</a></p>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">⚓</a></h2>
 <h3 id="infinite-loading-screen">Infinite Loading Screen<a class="headerlink" href="#infinite-loading-screen" title="Permanent link">⚓</a></h3>
 <h4 id="get-a-screenshot">Get a screenshot<a class="headerlink" href="#get-a-screenshot" title="Permanent link">⚓</a></h4>
-<p>In some cases, the recorder may fail to start properly when connecting to a device. If this occurs, you will be presented with an error message, following which the loading screen will continue to load infinitely. This usually happens as a result of a desynchronization between the device and ADB, the Android Debug Bridge, resulting in ADB classifying the device as "offline". If this happens, try the following steps:</p>
+<p>In some cases, the recorder may fail to start properly when connecting to a device. If this occurs, you will be presented with an error message, following which the loading screen will continue to load infinitely. This usually happens as a result of a desynchronization between the device and ADB (Android Debug Bridge), resulting in ADB classifying the device as "offline". If this happens, try the following steps:</p>
 <ol>
 <li>Close the recorder.</li>
 <li>Unplug the device.</li>
@@ -908,10 +908,10 @@
 <li>Start the recorder again.</li>
 </ol>
 <p>If the problem persists, please contact MoQuality for further support.</p>
-<h2 id="appendix-differences-between-android-and-ios">Appendix: Differences between Android and iOS<a class="headerlink" href="#appendix-differences-between-android-and-ios" title="Permanent link">⚓</a></h2>
-<p>For the most part, Android and iOS devices behave similarly in the recorder, but there are a few differences. Some of these are obvious, as they pertain to unique features that one device type or the other has, such as the back button, which doesn't exist on iOS.</p>
-<p>A larger, less obvious difference is that of touch control. On Android, the mouse emulates a touch input, providing a clean 1-to-1 interaction between the recorder and the app. Unfortunately, due to limitations in iOS automation, the recorder is unable to do this 1-to-1 interaction with iOS devices.</p>
-<p>When clicking on the screen while using an iOS device, a circle will appear where the mouse button was pressed. If the mouse is dragged past a threshold distance away from that starting point, a second circle will appear under the mouse with a line connecting the two. If this appears, releasing the mouse will perform a drag from the first circle to the second; if it has not appeared, a click will be performed at the location of the circle instead.</p>
+<h3 id="differences-between-android-and-ios-test-recording">Differences between Android and iOS test recording<a class="headerlink" href="#differences-between-android-and-ios-test-recording" title="Permanent link">⚓</a></h3>
+<p>Android and iOS devices behave similarly in the recorder, but there are a few differences in the touch control.</p>
+<p>On Android, the mouse pointer emulates a touch input, providing a clean 1-to-1 interaction between the recorder and the app. Unfortunately, due to limitations in iOS automation, the recorder is unable to do this 1-to-1 interaction with iOS devices.</p>
+<p>When clicking on the screen while using an iOS device, a circle will appear where the mouse button was pressed. If the mouse is dragged past a threshold distance away from that starting point, a second circle will appear under the mouse with a line connecting the two. If this appears, releasing the mouse will perform a drag from the first circle to the second; if it does not appear, then a click action will be performed at the location of the first circle instead.</p>
                 
                   
                 
