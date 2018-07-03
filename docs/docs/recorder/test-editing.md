@@ -29,7 +29,7 @@ We are currently in the process of adding the functionality to parameterize test
 
 <img src="../android/add_sleep_action.png" style="max-width:600px;max-height:480px" />
 
-## Selecting a New Target UI Widget (Beta)
+## Selecting a New Target Widget (Beta)
 
 If the recorded is unable to detect the desired widget, you can manually set a new target within the current screen. Simply go to *Select Target* tab and select the widget on the screen that you want to set as new target. 
 
