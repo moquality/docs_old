@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "What is MoQuality?\n\u2693\n\n\nMoQuality is an AI based automated testing platform for native android and iOS mobile apps. It provides an easier way to record tests and run across multiple devices at once. You can expand your test coverage as the AI explores your app just like humans would do and discover more errors in the process.  \n\n\nGet started in few simple steps:\n\n\n\n\nCreate an account\n\n\nUpload your mobile app\n\n\nDownload the Recorder desktop app and start creating test-cases\n\n\nSchedule test runs on multiple devices\n\n\nGenerate more tests using MoQuality AI\n\n\nView results",
+            "text": "What is MoQuality?\n\u2693\n\n\nMoQuality is an AI based automated testing platform for native android and iOS mobile apps. It provides an easier way to record tests and run across multiple devices at once. You can expand your test coverage as the AI explores your app just like humans would do and discover more errors in the process.  \n\n\nGet started in few simple steps:\n\n\n\n\nCreate an account\n\n\nUpload your mobile app\n\n\nDownload the Recorder desktop app and start creating test-cases\n\n\nSchedule test runs on multiple devices\n\n\nGenerate more tests using MoQuality AI\n\n\nView results\n\n\n\n\nYou can also use MoQuality in other uses cases:\n\n\n\n\nDocumentation\n with MoQuality",
             "title": "What is MoQuality?"
         },
         {
             "location": "/#what-is-moquality",
-            "text": "MoQuality is an AI based automated testing platform for native android and iOS mobile apps. It provides an easier way to record tests and run across multiple devices at once. You can expand your test coverage as the AI explores your app just like humans would do and discover more errors in the process.    Get started in few simple steps:   Create an account  Upload your mobile app  Download the Recorder desktop app and start creating test-cases  Schedule test runs on multiple devices  Generate more tests using MoQuality AI  View results",
+            "text": "MoQuality is an AI based automated testing platform for native android and iOS mobile apps. It provides an easier way to record tests and run across multiple devices at once. You can expand your test coverage as the AI explores your app just like humans would do and discover more errors in the process.    Get started in few simple steps:   Create an account  Upload your mobile app  Download the Recorder desktop app and start creating test-cases  Schedule test runs on multiple devices  Generate more tests using MoQuality AI  View results   You can also use MoQuality in other uses cases:   Documentation  with MoQuality",
             "title": "What is MoQuality?"
         },
         {
@@ -404,6 +404,36 @@
             "location": "/getting-started/view-results/#view-map",
             "text": "It present a snapshot of the whole app itself. It shows how all the screens are connected with each other and therefore is useful in understanding the whole app structure. It aids in coming up with good test cases. For example,\n if a certain screen is not present in the map, then a user might be interested in creating a test case containing that screen. Such test case can easily be created with MoQuality Recorder with a few clicks.",
             "title": "View map"
+        },
+        {
+            "location": "/flows/documentation/",
+            "text": "Documentation with MoQuality\n\u2693\n\n\nYou can use MoQuality to document manual or automated tests. The documentation feature allows you to export/download tests or test reports created on our platform. \n\n\nEnable Docs\n\u2693\n\n\nEnable the docs option in your \nAccounts > Payment\n page. You need to put your credit card information to enable this feature. We will invoice you for this feature at the end of each month. Check out \npricing\n here.\n\n\nExport Tests\n\u2693\n\n\n\n\n\n\nCreate tests\nBefore you export tests you will first need to create tests with our Test Recorder. You can learn more about creating tests on MoQuality \nhere\n. \n\n\n\n\n\n\nCreate a test suite with the tests you want to export. Learn how to create test suite \nhere\n.\n\n\n\n\n\n\nTo export tests click on the Download icon on the Test Suites page. We will email you a link to download the tests.\n\n\n\n\n\n\n\n\nThe report contains screenshots with actions overlayed on them.\n\n\n\nExport Test Reports\n\u2693\n\n\nIf you have enabled the export option, we will email you a link to download the report alongwith every test run you schedule on MoQuality.\n\n\nUpcoming Features\n\u2693\n\n\n\n\nSlack Integration (release Aug 1)\n\n\nGithub Integration (release Aug 1)\n\n\nPivotal Tracker (release mid Aug)\n\n\n\n\nIntegration with Slack and Github will allow you to export your results directly to Github PRs or a Slack channel.",
+            "title": "Documentation"
+        },
+        {
+            "location": "/flows/documentation/#documentation-with-moquality",
+            "text": "You can use MoQuality to document manual or automated tests. The documentation feature allows you to export/download tests or test reports created on our platform.",
+            "title": "Documentation with MoQuality"
+        },
+        {
+            "location": "/flows/documentation/#enable-docs",
+            "text": "Enable the docs option in your  Accounts > Payment  page. You need to put your credit card information to enable this feature. We will invoice you for this feature at the end of each month. Check out  pricing  here.",
+            "title": "Enable Docs"
+        },
+        {
+            "location": "/flows/documentation/#export-tests",
+            "text": "Create tests\nBefore you export tests you will first need to create tests with our Test Recorder. You can learn more about creating tests on MoQuality  here .     Create a test suite with the tests you want to export. Learn how to create test suite  here .    To export tests click on the Download icon on the Test Suites page. We will email you a link to download the tests.     The report contains screenshots with actions overlayed on them.",
+            "title": "Export Tests"
+        },
+        {
+            "location": "/flows/documentation/#export-test-reports",
+            "text": "If you have enabled the export option, we will email you a link to download the report alongwith every test run you schedule on MoQuality.",
+            "title": "Export Test Reports"
+        },
+        {
+            "location": "/flows/documentation/#upcoming-features",
+            "text": "Slack Integration (release Aug 1)  Github Integration (release Aug 1)  Pivotal Tracker (release mid Aug)   Integration with Slack and Github will allow you to export your results directly to Github PRs or a Slack channel.",
+            "title": "Upcoming Features"
         },
         {
             "location": "/integration-ci-cd/mq-cli/",
