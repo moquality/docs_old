@@ -35,6 +35,8 @@ pages:
   # - Executing Tests: getting-started/pushkar.md
 - View Test Reports:
   - Dashboard: getting-started/view-results.md
+- Workflows:
+  - Documentation: flows/documentation.md
 - CI/CD Integrations:
   - MoQuality CLI: integration-ci-cd/mq-cli.md
   - Integrate with fastlane: integration-ci-cd/fastlane.md

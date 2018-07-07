@@ -10,3 +10,7 @@ Get started in few simple steps:
 * [Schedule test runs on multiple devices](getting-started/scheduling-tests)
 * [Generate more tests using MoQuality AI](getting-started/auto-test)
 * [View results](getting-started/view-results)
+
+You can also use MoQuality in other uses cases:
+
+* [Documentation](flows/documentation.md) with MoQuality
