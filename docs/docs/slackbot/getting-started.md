@@ -7,7 +7,7 @@ MoQuality enables you to schedule tests when you deploy a new build of your app.
 ## Prerequisites
 
 * Slack account & workspace: In order to use Slackbot, you will, of course, need to have created a [Slack account](https://slack.com/get-started) and a [workspace](https://slack.com/create).
-* MoQuality account: Slackbot will need to link your Slack account to MoQuality account, which you can create [here](https://app.moquality.com/signup).
+* MoQuality account: Slackbot will need to link your Slack account to your MoQuality account, which you can create [here](https://app.moquality.com/signup).
 * MoQuality team: **NEED THIS!**
 * MoQuality app: For the purpose of receiving an app's test updates from Slackbot, ensure that you have already uploaded the first version of your app through the [MoQuality website](https://app.moquality.com/).
 
@@ -18,3 +18,7 @@ Download Slackbot from **[HERE]**. Slack will prompt you to authorize the bot fo
 ## Setup
 
 Once Slackbot is installed to your workspace, there is a **critical step** you must take to enable proper interaction with Slackbot. Enter `/mq-link [API KEY]`, where [API KEY] is your API key, the unique identifier to your MoQuality account. **TEAM ID OR USER ID????**
+
+## Troubleshooting
+
+If you encounter an error, please report it **[HERE]**.

@@ -46,4 +46,7 @@ pages:
 - Slackbot:
   - Getting Started: slackbot/getting-started.md
   - Features: slackbot/features.md
+- Gitbot:
+  - Getting Started: gitbot/getting-started.md
+  - Features: gitbot/features.md
 - FAQ: faq.md
