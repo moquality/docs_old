@@ -1,32 +1,34 @@
 # Recorder Setup for Android Devices
 
-## Getting Started
+## Enable USB Debugging
 
-1. Download the recorder from **app.moquality.com > Apps > Download Test Recorder**
-
-    <img src="../android/download_test_recorder.png" style="max-width:600px;max-height:480px" />
-
-2. Select a device you would like to test with and **turn on USB Debugging**, which can be found inside of **Settings > Developer Options > USB Debugging** and connect your device to your computer. **Press 'Always Allow"** on the popup on the device.
+1. Select a device you would like to test with and then **turn on USB Debugging**, which can be found inside of **Settings > Developer Options > USB Debugging** and connect your device to your computer. **Press 'Always Allow"** on the popup on the device.
 
     <img src="../android/usb_debugging.png" style="max-width:600px;max-height:480px" />
 
-3. Make sure to have **uploaded a version of your app to test onto www.app.moquality.com** and have filled out the package name and activity name.
+## Upload App
+
+1. Make sure to have uploaded a version of your app to test on [app.moquality.com](https://app.moquality.com). We automatically will find the `package name` and `activity name` for the app. You can verify it under the Settings tab.
 
     <img src="../android/package_name.png" style="max-width:600px;max-height:480px" />
 
-4. Launch the recorder with your connected device and **log in with either your API key or username and password**. Select your device and app from the drop down, as well as your screen size and keyboard preference.
+## Launch Recorder
+
+1. Launch the recorder with your connected device and log in with either your *API key* or *username/password*. Select your device and app from the drop down, as well as your screen size and keyboard preference. We recommend setting it to no-keyboard, tests are more reliable without flaky keyboard. The recorder itself has a text input feature which will allow you to input text into text boxes.
 
     <img src="../android/login.gif" style="max-width:600px;max-height:480px" />
 
-5. **Press Record to begin** recording your test on your device. Interact with the screen projection you see in front of you. You **MUST use the bottom interface buttons** for actions instead of the hardware buttons on your device.
+2. **Press Record** (on top left) to begin  recording your test on your device. Interact with the screen projection you see in front of you. You **MUST use the bottom interface buttons** for actions instead of the hardware buttons on your device. Hardware buttons include back button, home screen button and show apps button. Similarly, if your device has software buttons, do not click them. We assume that software buttoms will never be a part of a test case and discard them.
 
     <img src="../android/recording_demo.gif" style="max-width:600px;max-height:480px" />
 
-6. When you are done recording a test, **press SAVE and name your test**. You can then view the test in the app.moquality.com website.
+3. When you are done recording a test, **press SAVE and name your test**. You can then view the test in the app.moquality.com website.
 
     <img src="../android/save_test.gif" style="max-width:600px;max-height:480px" />
 
-7. To **confirm the test was valid, move to the Tests Tab and try to run the test**. If you are unable to run the test, you may have to re-record it, or head down to the FAQ to see possible solutions.
+## Replay Tests
+
+1. To **confirm the test was valid, move to the Tests Tab and try to run the test**. If you are unable to run the test, you may have to re-record it, or head down to the FAQ to see possible solutions.
 
     <img src="../android/test_replay.gif" style="max-width:600px;max-height:480px" />
 

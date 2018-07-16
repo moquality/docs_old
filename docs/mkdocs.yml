@@ -15,24 +15,28 @@ markdown_extensions:
 pages:
 - "What is MoQuality?": index.md
 - Uploading Apps:
-  - Creating an Android APK: getting-started/pushkar.md
-  - Creating an iOS App: getting-started/pushkar.md
+  - Creating an Android APK: getting-started/android.md
+  - Creating an iOS Simulator App: getting-started/ios-sim.md
+  - Creating an iOS Native App: getting-started/ios-native.md
   - Upload App: getting-started/upload-app.md
 - Test Recorder:
   - Getting Started: recorder/index.md
   - Android Setup: recorder/android.md
   - iOS Setup: recorder/ios.md
   - Features: recorder/features.md
+  - Test Editing: recorder/test-editing.md
 - Autogenerate Tests:
   - Scheduling robot tests : getting-started/auto-test.md
 - Scheduling Test Runs: 
-  - View recorded Tests: getting-started/view-tests.md
+  - View Recorded Tests: getting-started/view-tests.md
   - Creating Test Suites: getting-started/test-suite.md
   - Creating Device Groups: getting-started/devices.md
   - Scheduling Tests : getting-started/scheduling-tests.md
-  - Executing Tests: getting-started/pushkar.md
+  # - Executing Tests: getting-started/pushkar.md
 - View Test Reports:
   - Dashboard: getting-started/view-results.md
+- Workflows:
+  - Documentation: flows/documentation.md
 - CI/CD Integrations:
   - MoQuality CLI: integration-ci-cd/mq-cli.md
   - Integrate with fastlane: integration-ci-cd/fastlane.md
