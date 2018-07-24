@@ -13,10 +13,12 @@ MoQuality's services provide an invaluable advancement to QA testing, but those 
 
 ## Installation
 
-Install Gitbot from [here](https://github.com/apps/mq-gitbot-test). 
+Install Gitbot from **[LINK NEEDED](https://github.com/apps/mq-gitbot-test)**. Follow the prompts to authorize Gitbot and install it to your desired repository or repositories. You will see that Gitbot will be given ***Read*** *and **write** access to pull requests*. This does not give Gitbot access to the code. It only allows Gitbot to interact with the high-level interfaces such as comments. See the [GitHub API](https://developer.github.com/v3/apps/permissions/#permission-on-pull-requests) for more detailed permissions information.
 
 ## Setup
 
+To recieve testing updates in the comments of a pull request, enter your pull request URL on the **LINK NEEDED** MoQuality page.
+
 ## Troubleshooting
 
-If you encounter an error, please report it **[HERE]**.
+If you encounter an error, please report it **[LINK NEEDED]**.

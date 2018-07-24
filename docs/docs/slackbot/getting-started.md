@@ -13,7 +13,7 @@ MoQuality enables you to schedule tests when you deploy a new build of your app.
 
 ## Installation
 
-Download Slackbot from **[HERE]**. Slack will prompt you to authorize the bot for a channel. There are two permissions that the bot requires. The first permission is the ability to *Access information about your public channels*. This permission is necessary for proper onboarding, as the bot must acccess your channel's list of users in order to send them onboarding messages. The second permission is the ability to *Send messages as MoQuality*. This permission is necessary for Slackbot to post messages as a bot user.
+Install Slackbot from **[LINK NEEDED](https://api.moquality.com)**. Slack will prompt you to authorize the bot for a channel. There are two permissions that the bot requires. The first permission is the ability to *Access information about your public channels*. This permission is necessary for proper onboarding, as the bot must acccess your channel's list of users in order to send them private onboarding messages. The second permission is the ability to *Send messages as MoQuality*. This permission is necessary for Slackbot to post messages as a bot user.
 
 ## Setup
 
@@ -21,4 +21,4 @@ Once Slackbot is installed to your workspace, there is a **critical step** you m
 
 ## Troubleshooting
 
-If you encounter an error, please report it **[HERE]**.
+If you encounter an error, please report it **[LINK NEEDED]**.
