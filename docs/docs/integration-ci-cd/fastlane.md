@@ -32,7 +32,7 @@ This shell script will contain the MQ CLI commands that your new step will run. 
 ``` shell
 #!/bin/sh
 
-npm install mq-cli
+npm install -g mq-cli
 
 mq login -a $API_KEY
 mq user

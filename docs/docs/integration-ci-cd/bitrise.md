@@ -57,7 +57,7 @@ In place of those steps, add:
 The lines following `content` are shell commands. You may create a shell script to run MoQuality commands and run that script in Bitrise by adding `sh [script name].sh` beneath `- content: |`, or you can add the MoQuality commands beneath `- content: |` without a shell script. The following sub-intructions exlain how to install the MQCLI and upload a new build of an app. Again, these commands can either be run through a shell script or placed directly into bitrise.yml. Below are the commands to upload an app to MoQuality:
 
 ``` bash
-    npm install mq-cli
+    npm install -g mq-cli
 
     mq login -a $API_KEY
     mq user
