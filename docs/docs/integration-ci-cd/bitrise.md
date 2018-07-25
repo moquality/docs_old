@@ -14,7 +14,7 @@ Bitrise is a Continuous Integration and Delivery Platform as a Service. MoQualit
 
 ### Export Several Variables
 
-Integrating MoQuality with Bitrise requires that you export several environment variables. The first variable is `API_KEY`, which will enable user login. To find your API key, run `mq login` in your command line to log in to MoQuality. Then, run `mq user` to display user information. Your API key will be in the list of returned information. The next variable is `APP_ID`. This will specify which app is being uploaded. To find your app Id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app Id in the same row. The third variable is `APK_PATH`, the path to your folder for apk's. Navigate through your file explorer to find this path. See the below commands for an example of setting these variables with a Calculator app.
+Integrating MoQuality with Bitrise requires that you export several environment variables. The first variable is `API_KEY`, which will enable user login. To find your API key, run `mq login` in your command line to log in to MoQuality. Then, run `mq user` to display user information. Your API key will be in the list of returned information. The next variable is `APP_ID`. This will specify which app is being uploaded. To find your app Id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app Id in the same row. The third variable is `APK_PATH`, the path to your folder for apk's. Navigate through your file explorer to find this path. See the below command line commands as an example of setting these variables for a Calculator app.
 
 ``` bash
 export API_KEY=[OBTAINED_VALUE]
