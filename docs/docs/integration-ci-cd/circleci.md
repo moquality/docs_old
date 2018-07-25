@@ -12,52 +12,63 @@ CircleCI is a Continuous Integration and Continuous Delivery platform that allow
 
 ## Instructions
 
-1. **Open your `config.yml` file** in an editor.
+### Open `config.yml`
 
-2. Under `steps: ` in your job, **add a run step called `Install mq-cli`**.
+Open your `config.yml` file in an editor.
 
-        - run:
-            name: Install MQ CLI
+### Add Installation Step
 
-3. Beneath `name:`, **add `command: |`**. This indicates that you are going to issue multiple lines of commands. Your step should look like the below.
+Under `steps: ` in your job, add a run step called `Install mq-cli` by using `name:`. Beneath `name:`, add `command: |`. This indicates that you are going to issue multiple lines of commands. Your step should look like the below.
 
-        - run:
-            name: Install MQ CLI
-            command: |
+``` YAML
+- run:
+    name: Install MQ CLI
+    command: |
+```
 
-4. There are **four commands you must run to install MQ CLI** within your container. The first two are **`curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`** and **`sudo apt-get install -y nodejs`**. These commands are based off of [these instructions](https://nodejs.org/en/download/package-manager/) for installing Nodejs via a package manager. Installing Nodejs enables the use of npm commands, which will be necessary for installing MQ CLI. The third command to run is **`sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin`**. This command will give the user write permissions to two directories whose write permissions are necessary for the installation of MQ CLI. Finally, the command **`npm install -g mq-cli`** installs MQ CLI. You have now created the step that installs MQ CLI and enables MQ CLI commands within your container. **Your step should look like the below**.
+### Add Commands to Step
 
-        - run:
-            name: Install MQ CLI
-            command: |
-              curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-              sudo apt-get install -y nodejs
-              sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin
-              npm install -g mq-cli
+There are four commands you must run to install MQ CLI within your container. The first two are `curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -` and `sudo apt-get install -y nodejs`. These commands are based off of [these instructions](https://nodejs.org/en/download/package-manager/) for installing Nodejs via a package manager. Installing Nodejs enables the use of npm commands, which will be necessary for installing MQ CLI. The third command to run is `sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin`. This command will give the user write permissions to two directories whose write permissions are necessary for the installation of MQ CLI. Finally, the command `npm install -g mq-cli` installs MQ CLI. You have now created the step that installs MQ CLI and enables MQ CLI commands within your container. Your step should look like the below.
 
-5. Now that you have access to MQ CLI commands, you can create a subsequent step of your own to perform a task with these commands. The following sub-instructions breakdown **how to write a step that uploads your app to MoQuality** using MQ CLI commands.
+``` YAML
+- run:
+    name: Install MQ CLI
+    command: |
+      curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+      sudo apt-get install -y nodejs
+      sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin
+      npm install -g mq-cli
+```
 
-        - run:
-            name: Login and Upload to MoQuality
-            command: |
-              mq login -a [API_KEY]
-              mq user
-              mq upload -f [APK_PATH] -a [APP_ID]
-              mq apps
+### Add Login and Upload Step
 
-    1. The first two lines create a step called `Upload to MoQuality`.
+Now that you have access to MQ CLI commands, you can create a subsequent step of your own to perform a task with these commands. The following sub-instructions breakdown how to write a step that uploads your app to MoQuality using MQ CLI commands.
 
-    2. As before, the line `command: |` indicates that you are going to issue multiple lines of commands.
+``` YAML
+- run:
+    name: Login and Upload to MoQuality
+    command: |
+      mq login -a [API_KEY]
+      mq user
+      mq upload -f [APK_PATH] -a [APP_ID]
+      mq apps
+```
 
-    3. `mq login -a [API_KEY]` logs you in using your API key. Your API key uniquely identifies your account. To find your API key, run `mq login` in your command line and follow the prompts to log in to your account. Next, run `mq user` to display user information. Your API key will be in the list of returned information.
+1. The first two lines create a step called `Upload to MoQuality`.
 
-    4. `mq user` returns user information, and you can check that your user is correct.
+2. As before, the line `command: |` indicates that you are going to issue multiple lines of commands.
 
-    5. `mq upload -f [APK_PATH] -a [APP_ID]` will upload your app, whose location is provided by `[APK_PATH]`, the path to your apk file. The command uses `[APP_ID]` to determine which app is being uploaded. Your app id uniquely identifies your app. To find your app id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app id in the same row.
+3. `mq login -a [API_KEY]` logs you in using your API key. Your API key uniquely identifies your account. To find your API key, run `mq login` in your command line and follow the prompts to log in to your account. Next, run `mq user` to display user information. Your API key will be in the list of returned information.
 
-    6. `mq apps` returns a list of your apps, and you can confirm that your app version has incremented by one.
+4. `mq user` returns user information, and you can check that your user is correct.
 
-6. Now that you have created new steps, integrating MoQuality with CircleCI, **run `circleci build`** in your command line to run the build job. If you added the steps within a job other than build, **add the `--job` option followed by the name of the job** to the `circleci build` command.
+5. `mq upload -f [APK_PATH] -a [APP_ID]` will upload your app, whose location is provided by `[APK_PATH]`, the path to your apk file. The command uses `[APP_ID]` to determine which app is being uploaded. Your app id uniquely identifies your app. To find your app id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app id in the same row.
+
+6. `mq apps` returns a list of your apps, and you can confirm that your app version has incremented by one.
+
+### Run the Build
+
+Now that you have created new steps, integrating MoQuality with CircleCI, run `circleci build` in your command line to run the build job. If you added the steps within a job other than build, add the `--job` option followed by the name of the job to the `circleci build` command.
 
 ## Notes
 
@@ -65,6 +76,6 @@ We do not recommend running the commands to install MQ CLI within a docker image
 
 ## Troubleshooting
 
-**Write permissions error when installing MQ CLI**
+### Write permissions error when installing MQ CLI
 
 Read the error to find the directory to which you cannot write. Add the path of that directory to your `sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin` command. The command will then look like `sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin [DIRECTORY_PATH]`.

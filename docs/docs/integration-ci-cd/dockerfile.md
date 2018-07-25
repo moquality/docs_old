@@ -9,28 +9,36 @@ A source of difficulty when developing applications is creating the perfect envi
 * Docker: Install your preferred version of Docker [here](https://docs.docker.com/install/) and use the [official Docker getting started guide](https://docs.docker.com/get-started/) to familiarize yourself with Docker.
 * Docker account: Set up a Docker account [here](https://cloud.docker.com/).
 
-## Instructions
+## Create a Custom Docker Image
 
-### Create a Custom Docker Image
+### Create Empty Directory
 
-1. **Create an empty directory** and navigate into that directory within your command line.
+Create an empty directory and navigate into that directory within your command line.
 
-        $ cd [EMPTY_DIRECTORY]
+``` shell
+cd [EMPTY_DIRECTORY]
+```
 
-2. Within that directory, **create a file called `Dockerfile`**. This is where you will define the environment of your container.
+### Create `Dockerfile`
 
-3. Open `Dockerfile` in an editor of your choice.
+Within that directory, create a file called `Dockerfile`. This is where you will define the environment of your container.
 
-4. Fill the Dockerfile while following the format below. A very short example Dockerfile is beneath the format. The [FROM instruction](https://docs.docker.com/engine/reference/builder/#from) initializes a new build stage and sets the base image. The [RUN instruction](https://docs.docker.com/engine/reference/builder/#run) runs a command within our docker container. For more reference on instructions and information on Docker syntax, click [here](https://docs.docker.com/engine/reference/builder/#usage).
+### Open `Dockerfile`
 
-**Format**
+Open `Dockerfile` in an editor of your choice.
+
+### Fill `Dockerfile`
+
+Fill the Dockerfile while following the format below. A very short example Dockerfile is beneath the format. The [FROM instruction](https://docs.docker.com/engine/reference/builder/#from) initializes a new build stage and sets the base image. The [RUN instruction](https://docs.docker.com/engine/reference/builder/#run) runs a command within our docker container. For more reference on instructions and information on Docker syntax, click [here](https://docs.docker.com/engine/reference/builder/#usage).
+
+#### Format
 
 ``` Dockerfile
 # Comment
 INSTRUCTION arguments
 ```
 
-**Example**
+#### Example
 
 ``` Dockerfile
 #Use an official Ubuntu runtime as a parent image
@@ -40,31 +48,55 @@ FROM ubuntu
 RUN echo "Hello world!"
 ```
 
-5. Now that you have a Dockerfile with instructions, it's time to **build your image**. Run the below command, inserting your own tag for the image. **Note the period** after the image tag.
+### Build Image
 
-        $ docker build -t [LOCAL_IMAGE_TAG] .
+Now that you have a Dockerfile with instructions, it's time to build your image. Run the below command, inserting your own tag for the image. **Note the period after the image tag**.
 
-6. Once your image is done building, you can confirm that it is in your machine’s local Docker image registry with the below command.
+``` shell
+docker build -t [LOCAL_IMAGE_TAG] .
+```
 
-        $ docker image ls
+### Confirm Image Existence
 
-7. To share your image, log in to docker with the below command.
+Once your image is done building, you can confirm that it is in your machine’s local Docker image registry with the below command.
 
-        $ docker login
+``` shell
+docker image ls
+```
 
-8. Before uploading your image, you should give it a tag for Docker Hub using the following command. An example of a repository name and tag could be `dockertesting:latest`. If no tag is given, Docker will tag the image with `latest` by default.
+### Log in to Docker
 
-        $ docker tag [LOCAL_IMAGE_TAG] [DOCKER_USERNAME]/[REPOSITORY_NAME]:[TAG]
+To share your image, log in to docker with the below command.
 
-9. Publish the image with below command.
+``` shell
+docker login
+```
 
-        $ docker push [DOCKER_USERNAME]/[REPOSITORY_NAME]:[TAG]
+### Tag Image
+
+Before uploading your image, you should give it a tag for Docker Hub using the following command. An example of a repository name and tag could be `dockertesting:latest`. If no tag is given, Docker will tag the image with `latest` by default.
+
+``` shell
+docker tag [LOCAL_IMAGE_TAG] [DOCKER_USERNAME]/[REPOSITORY_NAME]:[TAG]
+```
+
+### Publish Image
+
+Publish the image with below command.
+
+``` shell
+docker push [DOCKER_USERNAME]/[REPOSITORY_NAME]:[TAG]
+```
 
 Now your image is accessible from online and can be pulled at any time. The next set of instructions explain how you can use your Docker image in CircleCI.
 
-### CircleCI and Custom Docker Images
+## CircleCI and Custom Docker Images
 
-CircleCI supports the use of custom Docker images, and the CircleCI documentation on customizing Docker images for CircleCI can be found [here](https://circleci.com/docs/2.0/custom-images/). If you have built and pushed a custom Docker image, you can use it in your CircleCI job by adding the image path to the Docker executor in your job.
+CircleCI supports the use of custom Docker images, and the CircleCI documentation on customizing Docker images for CircleCI can be found [here](https://circleci.com/docs/2.0/custom-images/).
+
+### Add Docker Image to Job
+
+If you have built and pushed a custom Docker image, you can use it in your CircleCI job by adding the image path to the Docker executor in your job.
 
 ```YAML
 job:
@@ -75,6 +107,8 @@ job:
 
 The information in brackets can be found by visiting your image on [Docker Hub](https://hub.docker.com/) and selecting your repository. The Docker pull command will be on the repository page, and you can find your tag under the Tags tab.
 
+### CircleCI Image as Base Image
+
 You can also build your custom Docker image on top of a CirlceCI image. Say you want to use the `circleci/android:api-25-alpha` image, but you need to add more dependencies. You can create a Dockerfile and begin it with the following.
 
 ```Dockerfile
@@ -83,9 +117,11 @@ FROM circleci/android:api-25-alpha
 
 Now you can add your instructions to set up an environment within a CircleCI container. The next section breaks down an exmaple Docker image used with CircleCI to build and upload an app to MoQuality.
 
-### CircleCI and Custom Docker Image for MoQuality App
+## CircleCI and Custom Docker Image for MoQuality App
 
-MoQuality has created a [Github repository] with all the necessary files to build and upload a calculator app to MoQuality by using CircleCI and a custom Dockerfile. Our Dockerfile uses Ubuntu as our parent image and installs dependencies such as Gradle to build the app. The Docker image path is `jragonemq/mqubuntutest:latest`. Before beginning, create an app on MoQuality that you can use to test the upload properties of this build. It does not matter what apk file you upload upon creation of the app.
+MoQuality has created a [Github repository](https://github.com/moquality/plugins) with all the necessary files to build and upload a calculator app to MoQuality by using CircleCI and a custom Dockerfile. Our Dockerfile uses Ubuntu as our parent image and installs dependencies such as Gradle to build the app. The Docker image path is `jragonemq/mqubuntutest:latest`. Before beginning, create an app on MoQuality that you can use to test the upload properties of this build. It does not matter what apk file you upload upon creation of the app.
+
+### MoQuality's Example `Dockerfile`
 
 The following is the code behind the `jragonemq/mqubuntutest:latest` Dockerfile. This creates an environment for running the calculator app on top of an Ubuntu parent image. We are essentially filling a fresh Ubuntu container with our dependencies. The comments explain what each set of instructions is doing. However, understanding each instruction is less important than understanding what these instructions accomplish holistically: they build the environment.
 
@@ -124,9 +160,27 @@ COPY android-8.0.0 android
 ENV PATH="/android:$PATH"
 ```
 
-Create an empty directory and `cd` into it. Then, clone the repository using `git clone`. Within the hidden `.circleci` folder is the `config.yml` file. In this file are steps which build the app using `gradle build`, [install the mq-cli](circleci.md#instructions), and [login and upload the app to MoQuality](circleci.md#instructions). By the `mq login` and `mq upload` commands, fill in [API_KEY] and [APP_ID] with the API key of your account and app id of your app. To find your API key, run `mq login` in your command line and follow the prompts to log in to your account. Next, run `mq user` to display user information. Your API key will be in the list of returned information. To find your app id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app id in the same row. Using the above instructions and [CircleCI MQ CLI integration documentation](circleci.md), we have created our own custom Dockerfile, integrated it with CircleCI, and integrated the CircleCI with MoQuality.
+### Create Empty Directory for Git Repo
 
-```YAML
+Create an empty directory and `cd` into it.
+
+``` shell
+cd [EMPTY_DIRECTORY]
+```
+
+### Clone MoQuality Repository
+
+Clone MoQuality's example repository using `git clone`.
+
+``` shell
+git clone https://github.com/moquality/plugins.git
+```
+
+### `config.yml` Contents
+
+Within the hidden `.circleci` folder is the `config.yml` file. In this file are steps which build the app using `gradle build`, [install the mq-cli](circleci.md#instructions), and [login and upload the app to MoQuality](circleci.md#instructions).
+
+``` YAML hl_lines="24 26"
 version: 2
 jobs:
   build:
@@ -155,3 +209,9 @@ jobs:
             mq upload -f app/build/outputs/apk/debug/app-debug.apk -a [APP_ID]
             mq apps
 ```
+
+### Edit `config.yml`
+
+By the `mq login` and `mq upload` commands, highlighted above, fill in [API_KEY] and [APP_ID] with the API key of your account and app id of your app, respectively. To find your API key, run `mq login` in your command line and follow the prompts to log in to your account. Next, run `mq user` to display user information. Your API key will be in the list of returned information. To find your app id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app id in the same row.
+
+Using the above instructions and [CircleCI MQ CLI integration documentation](circleci.md), we have created our own custom Dockerfile, integrated it with CircleCI, and integrated the CircleCI with MoQuality.

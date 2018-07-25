@@ -12,72 +12,103 @@ Bitrise is a Continuous Integration and Delivery Platform as a Service. MoQualit
 
 ## Instructions
 
-1. In your command line, navigate to your desired directory, and **clone your git repository**.
+### Clone Git Repository
 
-        $ git clone [git repository] 
+In your command line, navigate to your desired directory, and clone your git repository.
 
-2. Integrating MoQuality with Bitrise requires **several variables that you must export**. The first variable is **`API_KEY`**, which will enable user login. To find your API key, run `mq login` in your command line to log in to MoQuality. Then, run `mq user` to display user information. Your API key will be in the list of returned information. The next variable is **`APP_ID`**. This will specify which app is being uploaded. To find your app id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app id in the same row. The third variable is **`APK_PATH`**, the path to your folder for apk's. Navigate through your file explorer to find this path. See the below commands for an example of setting these variables with a Calculator app.
+``` bash
+git clone [git repository]
+```
 
-        $ export API_KEY=[OBTAINED_VALUE]
-        $ export APP_ID=[OBTAINED_VALUE]
-        $ export APK_PATH=/Users/[USERNAME]/Calculator/app/build/outputs/apk/
+### Export Several Variables
 
-3. **Ensure bitrise.yml is in your current directory**, and **open the file** in an editor.
+Integrating MoQuality with Bitrise requires several variables that you must export. The first variable is `API_KEY`, which will enable user login. To find your API key, run `mq login` in your command line to log in to MoQuality. Then, run `mq user` to display user information. Your API key will be in the list of returned information. The next variable is `APP_ID`. This will specify which app is being uploaded. To find your app id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app id in the same row. The third variable is `APK_PATH`, the path to your folder for apk's. Navigate through your file explorer to find this path. See the below commands for an example of setting these variables with a Calculator app.
 
-4. In bitrise.yml, there should be environment variables **`GRADLE_BUILD_FILE_PATH`** and **`GRADLEW_PATH`**. These are the paths to your build.gradle and gradlew files, respectively. You can find these paths using your file explorer. **When you know the paths, enter them in bitrise.yml for their respective variables.** The below code is an example of how your variables should look.
+``` bash
+export API_KEY=[OBTAINED_VALUE]
+export APP_ID=[OBTAINED_VALUE]
+export APK_PATH=/Users/[USERNAME]/Calculator/app/build/outputs/apk/
+```
 
+### Open `bitrise.yml`
 
-        app:
-          envs:
-          - GRADLE_BUILD_FILE_PATH: /Users/[USERNAME]/Calculator/build.gradle
-          - GRADLEW_PATH: /Users/[USERNAME]/Calculator/gradlew
+Ensure `bitrise.yml` is in your main directory, and open the file in an editor.
 
-5. There are two default workflows in bitrise.yml: deploy and primary. **To begin adding a step** integrating MoQuality with either of these workflows, **remove the last two steps, `deploy-to-bitrise-io@1.3.10` and `cache-push@2.0.5`**. In place of those steps, **add**:
+### Set File Paths
 
-        - script@1.1.5:
-            inputs:
-            - content: |
+In bitrise.yml, there should be environment variables `GRADLE_BUILD_FILE_PATH` and `GRADLEW_PATH`. These are the paths to your build.gradle and gradlew files, respectively. You can find these paths using your file explorer. When you know the paths, enter them in bitrise.yml for their respective variables. The below code is an example of how your variables should look.
 
-6. The lines following `content` are shell commands. **You may create a shell script** to run MoQuality commands and run that script in Bitrise by adding `sh [script name].sh` beneath `- content: |`, **or you can add the MoQuality commands** beneath `- content: |` without a shell script. The following **sub-intructions exlain how to upload a new build of an app**. Again, these commands can either be run through a shell script or placed directly into bitrise.yml.
+``` YAML
+app:
+  envs:
+  - GRADLE_BUILD_FILE_PATH: /Users/[USERNAME]/Calculator/build.gradle
+  - GRADLEW_PATH: /Users/[USERNAME]/Calculator/gradlew
+```
 
-    1. Below are the commands to upload an app to MoQuality:
+### Remove Two Steps
 
-            mq login -a $API_KEY
-            mq user
-            mq upload -a $APP_ID -f $APK_PATH/app-debug.apk
-            mq apps
+There are two default workflows in bitrise.yml: deploy and primary. To begin adding a step integrating MoQuality with either of these workflows, remove the last two steps, `deploy-to-bitrise-io@1.3.10` and `cache-push@2.0.5`.
 
-    2. `mq login -a $API_KEY` will log you in using your API key.
+### Add New Step
 
-    3. `mq user` returns user information, and you can check that your user is correct.
+In place of those steps, add:
 
-    4. `mq upload -a $APP_ID -f $APK_PATH/app-debug.apk` will upload your app, whose location is provided by `$APK_PATH`, and the command uses `$APP_ID` to determine which app is being uploaded.
+``` YAML
+- script@1.1.5:
+    inputs:
+    - content: |
+```
 
-    5. `mq apps` returns a list of the users apps, and you can confirm that your app version has incremented by one.
+### Fill New Step
 
-7. Your **new step**, integrating MoQuality with Bitrise, should be **formatted like one of the two examples below**.
+The lines following `content` are shell commands. You may create a shell script to run MoQuality commands and run that script in Bitrise by adding `sh [script name].sh` beneath `- content: |`, or you can add the MoQuality commands beneath `- content: |` without a shell script. The following sub-intructions exlain how to upload a new build of an app. Again, these commands can either be run through a shell script or placed directly into bitrise.yml.
 
-        - script@1.1.5:
-            inputs:
-            - content: |
-                mq login -a $API_KEY
-                mq user
-                mq upload -a $APP_ID -f $APK_PATH/app-debug.apk
-                mq apps
+1. Below are the commands to upload an app to MoQuality:
 
-        - script@1.1.5:
-            inputs:
-            - content: |
-                sh [script name].sh
+``` bash
+    mq login -a $API_KEY
+    mq user
+    mq upload -a $APP_ID -f $APK_PATH/app-debug.apk
+    mq apps
+```
 
-8. In your command line, **run `bitrise run [workflow]`**.
+2. `mq login -a $API_KEY` will log you in using your API key.
+
+3. `mq user` returns user information, and you can check that your user is correct.
+
+4. `mq upload -a $APP_ID -f $APK_PATH/app-debug.apk` will upload your app, whose location is provided by `$APK_PATH`, and the command uses `$APP_ID` to determine which app is being uploaded.
+
+5. `mq apps` returns a list of the users apps, and you can confirm that your app version has incremented by one.
+
+### Completed Step Examples
+
+Your new step, integrating MoQuality with Bitrise, should be formatted like one of the two examples below.
+
+``` YAML
+- script@1.1.5:
+    inputs:
+    - content: |
+        mq login -a $API_KEY
+        mq user
+        mq upload -a $APP_ID -f $APK_PATH/app-debug.apk
+        mq apps
+
+- script@1.1.5:
+    inputs:
+    - content: |
+        sh [script name].sh
+```
+
+### Run Workflow
+
+In your command line, run `bitrise run [workflow]`.
 
 ##Troubleshooting
 
-**Permission denied when installing MQ CLI**
+### Permission denied when installing MQ CLI
 
 Run `sudo chown -R [USERNAME] /usr/local/lib/node_modules` in your terminal. This will give you permission to write to the node_modules directory.
 
-**Gradle-runner step fails for task ':app:mergeDebugResources'**
+### Gradle-runner step fails for task ':app:mergeDebugResources'
 
 Don't worry about this error. Run the workflow again, and it should work.
