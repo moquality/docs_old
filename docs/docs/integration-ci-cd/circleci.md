@@ -62,7 +62,7 @@ Now that you have access to MQ CLI commands, you can create a subsequent step of
 
 4. `mq user` returns user information, and you can check that your user is correct.
 
-5. `mq upload -f [APK_PATH] -a [APP_ID]` will upload your app, whose location is provided by `[APK_PATH]`, the path to your apk file. The command uses `[APP_ID]` to determine which app is being uploaded. Your app id uniquely identifies your app. To find your app id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app id in the same row.
+5. `mq upload -f [APK_PATH] -a [APP_ID]` will upload your app, whose location is provided by `[APK_PATH]`, the path to your apk file. The command uses `[APP_ID]` to determine which app is being uploaded. Your app Id uniquely identifies your app. To find your app Id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app Id in the same row.
 
 6. `mq apps` returns a list of your apps, and you can confirm that your app version has incremented by one.
 

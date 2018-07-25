@@ -1,4 +1,4 @@
-# Integrate with *fastlane*
+# Integrate with _fastlane_
 
 ## Introduction
 
@@ -16,7 +16,7 @@ To integrate MoQuality with _fastlane_, you will add a step to your lane that ru
 
 ### Set Environment Variables
 
-There are two environment variables that you must set. The first variable is `API_KEY`, which will enable user login. To find your API key, run `mq login` in your command line to log in to MoQuality. Then, run `mq user` to display user information. Your API key will be in the list of returned information. The second variable is `APP_ID`. This will specify which app is being uploaded. To find your app id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app id in the same row. See the below example commands for setting these variables.
+There are two environment variables that you must set. The first variable is `API_KEY`, which will enable user login. To find your API key, run `mq login` in your command line to log in to MoQuality. Then, run `mq user` to display user information. Your API key will be in the list of returned information. The second variable is `APP_ID`. This will specify which app is being uploaded. To find your app Id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app Id in the same row. See the below example commands for setting these variables.
 
 ``` shell
 export API_KEY=[OBTAINED_VALUE]
@@ -32,17 +32,21 @@ This shell script will contain the MQ CLI commands that your new step will run. 
 ``` shell
 #!/bin/sh
 
+npm install mq-cli
+
 mq login -a $API_KEY
 mq user
 mq upload -a $APP_ID -f $1
 mq apps
 ```
 
+* `npm install mq-cli` installs the MQ CLI. See the [MQ CLI documentation](mq-cli/#Installation) for alternative installation commands.
+
 * `mq login -a $API_KEY` logs you in using your API key.
 
 * `mq user` returns user information, and you can check that your user is correct.
 
-* `mq upload -a $APP_ID -f $1` will upload your app, whose location is provided by `$1`, the path to your apk file that will be passed as an argument. The command uses `$APP_ID` to determine which app is being uploaded.
+* `mq upload -a $APP_ID -f $1` will upload your app, whose location is provided by `$1`, the apk file's path that will be passed as an argument during execution. The command uses `$APP_ID` to determine which app is being uploaded.
 
 * `mq apps` returns a list of your apps, and you can confirm that your app version has incremented by one.
 
