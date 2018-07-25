@@ -84,7 +84,7 @@ Your new step, integrating MoQuality with Bitrise, should be formatted like one 
     title: Install MQ CLI and Upload App to MoQuality
     inputs:
     - content: |
-        npm install mq-cli
+        npm install -g mq-cli
         mq login -a $API_KEY
         mq user
         mq upload -a $APP_ID -f $APK_PATH/app-debug.apk
