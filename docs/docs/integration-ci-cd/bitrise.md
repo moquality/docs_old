@@ -12,14 +12,6 @@ Bitrise is a Continuous Integration and Delivery Platform as a Service. MoQualit
 
 ## Instructions
 
-### Clone Git Repository
-
-In your command line, navigate to your desired directory, and clone your git repository.
-
-``` bash
-git clone [GIT_REPO]
-```
-
 ### Export Several Variables
 
 Integrating MoQuality with Bitrise requires that you export several environment variables. The first variable is `API_KEY`, which will enable user login. To find your API key, run `mq login` in your command line to log in to MoQuality. Then, run `mq user` to display user information. Your API key will be in the list of returned information. The next variable is `APP_ID`. This will specify which app is being uploaded. To find your app Id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app Id in the same row. The third variable is `APK_PATH`, the path to your folder for apk's. Navigate through your file explorer to find this path. See the below commands for an example of setting these variables with a Calculator app.
