@@ -54,7 +54,7 @@ Posts a private message as an attachment containing the statuses of tests for an
 
 ### **/mq-subscribe**
 
-Subscribes the current channel to test updates from the given app that has been created on MoQuality. After subscribing the channel, Slackbot posts a public message as an attachment containing information about the subscription.
+Subscribes the authorized channel to test updates from the given MoQuality app. After subscribing the channel, Slackbot posts a public message as an attachment containing information about the subscription.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
 

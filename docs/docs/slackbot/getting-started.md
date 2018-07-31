@@ -8,16 +8,15 @@ MoQuality enables you to schedule tests when you deploy a new build of your app.
 
 * Slack account & workspace: In order to use Slackbot, you will, of course, need to have created a [Slack account](https://slack.com/get-started) and a [workspace](https://slack.com/create).
 * MoQuality account: Slackbot will need to link your Slack account to your MoQuality account, which you can create [here](https://app.moquality.com/signup).
-* MoQuality team: **NEED THIS!**
-* MoQuality app: For the purpose of receiving an app's test updates from Slackbot, ensure that you have already uploaded the first version of your app through the [MoQuality website](https://app.moquality.com/).
+* MoQuality app: For the purpose of receiving an app's status updates from Slackbot, ensure that you have already uploaded the first version of your app through the [MoQuality website](https://app.moquality.com/).
 
 ## Installation
 
-Install Slackbot from **[LINK NEEDED](https://api.moquality.com)**. Slack will prompt you to authorize the bot for a channel. There are two permissions that the bot requires. The first permission is the ability to *Access information about your public channels*. This permission is necessary for proper onboarding, as the bot must acccess your channel's list of users in order to send them private onboarding messages. The second permission is the ability to *Send messages as MoQuality*. This permission is necessary for Slackbot to post messages as a bot user.
+Install Slackbot from your **[MoQuality account page](https://app.moquality.com/account)** under the `Integrations` tab. Slack will prompt you to authorize the bot for a channel. There is one permission that the bot requires. Said permission is the ability to *Send messages as MoQuality*. This permission is necessary for Slackbot to post messages as a bot user.
 
 ## Setup
 
-Once Slackbot is installed to your workspace, there is a **critical step** you must take to enable proper interaction with Slackbot. Enter `/mq-link [API KEY]`, where [API KEY] is your API key, the unique identifier to your MoQuality account. **TEAM ID OR USER ID????**
+Once Slackbot is integrated with your workspace, your MoQuality and Slack accounts are linked, and you or anyone else in your workspace can invoke one of Slackbots many [Slash Commands](features/#slash commands). By typing `/mq` in your Slack workspace, you should see a list of the available Slash Commands. The first Slash Command you may want to use is `/mq-subscribe [app Id]`. This command subscribes the authorized channel to test updates from the given MoQuality app. After subscribing the channel, Slackbot posts a public message as an attachment containing information about the subscription.
 
 ## Troubleshooting
 
