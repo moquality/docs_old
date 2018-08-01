@@ -18,6 +18,10 @@ Install Slackbot from your [MoQuality account page](https://app.moquality.com/ac
 
 Once Slackbot is integrated with your workspace, your MoQuality and Slack accounts are linked, and you or anyone else in your workspace can invoke one of Slackbots many [Slash Commands](features/#slash commands). By typing `/mq` in your Slack workspace, you should see a list of the available Slash Commands. The first Slash Command you may want to use is `/mq-subscribe [app Id]`. This command subscribes the authorized channel to test updates from the given MoQuality app. After subscribing the channel, Slackbot posts a public message as an attachment containing information about the subscription.
 
+## Uninstallation
+
+Slackbot can be uninstalled by navigating to the `Integrations` tab of your [MoQuality account page](https://app.moquality.com/account) and pressing the `X` on the top right of the Slack integration. This will direct you to Slackbot's configuration page, and at the bottom of said page is the `Remove app` button. By clicking that button, Slackbot will be uninstalled from your workspace and your MoQuality account will be delinked from your Slack account.
+
 ## Troubleshooting
 
 If you encounter an error, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.

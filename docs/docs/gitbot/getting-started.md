@@ -18,6 +18,10 @@ Install Gitbot from from your [MoQuality account page](https://app.moquality.com
 
 To recieve testing updates in the comments of a pull request, enter your pull request URL when you press the `Generate Tests` button on your MoQuality app's page. This will tell Gitbot where to post status updates from those tests. You can also enter the pull request URL on the test report's page.
 
+## Uninstallation
+
+Gitbot can be uninstalled by navigating to the `Integrations` tab of your [MoQuality account page](https://app.moquality.com/account) and pressing the `X` on the top right of the GitHub integration. This will direct you to Gitbot's configuration page, and at the bottom of said page is the `Uninstall` button. By clicking that button, Gitbot will be uninstalled from your workspace and your MoQuality account will be delinked from your GitHub account.
+
 ## Troubleshooting
 
 If you encounter an error, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.
