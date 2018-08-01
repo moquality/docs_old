@@ -79,3 +79,7 @@ We do not recommend running the commands to install MQ CLI within a docker image
 ### Write permissions error when installing MQ CLI
 
 Read the error to find the directory to which you cannot write. Add the path of that directory to your `sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin` command. The command will then look like `sudo chown -R $(whoami) /usr/lib/node_modules /usr/bin [DIRECTORY_PATH]`.
+
+### Undocumented Error
+
+If you encounter an error that is not documented, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.

@@ -214,4 +214,10 @@ jobs:
 
 By the `mq login` and `mq upload` commands, highlighted above, fill in [API_KEY] and [APP_ID] with the API key of your account and app Id of your app, respectively. To find your API key, run `mq login` in your command line and follow the prompts to log in to your account. Next, run `mq user` to display user information. Your API key will be in the list of returned information. To find your app Id, log in with `mq login` and run `mq apps` to see a list of your apps. Find your app in the list and locate the app Id in the same row.
 
-Using the above instructions and [CircleCI MQ CLI integration documentation](circleci.md), we have created our own custom Dockerfile, integrated it with CircleCI, and integrated the CircleCI with MoQuality.
+Using the above instructions and [CircleCI MQ CLI integration documentation](circleci.md), we have created our own custom Dockerfile, integrated it with CircleCI, and integrated CircleCI with MoQuality.
+
+## Troublshooting
+
+### Undocumented Error
+
+If you encounter an error that is not documented, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.

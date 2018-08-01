@@ -6,7 +6,6 @@ Slack has CLI-like interactions called [Slash Commands](https://api.slack.com/sl
 
 * [/mq-apps](#/mq-apps)
 * [/mq-help](#/mq-help)
-* [/mq-link](#/mq-link)
 * [/mq-schedule](#/mq-schedule)
 * [/mq-status](#/mq-status)
 * [/mq-subscribe](#/mq-subscribe)
@@ -27,14 +26,6 @@ Posts a private message as an attachment containing information about MoQuality 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
 
             /mq-help
-
-### **/mq-link**
-
-Links the user's Slack account to their MoQuality account and posts a private message concerning the success of that operation. A MoQuality user's API key can be found under their personal profile information. This Slash Command is necessary for the use of most other Slackbot Slash Commands.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
-
-            /mq-link [API key]
 
 ### **/mq-schedule**
 

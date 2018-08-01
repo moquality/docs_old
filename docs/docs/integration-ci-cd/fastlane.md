@@ -74,3 +74,9 @@ end
 ### Run the Lane
 
 Now that you have integrated MoQuality with _fastlane_, try running the lane with `fastlane [LANE_NAME]` in your command line.
+
+## Troubleshooting
+
+### Undocumented Error
+
+If you encounter an error that is not documented, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.

@@ -110,3 +110,7 @@ Run `sudo chown -R [USERNAME] /usr/local/lib/node_modules` in your terminal. Thi
 ### Gradle-runner step fails for task ':app:mergeDebugResources'
 
 Don't worry about this error. Run the workflow again, and it should work.
+
+### Undocumented Error
+
+If you encounter an error that is not documented, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.

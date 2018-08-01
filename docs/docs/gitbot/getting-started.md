@@ -21,4 +21,4 @@ To recieve testing updates in the comments of a pull request, enter your pull re
 
 ## Troubleshooting
 
-If you encounter an error, please report it **[LINK NEEDED]**.
+If you encounter an error, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.
