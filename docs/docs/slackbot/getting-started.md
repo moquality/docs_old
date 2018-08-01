@@ -2,7 +2,7 @@
 
 ## Introduction
 
-MoQuality enables you to schedule tests when you deploy a new build of your app. However, these tests take time, and so does monitoring their success. Rather than watch and wait for your tests to complete, Slack users can install the MoQuality bot to their workspace. This bot will send a notification with test results to your desired Slack channel when a chosen app's test has completed. In order to utilize MoQuality bot's services effectively, there are several steps to follow.
+MoQuality enables you to schedule tests when you deploy a new build of your app. However, these tests take time, and so does monitoring their success. Rather than watch and wait for your tests to complete, Slack users can install the MoQuality bot to their workspace. This bot, referred to as Slackbot, will send a notification with test results to your desired Slack channel when a chosen app's test has completed. In order to utilize MoQuality bot's services effectively, there are several steps to follow.
 
 ## Prerequisites
 
