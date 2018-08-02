@@ -155,3 +155,9 @@ Displays current user information.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
 
             $ mq user
+
+## Troubleshooting
+
+### Undocumented Error
+
+If you encounter an error that is not documented, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.
