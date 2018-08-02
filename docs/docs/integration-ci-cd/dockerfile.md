@@ -119,7 +119,7 @@ Now you can add your instructions to set up an environment within a CircleCI con
 
 ## CircleCI and Custom Docker Image for MoQuality App
 
-MoQuality has created a [Github repository](https://github.com/moquality/plugins) with all the necessary files to build and upload a calculator app to MoQuality by using CircleCI and a custom Dockerfile. Our Dockerfile uses Ubuntu as our parent image and installs dependencies such as Gradle to build the app. The Docker image path is `jragonemq/mqubuntutest:latest`. Before beginning, create an app on MoQuality that you can use to test the upload properties of this build. It does not matter what apk file you upload upon creation of the app.
+MoQuality has created a [Github repository](https://github.com/moquality/devcenter) with all the necessary files to build and upload a calculator app to MoQuality by using CircleCI and a custom Dockerfile. Our Dockerfile uses Ubuntu as our parent image and installs dependencies such as Gradle to build the app. The Docker image path is `jragonemq/mqubuntutest:latest`. Before beginning, create an app on MoQuality that you can use to test the upload properties of this build. It does not matter what apk file you upload upon creation of the app.
 
 ### MoQuality's Example `Dockerfile`
 

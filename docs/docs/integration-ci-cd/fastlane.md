@@ -7,7 +7,7 @@ _fastlane_ is a Continuous Integration and Continuous Delivery tool for iOS and 
 ## Prerequisites
 
 * _fastlane_: If you have not yet installed _fastlane_, follow the instructions [here](https://docs.fastlane.tools/).
-* MQ CLI: [Install MQ CLI](mq-cli.md#installation).
+* MQ CLI: [Install the MQ CLI](mq-cli.md#installation).
 * MoQuality app: If you intend to upload a new build of an app, ensure that you have already uploaded the first version through the [MoQuality website](https://app.moquality.com/).
 
 ## Instructions

@@ -7,7 +7,7 @@ CircleCI is a Continuous Integration and Continuous Delivery platform that allow
 ## Prerequisites
 
 * CircleCI: If you have not yet installed CircleCI, follow the instructions [here](https://circleci.com/docs/2.0/local-cli/).
-* MQ CLI: [Install MQ CLI](mq-cli.md#installation).
+* MQ CLI: [Install the MQ CLI](mq-cli.md#installation).
 * MoQuality app: If you intend to upload a new build of an app using MQ CLI, ensure that you have already uploaded the first version through the [MoQuality website](https://app.moquality.com/).
 
 ## Instructions

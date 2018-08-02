@@ -7,7 +7,7 @@ Bitrise is a Continuous Integration and Delivery Platform as a Service. MoQualit
 ## Prerequisites
 
 * Bitrise: If you have not yet installed Bitrise, follow the instructions [here](https://www.bitrise.io/cli).
-* MQ CLI: [Install MQ CLI](mq-cli.md#installation).
+* MQ CLI: [Install the MQ CLI](mq-cli.md#installation).
 * MoQuality app: If you intend to upload a new build of an app, ensure that you have already uploaded the first version through the [MoQuality website](https://app.moquality.com/).
 
 ## Instructions

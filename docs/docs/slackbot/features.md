@@ -6,7 +6,7 @@ Slack has CLI-like interactions called [Slash Commands](https://api.slack.com/sl
 
 * [/mq-apps](#/mq-apps)
 * [/mq-help](#/mq-help)
-* [/mq-schedule](#/mq-schedule)
+<!-- * [/mq-schedule](#/mq-schedule) -->
 * [/mq-status](#/mq-status)
 * [/mq-subscribe](#/mq-subscribe)
 * [/mq-user](#/mq-user)
@@ -27,13 +27,13 @@ Posts a private message as an attachment containing information about MoQuality 
 
             /mq-help
 
-### **/mq-schedule**
+<!-- ### **/mq-schedule**
 
 Schedules a test for an app that has been created on MoQuality. The necessary information to perform this Slash Command can be obtained with the [MQ CLI](../integration-ci-cd/mq-cli.md). After scheduling the test, Slackbot posts a private message as an attachment containing the status of the newly scheduled test.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
 
-            /mq-schedule [app Id] [device group Id] [report name] [test suite Id]
+            /mq-schedule [app Id] [device group Id] [report name] [test suite Id] -->
 
 ### **/mq-status**
 
