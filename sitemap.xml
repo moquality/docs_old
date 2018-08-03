@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,25 +13,25 @@
         
     <url>
      <loc>/getting-started/android/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting-started/ios-sim/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting-started/ios-native/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting-started/upload-app/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -41,31 +41,31 @@
         
     <url>
      <loc>/recorder/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/recorder/android/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/recorder/ios/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/recorder/features/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/recorder/test-editing/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -75,7 +75,7 @@
         
     <url>
      <loc>/getting-started/auto-test/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -85,25 +85,25 @@
         
     <url>
      <loc>/getting-started/view-tests/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting-started/test-suite/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting-started/devices/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting-started/scheduling-tests/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -113,7 +113,7 @@
         
     <url>
      <loc>/getting-started/view-results/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -123,7 +123,7 @@
         
     <url>
      <loc>/flows/documentation/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -133,31 +133,47 @@
         
     <url>
      <loc>/integration-ci-cd/mq-cli/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/integration-ci-cd/fastlane/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/integration-ci-cd/bitrise/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/integration-ci-cd/circleci/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/integration-ci-cd/dockerfile/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -166,7 +182,7 @@
     
     <url>
      <loc>/faq/</loc>
-     <lastmod>2018-07-07</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
