@@ -6,7 +6,7 @@ MoQuality enables you to schedule tests when you deploy a new build of your app.
 
 ## Prerequisites
 
-* Slack account & workspace: In order to use Slackbot, you will, of course, need to have created a [Slack account](https://slack.com/get-started) and a [workspace](https://slack.com/create).
+* Slack account & workspace: In order to use Slackbot, you will, of course, need to have created a [Slack account](https://slack.com/get-started), [workspace](https://slack.com/create), and [channel](https://get.slack.help/hc/en-us/articles/201402297-Create-a-channel). It is ideal to create a channel specifically for the use of Slackbot.
 * MoQuality account: Slackbot will need to link your Slack account to your MoQuality account, which you can create [here](https://app.moquality.com/signup).
 * MoQuality app: For the purpose of receiving an app's status updates from Slackbot, ensure that you have already uploaded the first version of your app through the [MoQuality website](https://app.moquality.com/).
 
@@ -16,7 +16,11 @@ Install Slackbot from your [MoQuality account page](https://app.moquality.com/ac
 
 ## Setup
 
-Once Slackbot is integrated with your workspace, your MoQuality and Slack accounts are linked, and you or anyone else in your workspace can invoke one of Slackbots many [Slash Commands](features/#slash commands). By typing `/mq` in your Slack workspace, you should see a list of the available Slash Commands. The first Slash Command you may want to use is `/mq-subscribe [app Id]`. This command subscribes the authorized channel to test updates from the given MoQuality app. After subscribing the channel, Slackbot posts a public message as an attachment containing information about the subscription.
+Once Slackbot is integrated with your workspace, your MoQuality and Slack accounts are linked. This means that you or anyone else in your workspace can invoke one of Slackbots many [Slash Commands](features/#slash commands). By typing `/mq` in your Slack workspace, you should see a list of the available Slash Commands.
+
+![Available Slash Commands](slackbot-img/available_slash_commands.png)
+
+The first Slash Command you may want to use is [`/mq-subscribe [app Id]`](features/#mq-subscribe). This command subscribes the authorized channel to test updates from the given MoQuality app. After subscribing the channel, Slackbot posts a public message as an attachment containing information about the subscription.
 
 ## Uninstallation
 

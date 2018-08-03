@@ -4,12 +4,12 @@
 
 Slack has CLI-like interactions called [Slash Commands](https://api.slack.com/slash-commands). Slash Commands enable the user to directly interact with Slackbot in a variety of ways. Listed below is the full array of Slash Commands that Slackbot supports.
 
-* [/mq-apps](#/mq-apps)
-* [/mq-help](#/mq-help)
+* [/mq-apps](#mq-apps)
+* [/mq-help](#mq-help)
 <!-- * [/mq-schedule](#/mq-schedule) -->
-* [/mq-status](#/mq-status)
-* [/mq-subscribe](#/mq-subscribe)
-* [/mq-user](#/mq-user)
+* [/mq-status](#mq-status)
+* [/mq-subscribe](#mq-subscribe)
+* [/mq-user](#mq-user)
 
 ### **/mq-apps**
 
