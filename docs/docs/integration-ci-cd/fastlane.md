@@ -10,6 +10,14 @@ _fastlane_ is a Continuous Integration and Continuous Delivery tool for iOS and 
 * MQ CLI: [Install the MQ CLI](mq-cli.md#installation).
 * MoQuality app: If you intend to upload a new build of an app, ensure that you have already uploaded the first version through the [MoQuality website](https://app.moquality.com/).
 
+## Example Code
+
+MoQuality hosts a [GitHub repository](https://github.com/moquality/devcenter) that contains example code for all of our CI/CD integrations, including _fastlane_. You can take advantage of this repository by running the following command in the directory of your choosing.
+
+``` shell
+git clone https://github.com/moquality/devcenter.git
+```
+
 ## Instructions
 
 To integrate MoQuality with _fastlane_, you will add a step to your lane that runs a shell script containing your MQ CLI commands. For this documentation, we will call that script `mq.sh`, but you can call it whatever you wish.

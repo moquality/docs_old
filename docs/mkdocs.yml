@@ -45,9 +45,9 @@ pages:
   - Custom Docker Images: integration-ci-cd/dockerfile.md
 - Notifications:
   - Slackbot:
-    - Getting Started: slackbot/getting-started.md
-    - Features: slackbot/features.md
+    - Getting Started: notifications/slackbot/getting-started.md
+    - Features: notifications/slackbot/features.md
   - Gitbot:
-    - Getting Started: gitbot/getting-started.md
-    - Features: gitbot/features.md
+    - Getting Started: notifications/gitbot/getting-started.md
+    - Features: notifications/gitbot/features.md
 - FAQ: faq.md

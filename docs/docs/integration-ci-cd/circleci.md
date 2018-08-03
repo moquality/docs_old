@@ -10,6 +10,14 @@ CircleCI is a Continuous Integration and Continuous Delivery platform that allow
 * MQ CLI: [Install the MQ CLI](mq-cli.md#installation).
 * MoQuality app: If you intend to upload a new build of an app using MQ CLI, ensure that you have already uploaded the first version through the [MoQuality website](https://app.moquality.com/).
 
+## Example Code
+
+MoQuality hosts a [GitHub repository](https://github.com/moquality/devcenter) that contains example code for all of our CI/CD integrations, including CircleCI. You can take advantage of this repository by running the following command in the directory of your choosing.
+
+``` shell
+git clone https://github.com/moquality/devcenter.git
+```
+
 ## Instructions
 
 ### Open `config.yml`
