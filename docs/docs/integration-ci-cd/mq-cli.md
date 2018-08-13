@@ -20,13 +20,8 @@ The standard usage of MQ CLI commands is `mq [COMMAND]`, where COMMAND is one of
 ## Commands
 
 * [apps](#apps)
-* [devices](#devices)
-* [get-recorder](#get-recorder)
 * [help](#help)
 * [login](#login)
-* [schedule](#schedule)
-* [status](#status)
-* [suites](#suites)
 * [tests](#tests)
 * [upload](#upload)
 * [user](#user)
