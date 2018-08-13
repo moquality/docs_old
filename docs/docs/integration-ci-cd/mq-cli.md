@@ -2,16 +2,18 @@
 
 ## Introduction
 
-MoQuality CLI (MQ CLI) is a Command Line Interface that enables users to interact with MoQuality through their command line.
+The MoQuality CLI (MQ CLI) is a Command Line Interface that enables users to interact with MoQuality through their command line.
 
 ## Installation
 
-MQ CLI can be installed using either yarn or npm. The respective commands for either are below.
+The MQ CLI can be installed using either yarn or npm. The respective command for either method is below.
 
-        $ yarn global add mq-cli
-        $ npm install -g mq-cli
+``` shell
+        yarn global add mq-cli
+        npm install -g mq-cli
+```
 
-For a list of MQ CLI commands, type `mq help` in your command line.
+For a list of the MQ CLI's commands, type `mq help` in your command line.
 
 ## Usage
 
@@ -32,35 +34,23 @@ Displays a list of the current user's apps.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
 
-            $ mq apps
-
-### **devices**
-
-Displays a list of the current user's devices. Use these devices while scheduling test runs.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
-
-            $ mq devices
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Options**
-
-            -a --app=app             app id
-
-### **get-recorder**
-
-Downloads or updates the recorder.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
-
-            $ mq get-recorder
+``` shell
+        mq apps
+```
 
 ### **help**
 
-Displays the version, usage, and commands for MQ CLI.
+Displays the version, usage, and commands for the MQ CLI.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
 
-            $ mq help
+``` shell
+        mq help
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Arguments**
+
+            COMMAND  command to show help for
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Options**
 
@@ -72,7 +62,9 @@ Logs the user in with either their email and password or their API key.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
 
-            $ mq login
+``` shell
+        mq login
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Options**
 
@@ -80,51 +72,15 @@ Logs the user in with either their email and password or their API key.
             -p, --password=password  password of user
             -a, --api_key=api_key    api_key of user
 
-### **schedule**
-
-Schedules test runs for a particular app project. Runs are scheduled on the last uploaded version.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
-
-            $ mq schedule
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Options**
-
-            -a, --app=app            app id
-            -s, --suite=suite        suite id 
-            -d, --device=device      device group id
-
-### **status**
-
-Displays status on all test runs for the latest version uploaded for a particular app project.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
-
-            $ mq status
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Options**
-
-            -a --app=app             app id
-
-### **suites**
-
-Displays test suites created for a particular app project.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
-
-            $ mq devices
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Options**
-
-            -a --app=app             app id
-
 ### **tests**
 
 Show tests recorded for a particular app project.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
 
-            $ mq tests
+``` shell
+        mq tests
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Options**
 
@@ -136,7 +92,9 @@ Uploads a new version to an app project on MoQuality.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
 
-            $ mq upload
+``` shell
+        mq upload
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Options**
 
@@ -149,7 +107,9 @@ Displays current user information.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
 
-            $ mq user
+``` shell
+        mq user
+```
 
 ## Troubleshooting
 
