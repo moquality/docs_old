@@ -44,10 +44,13 @@ pages:
   - Integrate with CircleCI: integration-ci-cd/circleci.md
   - Custom Docker Images: integration-ci-cd/dockerfile.md
 - Notifications:
-  - Slackbot:
+  - Slack:
     - Getting Started: notifications/slackbot/getting-started.md
     - Features: notifications/slackbot/features.md
-  - Gitbot:
+  - GitHub:
     - Getting Started: notifications/gitbot/getting-started.md
     - Features: notifications/gitbot/features.md
+  - Pivotal Tracker:
+    - Getting Started: notifications/ptbot/getting-started.md
+    - Features: notifications/ptbot/features.md
 - FAQ: faq.md

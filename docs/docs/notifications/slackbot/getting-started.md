@@ -16,11 +16,11 @@ Install Slackbot from your [MoQuality account page](https://app.moquality.com/ac
 
 ## Setup
 
-Once Slackbot is integrated with your workspace, your MoQuality and Slack accounts are linked. This means that you or anyone else in your workspace can invoke one of Slackbots many [Slash Commands](features/#slash commands). By typing `/mq` in your Slack workspace, you should see a list of the available Slash Commands.
+Once Slackbot is integrated with your workspace, your MoQuality and Slack accounts are linked. This means that you or anyone else in your workspace can invoke one of Slackbots many [Slash Commands](features.md#slash commands). By typing `/mq` in your Slack workspace, you should see a list of the available Slash Commands.
 
 ![Available Slash Commands](slackbot-img/available_slash_commands.png)
 
-The first Slash Command you may want to use is [`/mq-subscribe [app Id]`](features/#mq-subscribe). This command subscribes the authorized channel to test updates from the given MoQuality app. After subscribing the channel, Slackbot posts a public message as an attachment containing information about the subscription.
+The first Slash Command you may want to use is [`/mq-subscribe [app Id]`](features.md#mq-subscribe). This command subscribes the authorized channel to test updates from the given MoQuality app. After subscribing the channel, Slackbot posts a public message as an attachment containing information about the subscription.
 
 ## Uninstallation
 
@@ -28,4 +28,6 @@ Slackbot can be uninstalled by navigating to the `Integrations` tab of your [MoQ
 
 ## Troubleshooting
 
-If you encounter an error, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.
+### Undocumented Error
+
+If you encounter an error that is not documented, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.

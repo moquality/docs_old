@@ -6,7 +6,7 @@ When a pull request is opened or reopned, Gitbot will post to the pull request a
 
 ## Status Updates
 
-If Gitbot has been [configured correctly](getting-started/#setup), it will post updates from tests to the comments of a pull request.
+If Gitbot has been [configured correctly](getting-started.md#setup), it will post updates from tests to the comments of a pull request.
 
 ## Future Features
 

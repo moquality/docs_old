@@ -8,7 +8,7 @@ MoQuality's services provide an invaluable advancement to QA testing, but those 
 
 * GitHub accounts & respository: In order to use Gitbot, you will, of course, need to have created a [GitHub account](https://github.com/join) and a [repository](https://github.com/new).
 * MoQuality account: Gitbot will need to link your GitHub account to your MoQuality account, which you can create [here](https://app.moquality.com/signup).
-* MoQuality app: For the purpose of test status notifications for a new version of your app, ensure that you have already uploaded the first version of your app through the [MoQuality website](https://app.moquality.com/).
+* MoQuality app: For the purpose of receiving test status notifications for a new version of your app, ensure that you have already uploaded the first version of your app through the [MoQuality website](https://app.moquality.com/).
 
 ## Installation
 
@@ -24,4 +24,6 @@ Gitbot can be uninstalled by navigating to the `Integrations` tab of your [MoQua
 
 ## Troubleshooting
 
-If you encounter an error, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.
+### Undocumented Error
+
+If you encounter an error that is not documented, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.

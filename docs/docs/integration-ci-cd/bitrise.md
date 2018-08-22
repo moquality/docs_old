@@ -73,7 +73,7 @@ The lines following `content` are shell commands. You may create a shell script 
     mq apps
 ```
 
-* `npm install mq-cli` installs the MQ CLI. See the [MQ CLI documentation](mq-cli/#Installation) for alternative installation commands.
+* `npm install mq-cli` installs the MQ CLI. See the [MQ CLI documentation](mq-cli.md#Installation) for alternative installation commands.
 
 * `mq login -a $API_KEY` will log you in using your API key.
 
