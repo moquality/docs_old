@@ -14,7 +14,11 @@ Pivotal Tracker is an agile project management tool that developers employ for m
 
 ### Invite PTBot to Your Project
 
-PTBot is a user, named `MoQuality Bot`, on Pivotal Tracker. In order for PTBot to comment on a story, it must be a member of your Pivotal Tracker project. To invite PTBot, visit the `MEMBERS` tab on your project, ![MEMBERS tab](ptbot-img/members_tab.png) press the `Invite People` button, and invite `bot@moquality.com` as a member of your project.
+PTBot is a user, named `MoQuality Bot`, on Pivotal Tracker. In order for PTBot to comment on a story, it must be a member of your Pivotal Tracker project. To invite PTBot, visit the `MEMBERS` tab on your project,
+
+![MEMBERS tab](ptbot-img/members_tab.png)
+
+press the `Invite People` button, and invite `bot@moquality.com` as a member of your project.
 
 ![Inivitation page](ptbot-img/invitation_page.png)
 
