@@ -1,6 +1,23 @@
 site_name: MoQuality Docs
 theme:
   name: 'material'
+  palette:
+    primary: 'white'
+    accent: 'deep orange'
+  font:
+    size: 10px
+  feature:
+    tabs: true
+  logo: '/images/logo.png'
+
+extra_css: [extra.css]
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/moquality'
+    - type: 'twitter'
+      link: 'https://twitter.com/moqualityinc'
 
 edit_uri: /moquality/docs/tree/master/docs/docs
 repo_name: 'MoQuality Docs'
@@ -10,44 +27,51 @@ markdown_extensions:
   - codehilite
   - admonition
   - toc:
-      permalink: '⚓'
+      permalink: true
 
-pages:
-- "What is MoQuality?": index.md
-- Uploading Apps:
-  - Creating an Android APK: getting-started/android.md
-  - Creating an iOS Simulator App: getting-started/ios-sim.md
-  - Creating an iOS Native App: getting-started/ios-native.md
-  - Upload App: getting-started/upload-app.md
-- Test Recorder:
+copyright: 'Copyright &copy; 2018 MoQuality, Inc.'
+
+nav:
+- Getting Started:
+  - "What is MoQuality?": index.md
+  # - Uploading Apps:
+  #   - Creating an Android APK: getting-started/android.md
+  #   - Creating an iOS Simulator App: getting-started/ios-sim.md
+  #   - Creating an iOS Native App: getting-started/ios-native.md
+  #   - Upload App: getting-started/upload-app.md
+- Barista:
   - Getting Started: recorder/index.md
   - Android Setup: recorder/android.md
   - iOS Setup: recorder/ios.md
   - Features: recorder/features.md
   - Test Editing: recorder/test-editing.md
-- Autogenerate Tests:
-  - Scheduling robot tests : getting-started/auto-test.md
-- Scheduling Test Runs: 
-  - View Recorded Tests: getting-started/view-tests.md
-  - Creating Test Suites: getting-started/test-suite.md
-  - Creating Device Groups: getting-started/devices.md
-  - Scheduling Tests : getting-started/scheduling-tests.md
-  # - Executing Tests: getting-started/pushkar.md
-- View Test Reports:
-  - Dashboard: getting-started/view-results.md
-- Workflows:
-  - Documentation: flows/documentation.md
-- CI/CD Integrations:
-  - MoQuality CLI: integration-ci-cd/mq-cli.md
-  - Integrate with fastlane: integration-ci-cd/fastlane.md
-  - Integrate with Bitrise: integration-ci-cd/bitrise.md
-  - Integrate with CircleCI: integration-ci-cd/circleci.md
-  - Custom Docker Images: integration-ci-cd/dockerfile.md
-- Notifications:
-  - Slackbot:
-    - Getting Started: notifications/slackbot/getting-started.md
-    - Features: notifications/slackbot/features.md
-  - Gitbot:
-    - Getting Started: notifications/gitbot/getting-started.md
-    - Features: notifications/gitbot/features.md
-- FAQ: faq.md
+  # - Autogenerate Tests:
+  #   - Scheduling robot tests : getting-started/auto-test.md
+  # - Scheduling Test Runs: 
+  #   - View Recorded Tests: getting-started/view-tests.md
+  #   - Creating Test Suites: getting-started/test-suite.md
+  #   - Creating Device Groups: getting-started/devices.md
+  #   - Scheduling Tests : getting-started/scheduling-tests.md
+    # - Executing Tests: getting-started/pushkar.md
+  - Dashboard:
+    - Test Reports: getting-started/view-results.md
+  - Workflows:
+    - Documentation: flows/documentation.md
+
+- Integrations:
+  - CI/CD:
+    - MoQuality CLI: integration-ci-cd/mq-cli.md
+    - Integrate with fastlane: integration-ci-cd/fastlane.md
+    - Integrate with Bitrise: integration-ci-cd/bitrise.md
+    - Integrate with CircleCI: integration-ci-cd/circleci.md
+    - Custom Docker Images: integration-ci-cd/dockerfile.md
+  - Notifications:
+    - Slackbot:
+      - Getting Started: notifications/slackbot/getting-started.md
+      - Features: notifications/slackbot/features.md
+    - Gitbot:
+      - Getting Started: notifications/gitbot/getting-started.md
+      - Features: notifications/gitbot/features.md
+
+- FAQ:
+  - FAQ: faq.md

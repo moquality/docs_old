@@ -1,4 +1,4 @@
-# Test Editing in the Recorder
+# Test Editing in Barista
 
 ## Introduction
 

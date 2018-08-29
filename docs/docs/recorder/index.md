@@ -1,20 +1,23 @@
-# Getting Started with the Recorder
+# Getting Started with Barista
 
-The MoQuality test recorder is used to record, replay and edit tests using a local mobile device. It automatically downloads and installs the app  on a new device.
+Barista can be used to record, replay and edit tests using a local mobile device. It automatically downloads and installs the app  on a new device.
 
-For a full overview of the recorder's functionality, see [the Recorder Feature List](features).
+For a full overview of the recorder's functionality, see [Barista's Feature List](features).
 
-## Downloading the Recorder
+## Installing Barista
 
-Download the recorder from [app.moquality.com/download](https://app.moquality.com/download).
+Install Barista with [brew](https://brew.sh/):
+```
+brew cask install moquality/brew/barista
+```
 
 ## Setup the Device
 Android and iOS devices are setup differently, as follows:
 
-* [Recorder Setup for Android Devices](android)
-* [Recorder Setup for iOS Devices](ios)
+* [Setup an Android Device](android)
+* [Setup an iOS Device](ios)
 
-## Recording a Test Case
+## Creating a Test Case
 
 1. Choose a device and an app.
 

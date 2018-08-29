@@ -1,4 +1,4 @@
-# Recorder Setup for Android Devices
+# Setup an Android Device
 
 ## Enable USB Debugging
 
