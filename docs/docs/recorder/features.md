@@ -1,12 +1,12 @@
-# Recorder Feature List
+# Barista Feature List
 
 ## Assertions
-Add an assertion to your test, to force-check expected outcomes such as checking for specific text or UI element. For example, at the login screen, incase of incorrect username or password, you can add an assertion in the recorder to check for the 'Invalid login credentials' text message.
+Add an assertion to your test, to force-check expected outcomes such as checking for specific text or UI element. For example, at the login screen, incase of incorrect username or password, you can add an assertion in Barista to check for the 'Invalid login credentials' text message.
 
 <img src="../android/assertion.gif" style="max-width:800px;max-height:600px" />
 
 ## API Requests
-Make API requests to your testing environments through the app. Recorder allows API requests at any screen of the app. This is most helpful when you might want to initialize user setup before testing the login screen or make an API call to clean out the test data at the end of test flow. 
+Make API requests to your testing environments through the app. Barista allows API requests at any screen of the app. This is most helpful when you might want to initialize user setup before testing the login screen or make an API call to clean out the test data at the end of test flow. 
 
 
 <img src="../android/api_request.gif" style="max-width:800px;max-height:600px" />

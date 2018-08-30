@@ -1,7 +1,7 @@
 
 
 # Viewing Results
-When a user has either scheduled tests or requested automatically generated tests, reports containing the results, success/failure of a tests, screenshot, various statistics, app maps are automatically generated. In order to view these
+After you have recorded and replayed tests using Barista, test reports containing the performance results, success/failure of a tests, screenshot, various statistics, app maps are automatically generated. In order to view these
 results,  navigate to the Overview page and a following screen shall appear.
 
 <img src="../dashboard-img/3.png" height="640px" />
