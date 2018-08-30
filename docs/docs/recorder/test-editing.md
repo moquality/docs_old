@@ -17,9 +17,9 @@ If you would like to change the description of a test step, it's as easy as repl
 
 <img src="../android/edit_test_description.png" style="max-width:600px;max-height:480px" />
 
-## Editing Test Parameters (Coming Soon)
+## Editing Test Parameters
 
-We are currently in the process of adding the functionality to parameterize test inputs, such as usernames and passwords, to expand the testing capabilities of an individual test.
+Barista provides the functionality to parameterize test inputs, such as usernames and passwords, to expand the testing capabilities of an individual test.
 
 <img src="../android/edit_test_params.png" style="max-width:600px;max-height:480px" />
 
