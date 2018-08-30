@@ -411,6 +411,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#launch-barista" title="Launch Barista" class="md-nav__link">
+    Launch Barista
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#creating-a-test-case" title="Creating a Test Case" class="md-nav__link">
     Creating a Test Case
   </a>
@@ -444,24 +451,25 @@
     Infinite Loading Screen
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#get-a-screenshot" title="Get a screenshot" class="md-nav__link">
-    Get a screenshot
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
   <a href="#differences-between-android-and-ios-test-recording" title="Differences between Android and iOS test recording" class="md-nav__link">
     Differences between Android and iOS test recording
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-does-my-phone-not-connect" title="Why does my phone not connect?" class="md-nav__link">
+    Why does my phone not connect?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-does-it-say-i-need-to-re-record-in-stable-mode" title="Why does it say I need to re-record in 'Stable Mode'?" class="md-nav__link">
+    Why does it say I need to re-record in 'Stable Mode'?
   </a>
   
 </li>
@@ -906,6 +914,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#launch-barista" title="Launch Barista" class="md-nav__link">
+    Launch Barista
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#creating-a-test-case" title="Creating a Test Case" class="md-nav__link">
     Creating a Test Case
   </a>
@@ -939,24 +954,25 @@
     Infinite Loading Screen
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#get-a-screenshot" title="Get a screenshot" class="md-nav__link">
-    Get a screenshot
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
   <a href="#differences-between-android-and-ios-test-recording" title="Differences between Android and iOS test recording" class="md-nav__link">
     Differences between Android and iOS test recording
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-does-my-phone-not-connect" title="Why does my phone not connect?" class="md-nav__link">
+    Why does my phone not connect?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-does-it-say-i-need-to-re-record-in-stable-mode" title="Why does it say I need to re-record in 'Stable Mode'?" class="md-nav__link">
+    Why does it say I need to re-record in 'Stable Mode'?
   </a>
   
 </li>
@@ -986,10 +1002,10 @@
                 
                 
                 <h1 id="getting-started-with-barista">Getting Started with Barista<a class="headerlink" href="#getting-started-with-barista" title="Permanent link">&para;</a></h1>
-<p>Barista can be used to record, replay and edit tests using a local mobile device. It automatically downloads and installs the app  on a new device.</p>
-<p>For a full overview of the recorder's functionality, see <a href="features">Barista's Feature List</a>.</p>
+<p>Barista can be used to record, replay and edit tests using a local mobile device. It automatically downloads and installs the app on a new mobile device.</p>
+<p>For a full functionality overview, see <a href="features">Barista's Feature List</a>.</p>
 <h2 id="installing-barista">Installing Barista<a class="headerlink" href="#installing-barista" title="Permanent link">&para;</a></h2>
-<p>Install Barista with <a href="https://brew.sh/">brew</a>:</p>
+<p>Install Barista with <a href="https://brew.sh/">brew</a> or <a href="https://app.moquality.com">download here</a>:</p>
 <div class="codehilite"><pre><span></span>brew cask install moquality/brew/barista
 </pre></div>
 
@@ -1000,21 +1016,35 @@
 <li><a href="android">Setup an Android Device</a></li>
 <li><a href="ios">Setup an iOS Device</a></li>
 </ul>
+<h2 id="launch-barista">Launch Barista<a class="headerlink" href="#launch-barista" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Launch Barista with your connected device and log in with either your <em>API key</em> or <em>username/password</em>. </p>
+<p><img src="android/login.gif" style="max-width:600px;max-height:480px" /></p>
+</li>
+</ol>
 <h2 id="creating-a-test-case">Creating a Test Case<a class="headerlink" href="#creating-a-test-case" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>Choose a device and an app.</p>
+<p>Select your device and app from the drop down, as well as your screen size and keyboard preference. We recommend setting it to no-keyboard, tests are more reliable without flaky keyboard. The recorder itself has a text input feature which will allow you to input text into text boxes.</p>
 <p><img src="common/select-device-and-settings.gif" style="max-width:600px;max-height:480px" /></p>
 </li>
 <li>
-<p>Choose device settings.</p>
+<p>Install app (for the first time use).</p>
 </li>
-<li>Install app (for the first time use).</li>
 <li>Click "Record".</li>
-<li>Perform actions in the app.</li>
-<li>Click "Save".</li>
+<li>
+<p>Demonstrate the user flow for the test case in the app.Interact with the screen projection you see in front of you. You <strong>MUST use the bottom interface buttons</strong> for actions instead of the hardware buttons on your device. Hardware buttons include back button, home screen button and show apps button. Similarly, if your device has software buttons, do not click them. We assume that software buttoms will never be a part of a test case and discard them.</p>
+<p><img src="android/recording_demo.gif" style="max-width:600px;max-height:480px" /></p>
+</li>
+<li>
+<p>Click "Save".</p>
+</li>
 <li>Enter a name for the test.</li>
-<li>Click "Save".</li>
+<li>
+<p>Click "Save".</p>
+<p><img src="android/save_test.gif" style="max-width:600px;max-height:480px" /></p>
+</li>
 </ol>
 <h2 id="replaying-a-test">Replaying a Test<a class="headerlink" href="#replaying-a-test" title="Permanent link">&para;</a></h2>
 <ol>
@@ -1024,13 +1054,16 @@
 <li>Install app (if it is not previously installed).</li>
 <li>Switch to the "Tests" tab.</li>
 <li>Find the test that you would like to replay and expand it.</li>
-<li>Click "Run".</li>
+<li>Click "Run". </li>
+<li>
+<p>If you are unable to run the test, you can edit or re-record the test.</p>
+<p><img src="android/test_replay.gif" style="max-width:600px;max-height:480px" /></p>
+</li>
 </ol>
 <h2 id="editing-a-test">Editing a Test<a class="headerlink" href="#editing-a-test" title="Permanent link">&para;</a></h2>
-<p>After saving a test recording, you can make changes to a test such as adding a time delay, or deleting a step. For more information see <a href="test-editing">Test editing</a></p>
+<p>After saving a test recording, you can make changes to a test such as adding a time delay, deleting a step, edit actions, add assertions, force select UI elements and much more. For more information see <a href="test-editing">Test editing</a></p>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <h3 id="infinite-loading-screen">Infinite Loading Screen<a class="headerlink" href="#infinite-loading-screen" title="Permanent link">&para;</a></h3>
-<h4 id="get-a-screenshot">Get a screenshot<a class="headerlink" href="#get-a-screenshot" title="Permanent link">&para;</a></h4>
 <p>In some cases, the recorder may fail to start properly when connecting to a device. If this occurs, you will be presented with an error message, following which the loading screen will continue to load infinitely. This usually happens as a result of a desynchronization between the device and ADB (Android Debug Bridge), resulting in ADB classifying the device as "offline". If this happens, try the following steps:</p>
 <ol>
 <li>Close the recorder.</li>
@@ -1045,6 +1078,10 @@
 <p>Android and iOS devices behave similarly in the recorder, but there are a few differences in the touch control.</p>
 <p>On Android, the mouse pointer emulates a touch input, providing a clean 1-to-1 interaction between the recorder and the app. Unfortunately, due to limitations in iOS automation, the recorder is unable to do this 1-to-1 interaction with iOS devices.</p>
 <p>When clicking on the screen while using an iOS device, a circle will appear where the mouse button was pressed. If the mouse is dragged past a threshold distance away from that starting point, a second circle will appear under the mouse with a line connecting the two. If this appears, releasing the mouse will perform a drag from the first circle to the second; if it does not appear, then a click action will be performed at the location of the first circle instead.</p>
+<h3 id="why-does-my-phone-not-connect">Why does my phone not connect?<a class="headerlink" href="#why-does-my-phone-not-connect" title="Permanent link">&para;</a></h3>
+<p>Double-check that USB debugging is on and that you have clicked 'Allow' on the on-screen popup. You may have to unplug and replug the device in some cases.</p>
+<h3 id="why-does-it-say-i-need-to-re-record-in-stable-mode">Why does it say I need to re-record in 'Stable Mode'?<a class="headerlink" href="#why-does-it-say-i-need-to-re-record-in-stable-mode" title="Permanent link">&para;</a></h3>
+<p>For some apps and tests, the regular mode may be unable to capture all the necessary details to successfully run the test. You can toggle 'Stable Mode' inside the recording by going into 'Settings' and toggling the option.</p>
                 
                   
                 
