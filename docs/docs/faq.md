@@ -24,9 +24,9 @@ While we continue to add additional cleanup steps and improve the cleanup proces
 
 No, we don't modify your app. Some iOS apps may require re-signing, but this feature is not currently supported. We recommend uploading a version of your app with debugging symbols enabled.
 
-## **Test Recording and Editing**
+## **Barista**
 
-### Does the recorder support both Android and iOS?
+### Does Barista support both Android and iOS?
 
 Yes, both Android and iOS, including iOS simulators, are supported.
 
@@ -47,7 +47,7 @@ The maximum time for each test is 5 minutes. If you need a longer timeout, pleas
 
 We offer this feature as an add-on. After you enable it, a link appears in our dashboard that enables you to download tests and test reports in JSON format.
 
-## Devices
+## **Devices**
 
 ### Can the cloud devices communicate with external web-services?
 

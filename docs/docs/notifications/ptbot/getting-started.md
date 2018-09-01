@@ -14,7 +14,7 @@ Pivotal Tracker is an agile project management tool that developers employ for m
 
 ### Invite PTBot to Your Project
 
-PTBot is a user, named `MoQuality Bot`, on Pivotal Tracker. In order for PTBot to comment on a story, it must be a member of your Pivotal Tracker project. To invite PTBot, visit the `MEMBERS` tab on your project,
+PTBot is a Pivotal Tracker user, named `MoQuality Bot`. In order for PTBot to comment on a story, it must be a member of your Pivotal Tracker project. To invite PTBot, visit the `MEMBERS` tab on your project,
 
 ![MEMBERS tab](ptbot-img/members_tab.png)
 
@@ -26,7 +26,7 @@ This will add PTBot to your project, enabling the bot to comment on stories.
 
 ### Add a Webhook to Your Project
 
-Pivotal Tracker offers webhook support for projects. [A Pivotal Tracker project webhook](https://www.pivotaltracker.com/help/articles/activity_webhook/) is a location to which Pivotal tracker sends activity information when changes are made to a project. For instance, when a story's state is changed to `Delivered`, Pivotal Tracker will send JSON data, describing that change, to the project's webhooks. When PTBot's webhook is added to your project, PTBot can monitor a story's state to tell you when to upload a new version of your app to MoQuality. To add PTBot's webhook to your project, visit the `MORE` tab on your project, select the `Webhooks` page from the menu on the left, and add the following webhook URL to your project: `https://notifications-dot-moquality-inc.appspot.com/ptbot/events`
+Pivotal Tracker offers webhook support for projects. A [Pivotal Tracker project webhook](https://www.pivotaltracker.com/help/articles/activity_webhook/) is a location to which Pivotal tracker sends activity information when changes are made to a project. For instance, when a story's state is changed to `Delivered`, Pivotal Tracker will send JSON data, describing that change, to the project's webhooks. When PTBot's webhook is added to your project, PTBot can monitor a story's state to tell you when to upload a new version of your app to MoQuality. To add PTBot's webhook to your project, visit the `MORE` tab on your project, select the `Webhooks` page from the menu on the left, and add the following webhook URL to your project: `https://notifications-dot-moquality-inc.appspot.com/ptbot/events`
 
 ![Webhook page](ptbot-img/webhook_page.png)
 

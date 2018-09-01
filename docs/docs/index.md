@@ -1,16 +1,14 @@
 # What is MoQuality?
 
-MoQuality is an AI based automated testing platform for native android and iOS mobile apps. It provides an easier way to record tests and run across multiple devices at once. You can expand your test coverage as the AI explores your app just like humans would do and discover more errors in the process.  
+MoQuality is an AI based automated testing solution for native android and iOS mobile apps. It provides an easier way to record tests and run across multiple devices at once. Using MoQuality's Barista Desktop App you can create adaptive tests by simply demonstrating the user flow on your mobile app. Execute these tests on your mobile devices and view results on MoQuality Dashboard.
 
 Get started in few simple steps:
 
-* [Create an account](https://app.moquality.com)
-* [Upload your mobile app](getting-started/upload-app)
-* [Download the Recorder desktop app and start creating test-cases](recorder)
-* [Schedule test runs on multiple devices](getting-started/scheduling-tests)
-* [Generate more tests using MoQuality AI](getting-started/auto-test)
+* [Create tests in Barista](recorder)
+* [Replay tests in Barista](recorder/#replaying-a-test)
+* [Robot Testing](getting-started/auto-test)
 * [View results](getting-started/view-results)
 
 You can also use MoQuality in other uses cases:
-
-* [Documentation](flows/documentation.md) with MoQuality
+ 
+* [Exporting Tests](flows/documentation.md) with MoQuality

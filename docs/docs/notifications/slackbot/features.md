@@ -58,3 +58,7 @@ Posts a private message as an attachment containing information about the MoQual
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Usage**
 
             /mq-user
+
+## Feature Request
+
+Do you have a request for a new feature? Open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues) with your feature request! Alternatively, you can send your feature request to <hello@moquality.com>.
