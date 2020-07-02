@@ -6,8 +6,12 @@ When a pull request is opened or reopned, Gitbot will post to the pull request a
 
 ## Status Updates
 
-If Gitbot has been [configured correctly](getting-started/#setup), it will post updates from tests to the comments of a pull request.
+If Gitbot has been [configured correctly](getting-started.md#setup), it will post updates from tests to the comments of a pull request. These updates may also contain screenshots, visualizing the pages on which a test failed or succeeded.
 
 ## Future Features
 
 In the future, Gitbot could be smarter and capable of automatically testing your new app versions when they are, perhaps, in a pending pull request. Then, Gitbot could post testing updates to the comments of said pull request, thereby notifying you of any breaking bugs without you having to manually enter any pull request URLs.
+
+## Feature Request
+
+Do you have a request for a new feature? Open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues) with your feature request! Alternatively, you can send your feature request to <hello@moquality.com>.

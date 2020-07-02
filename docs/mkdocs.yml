@@ -72,6 +72,9 @@ nav:
     - Gitbot:
       - Getting Started: notifications/gitbot/getting-started.md
       - Features: notifications/gitbot/features.md
+    - Pivotal Tracker:
+      - Getting Started: notifications/ptbot/getting-started.md
+      - Features: notifications/ptbot/features.md
 
 - FAQ:
   - FAQ: faq.md
